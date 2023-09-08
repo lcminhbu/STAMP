@@ -10,7 +10,7 @@
     }
 
     .container-fluid {
-        font-size: 50%;
+        font-size: 60%;
     }
 
     .navbar-nav {
@@ -32,7 +32,7 @@
     }
 
     .footer {
-        font-size: 50%;
+        font-size: 70%;
         padding-top: 30px !important;
         margin: 0 !important;
     }
