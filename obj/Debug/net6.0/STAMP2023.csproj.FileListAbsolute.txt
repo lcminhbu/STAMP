@@ -80,4 +80,9 @@ D:/Tuan/Self-Practice/Web/STAMP2023-3/STAMP2023_2/STAMP2023/STAMP2023/obj/Debug/
 /home/lmbuu/Downloads/STAMP2023/STAMP2023/obj/Debug/net6.0/STAMP2023.pdb
 /home/lmbuu/Downloads/STAMP2023/STAMP2023/obj/Debug/net6.0/STAMP2023.genruntimeconfig.cache
 /home/lmbuu/Downloads/STAMP2023/STAMP2023/obj/Debug/net6.0/ref/STAMP2023.dll
-/home/lmbuu/Downloads/STAMP2023/STAMP2023/bin/Debug/net6.0/ref/STAMP2023.dll
+/home/lmbuu/Downloads/STAMP2023/STAMP2023/obj/Debug/net6.0/staticwebassets/msbuild.STAMP2023.Microsoft.AspNetCore.StaticWebAssets.props
+/home/lmbuu/Downloads/STAMP2023/STAMP2023/obj/Debug/net6.0/staticwebassets/msbuild.build.STAMP2023.props
+/home/lmbuu/Downloads/STAMP2023/STAMP2023/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.STAMP2023.props
+/home/lmbuu/Downloads/STAMP2023/STAMP2023/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.STAMP2023.props
+/home/lmbuu/Downloads/STAMP2023/STAMP2023/obj/Debug/net6.0/staticwebassets.pack.json
+/home/lmbuu/Downloads/STAMP2023/STAMP2023/obj/Debug/net6.0/refint/STAMP2023.dll

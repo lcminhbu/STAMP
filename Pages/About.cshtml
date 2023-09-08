@@ -4,9 +4,9 @@
     ViewData["Title"] = "Về S.T.A.M.P";
 }
 <head>
-    <link rel="stylesheet" href="~/css/about.css"/>
-    <link rel="stylesheet" href="~/css/about-base.css"/>
-    <link rel="stylesheet" href="~/css/about-responsive.css"/>
+    <link rel="stylesheet" href="~/css/about.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/about-base.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/about-responsive.css" asp-append-version="true"/>
 </head>
 <body>
     <header class="header"></header>
@@ -21,13 +21,13 @@
                                     <a href="#" class="stamp-item__link">S.T.A.M.P 2023</a>
                                     <ul class="select-part">
                                         <li class="select-item">
-                                            <a class="select-part__link">Chủ đề</a>
+                                            <a href="#" class="select-part__link">Chủ đề</a>
                                         </li>
                                         <li class="select-item">
-                                            <a class="select-part__link">Đối tượng</a>
+                                            <a href="#" class="select-part__link">Đối tượng</a>
                                         </li>
                                         <li class="select-item">
-                                            <a class="select-part__link">Thể lệ</a>
+                                            <a href="#" class="select-part__link">Thể lệ</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -140,32 +140,27 @@
                             <div class="footer grid">
                                 <div class="grid__row">
                                     <div class="grid__column-6">
-                                        <div class="countdown-container">
-                                            <div class="">
-                                                <h2 class="time-remain">Thời gian tham gia còn</h2>
-                                                <div class="grid grid__row">
-                                                    <div class="grid__column-3">
-                                                        <div class="time-number color-1" id="day">00</div>
-                                                        <span class="time-text">Ngày</span>
-                                                    </div>
-                                                    <div class="grid__column-3">
-                                                        <div class="time-number color-2" id="hour">00</div>
-                                                        <span class="time-text">Giờ</span>
-                                                    </div>
-                                                    <div class="grid__column-3">
-                                                        <div class="time-number color-1" id="minute">00</div>
-                                                        <span class="time-text">Phút</span>
-                                                    </div>
-                                                    <div class="grid__column-3">
-                                                        <div class="time-number color-2" id="second">00</div>
-                                                        <span class="time-text">Giây</span>
-                                                    </div>
-                                                </div>
-                                                
+                                        <h2 class="time-remain">Thời gian tham gia còn</h2>
+                                        <div class="grid grid__row timer">
+                                            <div class="grid__column-3">
+                                                <div class="time-number color-1" id="day">00</div>
+                                                <span class="time-text">Ngày</span>
+                                            </div>
+                                            <div class="grid__column-3">
+                                                <div class="time-number color-2" id="hour">00</div>
+                                                <span class="time-text">Giờ</span>
+                                            </div>
+                                            <div class="grid__column-3">
+                                                <div class="time-number color-1" id="minute">00</div>
+                                                <span class="time-text">Phút</span>
+                                            </div>
+                                            <div class="grid__column-3">
+                                                <div class="time-number color-2" id="second">00</div>
+                                                <span class="time-text">Giây</span>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="grid__column-6">
+                                    <div class="grid__column-6 center">
                                         <div class="countdown-button"><span>THAM GIA NGAY</span></div>
                                     </div>
                                 </div>

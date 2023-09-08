@@ -1,0 +1,42 @@
+@media (max-width: 1023px) {
+    .time-text {
+        font-size: 24px;
+    }
+    
+    .time-number {
+        font-size: 40px;
+    }
+
+    .time-remain {
+        font-size: 24px;
+    }
+
+    .grid__column-6 {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .countdown-button {
+        font-size: 26px;
+        padding: 15px;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .time-remain {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .time-text {
+        font-size: 20px;
+        text-transform: lowercase;
+    }
+
+    .countdown-button {
+        text-transform: lowercase;
+        font-size: 20px;
+        padding: 10px;
+    }
+}
