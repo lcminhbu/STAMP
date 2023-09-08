@@ -1,4 +1,4 @@
-﻿﻿
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -41,13 +41,27 @@
                 <div class="login-box" id="navbarNavDropdown">
                     <ul class="navbar-nav header-item">
                         <li class="nav-item">
-                            <a class="nav-link login" asp-area="" asp-page="/Index" onmouseover="this.style.backgroundColor='#EA4335'; this.style.color='#F8F1F1';" onmouseout="this.style.backgroundColor='#F8F1F1'; this.style.color='#EA4335'">Đăng nhập</a>
+                            <button id="login-button" class="login-button" onmouseover="this.style.backgroundColor='#EA4335'; this.style.color='#F8F1F1';" onmouseout="this.style.backgroundColor='#F8F1F1'; this.style.color='#EA4335'" 
+                            onclick="document.getElementById('custom-form').style.display='block'">Đăng nhập</button>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-
+    <!-- Phần thông tin đăng nhập tài khoản -->
+     <div id="custom-form" class="custom-form">
+    <form>
+    <div class="login-form">
+    <h3 class="login-notice">Đăng nhập tài khoản</h3>
+    <h3 class="notice">Bạn cần đăng nhập tài khoản Google của mình để tiếp tục tính năng này</h3>
+    </div>
+    <button class="google-button">
+    <span class="google-icon" >Đăng nhập với Google</span>
+    </form>
+    <button class="close-button" >
+    <span class="close-icon" onclick="document.getElementById('custom-form').style.display='none'">X</span>
+    <!-- Nội dung của form ở đây -->
+  </div>
     <div class="container-fluid" style="padding: 0px">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -60,7 +74,6 @@
         </div>
 
     </footer>
-
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
