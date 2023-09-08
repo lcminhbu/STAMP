@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "W4lWnA1PI6M5i+SYf63VTB2ZQe67oG+Vdj1cyxd5hus=",
+  "Hash": "3mZXSW5MaAp2g23jNaiy5VxLNefVubiF0aJy/Y1v/mU=",
   "Source": "STAMP2023",
   "BasePath": "_content/STAMP2023",
   "Mode": "Default",
@@ -202,6 +202,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/searchbar-style.scss"
+    },
+    {
+      "Identity": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/css/shared-responsive.css",
+      "SourceId": "STAMP2023",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/",
+      "BasePath": "_content/STAMP2023",
+      "RelativePath": "css/shared-responsive.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/shared-responsive.css"
     },
     {
       "Identity": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/css/site.css",
