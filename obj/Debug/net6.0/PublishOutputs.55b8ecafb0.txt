@@ -1,0 +1,7 @@
+/home/lmbuu/Downloads/STAMP2023/STAMP2023/bin/Debug/net6.0/publish/STAMP2023
+/home/lmbuu/Downloads/STAMP2023/STAMP2023/bin/Debug/net6.0/publish/appsettings.Development.json
+/home/lmbuu/Downloads/STAMP2023/STAMP2023/bin/Debug/net6.0/publish/appsettings.json
+/home/lmbuu/Downloads/STAMP2023/STAMP2023/bin/Debug/net6.0/publish/STAMP2023.dll
+/home/lmbuu/Downloads/STAMP2023/STAMP2023/bin/Debug/net6.0/publish/STAMP2023.deps.json
+/home/lmbuu/Downloads/STAMP2023/STAMP2023/bin/Debug/net6.0/publish/STAMP2023.runtimeconfig.json
+/home/lmbuu/Downloads/STAMP2023/STAMP2023/bin/Debug/net6.0/publish/STAMP2023.pdb

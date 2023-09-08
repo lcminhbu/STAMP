@@ -1,0 +1,68 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = STAMP2023
+build_property.RootNamespace = STAMP2023
+build_property.ProjectDir = /home/lmbuu/Downloads/STAMP2023/STAMP2023/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /home/lmbuu/Downloads/STAMP2023/STAMP2023
+build_property._RazorSourceGeneratorDebug = 
+
+[/home/lmbuu/Downloads/STAMP2023/STAMP2023/Pages/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWJvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/lmbuu/Downloads/STAMP2023/STAMP2023/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/lmbuu/Downloads/STAMP2023/STAMP2023/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/lmbuu/Downloads/STAMP2023/STAMP2023/Pages/Info.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5mby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/lmbuu/Downloads/STAMP2023/STAMP2023/Pages/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/lmbuu/Downloads/STAMP2023/STAMP2023/Pages/News.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTmV3cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/lmbuu/Downloads/STAMP2023/STAMP2023/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/lmbuu/Downloads/STAMP2023/STAMP2023/Pages/Ranking.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmFua2luZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/lmbuu/Downloads/STAMP2023/STAMP2023/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/lmbuu/Downloads/STAMP2023/STAMP2023/Pages/Voting.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVm90aW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/lmbuu/Downloads/STAMP2023/STAMP2023/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/lmbuu/Downloads/STAMP2023/STAMP2023/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/lmbuu/Downloads/STAMP2023/STAMP2023/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ujq9c39umh

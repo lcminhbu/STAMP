@@ -1,0 +1,70 @@
+﻿﻿
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - STAMP2023</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/STAMP2023.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/shared-responsive.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary header">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-page="/Index"><img class="logo" src="~/image/About/stamplogo.png" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-box" id="navbarNavDropdown">
+                    <ul class="navbar-nav header-item">
+                        <li class="nav-item">
+                            <a class="nav-link item" asp-area="" asp-page="/Index" onmouseover="this.style.color='#EA4335';" onmouseout="this.style.color='rgba(0, 0, 0, 0.60)';">Trang chủ</a>
+                        </li>
+                        <li class="nav-item item">
+                            <a class="nav-link item" asp-area="" asp-page="/News" onmouseover="this.style.color='#EA4335';" onmouseout="this.style.color='rgba(0, 0, 0, 0.60)';">Tin Tức</a>
+                        </li>
+                        <li class="nav-item item">
+                            <a class="nav-link item" asp-area="" asp-page="/About" onmouseover="this.style.color='#EA4335';" onmouseout="this.style.color='rgba(0, 0, 0, 0.60)';">Về S.T.A.M.P</a>
+                        </li>
+                        <li class="nav-item item">
+                            <a class="nav-link item" asp-area="" asp-page="/Voting" onmouseover="this.style.color='#EA4335';" onmouseout="this.style.color='rgba(0, 0, 0, 0.60)';">Bình chọn</a>
+                        </li>
+                        <li class="nav-item item">
+                            <a class="nav-link item" asp-area="" asp-page="/Ranking" onmouseover="this.style.color='#EA4335';" onmouseout="this.style.color='rgba(0, 0, 0, 0.60)';">Xếp hạng</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="login-box" id="navbarNavDropdown">
+                    <ul class="navbar-nav header-item">
+                        <li class="nav-item">
+                            <a class="nav-link login" asp-area="" asp-page="/Index" onmouseover="this.style.backgroundColor='#EA4335'; this.style.color='#F8F1F1';" onmouseout="this.style.backgroundColor='#F8F1F1'; this.style.color='#EA4335'">Đăng nhập</a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid" style="padding: 0px">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted" style="position:relative">
+        <div class="container">
+            &copy; 2023 - STAMP2023 - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

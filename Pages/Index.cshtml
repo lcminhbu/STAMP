@@ -1,0 +1,394 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Trang chủ";
+}
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/css/Index.css"/>
+
+    <style>
+        .index-content-value-big {
+            font-size: 5rem;
+        }
+
+        .index-content-value {
+            font-size: 1.75rem;
+        }
+
+        .colorline {
+            padding-bottom: 3%;
+            display:flex;
+            margin-left:42%;
+        }
+
+        @@media (max-width: 768px) {
+            .index-content-value {
+                font-size: 0.5rem;
+            }
+
+            .index-content-value-big {
+                font-size: 2rem;
+            }
+            .colorline {
+                width:30%;
+                margin-left: 35%;
+                padding-bottom:1%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Banner and Countdown -->
+    <div class="position-relative">
+        <!--<img class="img-fluid" src="~/image/Index/banner1.jpg" style="width:100%; max-height:780px; object-fit:cover">-->
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <!--<img src="~/image/Index/banner1.jpg" style="width:100%">-->
+                <img class="img-fluid" src="~/image/Index/banner1.jpg" style="width:100%; max-height:780px; object-fit:cover">
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <!--<img src="~/image/Index/banner1.jpg" style="width:100%">-->
+                <img class="img-fluid" src="~/image/Index/banner1.jpg" style="width:100%; max-height:780px; object-fit:cover">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <!--<img src="~/image/Index/banner1.jpg" style="width:100%">-->
+                <img class="img-fluid" src="~/image/Index/banner1.jpg" style="width:100%; max-height:780px; object-fit:cover">
+                <div class="text">Caption Three</div>
+            </div>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script>
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+
+                slides[slideIndex - 1].style.display = "block";
+                slides[slideIndex - 1].style.opacity = "1"; // Fade in effect
+
+                setTimeout(() => {
+                    slides[slideIndex - 1].style.opacity = "0"; // Fade out effect
+                    //fade(slides);
+                    //unfade(slides);
+                    setTimeout(showSlides, 500); // Delay before next slide
+                }, 7000); // Display time of the slide
+            }
+
+        </script>
+
+        <style>
+            .countdown-value {
+                font-size: 3rem;
+            }
+
+            .countdown-label {
+                font-size: 2rem;
+            }
+
+            @@media (max-width: 768px) {
+                .countdown-value {
+                    font-size: 2rem;
+                }
+                .countdown-label {
+                    font-size: 1rem;
+                }
+            }
+        </style>
+
+        <!-- Countdown -->
+        <style>
+            .countdown-container {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 80%;
+                max-width: 800px;
+                height: 40%;
+                max-height: 700px;
+                border-radius: 30px;
+                background-color: white;
+                box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+                padding: 20px;
+                text-align: center;
+                /* Responsive adjustments */
+                @@media (max-width: 768px) {
+                    height:55%;
+                }
+            }
+        </style>
+        <div class="position-absolute top-100 start-50 countdown-container translate-middle" style="border-radius: 30px; background-color: white; box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);">
+            <div class="w3-card-4 rounded-lg p-4">
+                <style>
+                    .thoigianthamgiacon{
+                        font-size:3rem;
+                     @@media (max-width:768px)
+                     {
+                         font-size:1.5rem;
+                     }
+                    }
+                </style>
+                <h2 class="mb-4 thoigianthamgiacon">Thời gian tham gia còn</h2>
+                <div class="row justify-content-center">
+                    <div class="col-6 col-md-3 countdown-item">
+                        <div class="display-4 text-danger countdown-value" id="day">00</div>
+                        <span class="countdown-label">Ngày</span>
+                    </div>
+                    <div class="col-6 col-md-3 countdown-item">
+                        <div class="display-4 text-primary countdown-value" id="hour">00</div>
+                        <span class="countdown-label">Giờ</span>
+                    </div>
+                    <div class="col-6 col-md-3 countdown-item">
+                        <div class="display-4 text-warning countdown-value" id="minute">00</div>
+                        <span class="countdown-label">Phút</span>
+                    </div>
+                    <div class="col-6 col-md-3 countdown-item">
+                        <div class="display-4 text-success countdown-value" id="second">00</div>
+                        <span class="countdown-label">Giây</span>
+                    </div>
+                </div>
+                <style>
+                    .countdown-button {
+                    display: inline-block;
+                    padding: 20px 34px;
+                    font-size: 45px;
+                    font-weight: bold;
+                    text-align: center;
+                    background-color: red;
+                    color: white;
+                    border: none;
+                    border-radius: 30px;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                    margin-top:20px;
+                    }
+
+                    .countdown-button:hover {
+                        background-color: black;
+                        color:white
+                    }
+
+                    @@media (max-width: 768px) {
+                        .countdown-button {
+                            font-size: 20px;
+                            padding: 10px 19px;
+                            margin-top:10px;
+                        }
+                    }
+                </style>
+                <div class="countdown-button" style=""><span class="" style="color:white">THAM GIA NGAY</span></div>
+            </div>
+        </div>
+
+        <script>
+            const countdownDate = new Date("2023-09-19").getTime();
+
+            const countdownInterval = setInterval(() => {
+                const now = new Date().getTime();
+                const timeRemaining = countdownDate - now;
+
+                const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+                document.getElementById("day").textContent = days < 10 ? "0" + days : days;
+                document.getElementById("hour").textContent = hours < 10 ? "0" + hours : hours;
+                document.getElementById("minute").textContent = minutes < 10 ? "0" + minutes : minutes;
+                document.getElementById("second").textContent = seconds < 10 ? "0" + seconds : seconds;
+
+                if (timeRemaining < 0) {
+                    clearInterval(countdownInterval);
+                    // Ket thuc thi lam gi do o day
+                }
+            }, 1000);
+        </script>
+
+    </div>
+
+    <!-- Add space to separate the countdown section -->
+    <div style="padding-bottom:200px"></div>
+
+    <div class=" text-center position-relative" style="display: flex; align-items: center; justify-content: center;">
+        <!-- Background Image -->
+        <style>
+            .stampbg
+            {
+                @@media (max-width: 768px){
+                    height: 250%;
+                }
+            }
+        </style>
+        <img class="background-img img-fluid stamp-bg" src="~/image/Index/GioiThieuVeStamp/BG.svg" alt="Background Image">
+        <div class="position-absolute top-0 w-100 h-100">
+            <!-- Pattern Image -->
+            <img class="pattern-img img-fluid" src="~/image/Index/GioiThieuVeStamp/Pattern.svg" alt="Pattern Image">
+            <!-- Title and line -->
+            <div class="position-absolute top-0 w-100 h-100" style="padding-top:9%">
+                <h2 class="index-content-value-big" style="color: #EA4335;">
+                    GIỚI THIỆU VỀ S.T.A.M.P
+                </h2>
+                <div style="padding-bottom:3%">
+                    <div class="align-content-center colorline">
+                        <img class="img-fluid" src="~/image/Index/GioiThieuVeStamp/ColoredLine.svg" alt="Stamp Image">
+                    </div>
+                </div>
+
+                <!-- Content gioi thieu ve STAMP -->
+               
+                <div class="container-fluid" style="display: flex; justify-content: space-between;">
+                    <div class="index-content-value" style=" flex: 1; text-align: justify; margin-left:10%">
+                        <span style="color: #34A853; font-style: italic">
+                            Cuộc thi thiết kế và triển lãm tem thư S.T.A.M.P
+                        </span>
+                        <span style="color: black">
+                            Được lấy cảm hứng từ ngày kỷ niệm “Ngày tem Việt Nam” 27/08.
+                            Cuộc thi được tổ chức với mục tiêu vừa giúp các bạn sinh viên lan tỏa tình yêu quê hương đất nước thông qua những tác phẩm tem thư
+                            vừa giúp các bạn có thêm trải nghiệm thiết kế ra một tác phẩm tem thư hoàn chỉnh và duy trì sức sống trường tồn của tem thư
+                        </span>
+                    </div>
+                    <div style="flex: 1; text-align: center;">
+                        <img style="max-width: 100%;" src="~/image/Index/GioiThieuVeStamp/Untitled design (1) 1.png" alt="Stamp Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add space to separate the introduction section -->
+    <div class="container-fluid py-5"></div>
+    <style>
+        .index_cocaugiaithuong_border{
+            padding-block: 5%;
+            margin: 5%;
+            background-image: linear-gradient(180deg, #FA1D0A 0%, rgba(248, 75, 61, 0.94) 54.69%, rgba(234, 67, 53, 0.25) 100%);
+            stroke-width: 2px;
+            stroke: var(--unnamed, #EA4335);
+            opacity: 0.8;
+            filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
+            color: white;
+        }
+        @@media (max-width:768px)
+        {
+            padding-block: 2%;
+        }
+    </style>
+    <!-- Cơ cấu giải thưởng -->
+    <div class="container text-center">
+        <!-- Title and line -->
+        <h2 class="index-content-value-big" style="color: #EA4335;">
+            CƠ CẤU GIẢI THƯỞNG
+        </h2>
+        <div style="padding-bottom:3%">
+            <div class="align-content-center colorline">
+                <img class="img-fluid" src="~/image/Index/GioiThieuVeStamp/ColoredLine.svg" alt="Stamp Image">
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center" style="padding-bottom:10px">
+                <div class="col-6">
+                    <div style="min-height: 100px;">
+                        <h3 class="index-content-value-big" style="text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.50);">GIẢI NHẤT</h3>
+                        <div class="index_cocaugiaithuong_border" style="border: 3px coral; box-shadow: 3px 3px 4px rgba(125, 78, 172, 0.75) ">
+                            <p class="index-content-value-big" style="color:white; text-align: center; padding-top:10px">3.000.000 VNĐ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding-bottom:10px">
+                <div class="col-5">
+                    <div style="min-height: 100px;">
+                        <h3 class="index-content-value-big" style="text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.50);">GIẢI NHÌ</h3>
+                        <div class="index_cocaugiaithuong_border" style="">
+                            <p class="index-content-value-big" style="color:white; text-align: center; padding-top:10px">2.000.000 VNĐ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col"></div>
+                <div class="col-5">
+                    <div style="min-height: 100px;">
+                        <h3 class="index-content-value-big" style="text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.50);">GIẢI BA</h3>
+                        <div class="index_cocaugiaithuong_border" style="color:white">
+                            <p class="index-content-value-big" style=" color:white; text-align: center; padding-top:10px">1.000.000 VNĐ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding-bottom:10px">
+                <div class="col-5">
+                    <div style="min-height: 100px;">
+                        <h3 class="index-content-value-big" style="text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.50);">GIẢI KHUYẾN KHÍCH</h3>
+                        <div class="index_cocaugiaithuong_border" style="color:white">
+                            <p class="index-content-value-big" style="color:white; text-align: center; padding-top:10px">500.000 VNĐ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col"></div>
+                <div class="col-5">
+                    <div style="min-height: 100px;">
+                        <h3 class="index-content-value-big" style="text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.50);">GIẢI YÊU THÍCH</h3>
+                        <div class="index_cocaugiaithuong_border" style="color:white">
+                            <p class="index-content-value-big" style="color:white; text-align: center; padding-top:10px">500.000 VNĐ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add space to separate the prize section -->
+    <div class="container-fluid py-5"></div>
+
+    <!-- Các mốc thời gian -->
+    <div class=" text-center position-relative" style="display: flex; align-items: center; justify-content: center;">
+        <!-- Background Image -->
+        <img class="background-img img-fluid" src="~/image/Index/GioiThieuVeStamp/BG.svg" alt="Background Image">
+        <div class="position-absolute top-0 w-100 h-100">
+            <!-- Pattern Image -->
+            <img class="pattern-img img-fluid" src="~/image/Index/GioiThieuVeStamp/Pattern.svg" alt="Pattern Image">
+            <!-- Title and line -->
+            <div class="position-absolute top-0 w-100 h-100" style="padding-top:8%; padding-inline:15%">
+                <h2 class="text-danger index-content-value-big" style="color: #EA4335">
+                    CÁC MỐC THỜI GIAN
+                </h2>
+                <div class="align-content-center">
+                    <img class="img-fluid" src="~/image/Index/GioiThieuVeStamp/ColoredLine.svg" alt="Stamp Image">
+                </div>
+                <!-- Content TIMELINE -->
+                <div class="w3-container w3-bottombar w3-border-red w3-margin-bottom"></div>
+                <img class="img-fluid" src="~/image/Index/ThoiGian.png" alt="Timeline">
+            </div>
+        </div>
+    </div>
+
+</body>

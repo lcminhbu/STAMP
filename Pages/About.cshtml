@@ -1,0 +1,192 @@
+﻿@page
+@model AboutModel
+@{
+    ViewData["Title"] = "Về S.T.A.M.P";
+}
+<head>
+    <link rel="stylesheet" href="~/css/about.css"/>
+    <link rel="stylesheet" href="~/css/about-base.css"/>
+    <link rel="stylesheet" href="~/css/about-responsive.css"/>
+</head>
+<body>
+    <header class="header"></header>
+    <div>
+        <div class="app__container">
+            <div class="grid">
+                <div class="grid__row app__content">
+                    <div class="grid__column-2">
+                        <nav class="stamp-choose">
+                            <ul class="stamp-list">
+                                <li class="stamp-item stamp-item--active">
+                                    <a href="#" class="stamp-item__link">S.T.A.M.P 2023</a>
+                                </li>
+                                <li class="stamp-item">
+                                    <a href="#" class="stamp-item__link">S.T.A.M.P 2022</a>
+                                </li>
+                                <li class="stamp-item">
+                                    <a href="#" class="stamp-item__link">S.T.A.M.P 2021</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="info">
+                            <img src="~/image/About/stamplogo.png"/>
+                            <header class="info-header">STAMP - STAND TOGETHER AND MAKE PROTECTION</header>
+                            <div class="info-part info-introduce">
+                                <span class="info-text">
+                                    Cuộc thi S.T.A.M.P 2023 với chủ đề  
+                                </span>
+                                <span class="info-text bolder">
+                                    “S.T.A.M.P - Stand Together And Make Protection”
+                                </span>
+                                <span class="info-text">
+                                    được tổ chức nhằm hưởng ứng
+                                    ngày Quốc tế Bảo vệ tầng Ozone 16/09. Cuộc thi là sân chơi giúp các bạn sinh viên phát huy khả năng sáng tạo vô hạn
+                                    của bản thân để thiết kế ra những chiếc tem thư hướng về mái nhà xanh của chúng ta. Đồng thời, qua các hoạt động
+                                    triển lãm, BTC mong muốn sức sống mãnh liệt của nghệ thuật thiết kế tem thư sẽ luôn trường tồn mãi với thời gian và hy
+                                    vọng, những chiếc tem đặc biệt này sẽ chung tay lan tỏa tinh thần bảo vệ tầng Ozone và bảo vệ môi trường xanh đến
+                                    tất cả mọi người.
+                                </span>
+                            </div>
+                            <div class="info-part info-subject">
+                                <header class="info__header">CHỦ ĐỀ TÁC PHẨM</header>
+                                <img src="~/image/About/line.png"/>
+                                <div class="blue-background text-content">
+                                    <span class="mark-decor">"</span>
+                                    <span class="info-text">Thiết kế tem thư với nội dung liên quan đến tuyên truyền, lan tỏa tinh thần yêu thương, bảo vệ, khẳng định tầm quan trọng, quý báu của thiên nhiên, môi trường và đặc biệt là tầng Ozone.</span>
+                                </div>
+                            </div>
+                            <div class="info-part info-competitor">
+                                <header class="info__header">ĐỐI TƯỢNG DỰ THI</header>
+                                <img src="~/image/About/line.png"/>
+                                <ul class="info-text alignleft text-content">
+                                    <li>Toàn thể sinh viên hệ Chính quy đang học tại các trường Cao đẳng, Đại học trên địa bàn TP. Hồ Chí Minh.</li>
+                                    <li>Thí sinh dự thi theo hình thức cá nhân hoặc nhóm 2 – 3 người. Thí sinh có thể dự thi ở cả 02 hình thức trên</li>
+                                </ul>
+                            </div>
+                            <div class="info-part info-rule">
+                                <header class="info__header">THỂ LỆ</header>
+                                <img src="~/image/About/line.png"/>
+                                <div class="grid info-text">
+                                    <div class="grid__row">
+                                        <div class="grid__column-6 blue-background">
+                                            <div class="rule-title">Thiết kế dự thi</div>
+                                            <div class="alignleft padding-rule">
+                                                <ul>
+                                                    <li>Sinh viên đăng ký và tham gia dự thi bằng cách điền thông tin, gửi tác phẩm dự thi vào trang nhận bài trên website của cuộc thi S.T.A.M.P.</li>
+                                                    <li>Với mỗi tác phẩm chưa đúng quy định, BTC sẽ gửi mail thông báo sửa tác phẩm, thí sinh gửi lại tác phẩm hoàn thiện trước khi kết thúc thời gian tổng hợp bài thi.</li>
+                                                    <li>Lưu ý: Tác phẩm chưa đúng quy định sẽ bị loại ở vòng nộp bài nếu thí sinh không gửi lại tác phẩm. Trong trường hợp này, thí sinh không được công nhận tham gia cuộc thi.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="grid__column-6 blue-background">
+                                            <div class="rule-title">Bình chọn</div>
+                                            <div class="alignleft padding-rule">
+                                                <div>Những tác phẩm dự thi đúng quy định sẽ được đưa lên bình chọn trên website cuộc thi.</div>
+                                                <div class="bolder">Quy tắc tính điểm:</div>
+                                                <ul>
+                                                    <li>Mỗi lượt bình chọn = 1 điểm;</li>
+                                                    <li>Top 20 tác phẩm có lượt bình chọn cao nhất sẽ vào vòng triển lãm;</li>
+                                                    <li>Số điểm vòng bình chọn chiếm 10% tổng điểm chung cuộc của cuộc thi;</li>
+                                                    <li>Tác phẩm có lượt bình chọn cao nhất sẽ được tối đa điểm quy đổi của vòng bình
+                                                    chọn theo thang điểm 10 (tức 1 điểm).</li>
+                                                </ul>
+                                                <div>
+                                                    Top 20 tác phẩm xuất sắc của vòng bình chọn sẽ nhận được lời mời tham gia vòng
+                                                    triển lãm. Nếu thí sinh không phản hồi email trong vòng 24h sẽ mất quyền dự thi.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__row">
+                                        <div class="grid__column-6 blue-background">
+                                            <div class="rule-title">Triển lãm</div>
+                                        </div>
+                                        <div class="grid__column-6 blue-background">
+                                            <div class="rule-title">Quy định tác phẩm</div>
+                                            <div class="alignleft padding-rule">
+                                                <div class="bolder">Tác phẩm dự thi bao gồm:</div>
+                                                <ul>
+                                                    <li>Con tem: vẽ bằng tay (tô kín màu, gửi file chụp hình rõ nét) hoặc
+                                            thiết kế bằng phần mềm đồ hoạ (gửi file gốc hoặc link gốc tác phẩm).</li>
+                                                    <li>Bản thuyết minh tác phẩm, trình bày ngắn gọn trên 01 mặt giấy A4, font
+                                            chữ Times New Roman, cỡ chữ 13.</li>
+                                                    <li>Nếu tác phẩm được vào vòng triển lãm, cần bổ sung thêm 01 video giới thiệu
+                                            về tác phẩm dự thi.</li>
+                                                </ul>
+                                                <div class="bolder">Số lượng tác phẩm dự thi:</div>
+                                                <ul>
+                                                    <li>Mỗi cá nhân hoặc mỗi nhóm chỉ đăng ký 01 tác phẩm dự thi đạt yêu cầu của BTC.</li>
+                                                    <li>Các cá nhân muốn nộp nhiều tác phẩm có thể tham gia dưới hình thức nhiều nhóm.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="footer grid">
+                                <div class="grid__row">
+                                    <div class="grid__column-6">
+                                        <div class="countdown-container">
+                                            <div class="">
+                                                <h2 class="time-remain">Thời gian tham gia còn</h2>
+                                                <div class="grid grid__row">
+                                                    <div class="grid__column-3">
+                                                        <div class="time-number color-1" id="day">00</div>
+                                                        <span class="time-text">Ngày</span>
+                                                    </div>
+                                                    <div class="grid__column-3">
+                                                        <div class="time-number color-2" id="hour">00</div>
+                                                        <span class="time-text">Giờ</span>
+                                                    </div>
+                                                    <div class="grid__column-3">
+                                                        <div class="time-number color-1" id="minute">00</div>
+                                                        <span class="time-text">Phút</span>
+                                                    </div>
+                                                    <div class="grid__column-3">
+                                                        <div class="time-number color-2" id="second">00</div>
+                                                        <span class="time-text">Giây</span>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-6">
+                                        <div class="countdown-button"><span>THAM GIA NGAY</span></div>
+                                    </div>
+                                </div>
+
+                                <script>
+                                    const countdownDate = new Date("2023-09-19").getTime();
+
+                                    const countdownInterval = setInterval(() => {
+                                        const now = new Date().getTime();
+                                        const timeRemaining = countdownDate - now;
+
+                                        const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+                                        const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                        const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+                                        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+                                        document.getElementById("day").textContent = days < 10 ? "0" + days : days;
+                                        document.getElementById("hour").textContent = hours < 10 ? "0" + hours : hours;
+                                        document.getElementById("minute").textContent = minutes < 10 ? "0" + minutes : minutes;
+                                        document.getElementById("second").textContent = seconds < 10 ? "0" + seconds : seconds;
+
+                                        if (timeRemaining < 0) {
+                                            clearInterval(countdownInterval);
+                                            // Ket thuc thi lam gi do o day
+                                        }
+                                    }, 1000);
+                                </script>
+                            </div>
+                        </div>     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
