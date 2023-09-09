@@ -1,395 +1,395 @@
 {
   "Files": [
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/obj/Debug/net7.0/scopedcss/projectbundle/STAMP2023.bundle.scp.css",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/obj/Debug/net7.0/scopedcss/projectbundle/STAMP2023.bundle.scp.css",
       "PackagePath": "staticwebassets/STAMP2023.bundle.scp.css"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/css/Index.css",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/css/Index.css",
       "PackagePath": "staticwebassets/css/Index.css"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/css/about-base.css",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/css/about-base.css",
       "PackagePath": "staticwebassets/css/about-base.css"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/css/about-responsive.css",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/css/about-responsive.css",
       "PackagePath": "staticwebassets/css/about-responsive.css"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/css/about.css",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/css/about.css",
       "PackagePath": "staticwebassets/css/about.css"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/css/navbar.css",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/css/navbar.css",
       "PackagePath": "staticwebassets/css/navbar.css"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/css/ranking-style.css",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/css/ranking-style.css",
       "PackagePath": "staticwebassets/css/ranking-style.css"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/css/searchbar-style.css",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/css/searchbar-style.css",
       "PackagePath": "staticwebassets/css/searchbar-style.css"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/css/searchbar-style.min.css",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/css/searchbar-style.min.css",
       "PackagePath": "staticwebassets/css/searchbar-style.min.css"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/css/searchbar-style.scss",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/css/searchbar-style.scss",
       "PackagePath": "staticwebassets/css/searchbar-style.scss"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/css/shared-responsive.css",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/css/shared-responsive.css",
       "PackagePath": "staticwebassets/css/shared-responsive.css"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/css/site.css",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/favicon.ico",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/fonts/JosefinSans-VariableFont_wght.ttf",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/fonts/JosefinSans-VariableFont_wght.ttf",
       "PackagePath": "staticwebassets/fonts/JosefinSans-VariableFont_wght.ttf"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/fonts/Syne-VariableFont_wght.ttf",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/fonts/Syne-VariableFont_wght.ttf",
       "PackagePath": "staticwebassets/fonts/Syne-VariableFont_wght.ttf"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/About/frame.png",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/image/About/frame.png",
       "PackagePath": "staticwebassets/image/About/frame.png"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/About/line.png",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/image/About/line.png",
       "PackagePath": "staticwebassets/image/About/line.png"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/About/rank.png",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/image/About/rank.png",
       "PackagePath": "staticwebassets/image/About/rank.png"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/About/stamplogo.png",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/image/About/stamplogo.png",
       "PackagePath": "staticwebassets/image/About/stamplogo.png"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/About/submission.png",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/image/About/submission.png",
       "PackagePath": "staticwebassets/image/About/submission.png"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/Header and Footer/Logo.png",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/image/Header and Footer/Logo.png",
       "PackagePath": "staticwebassets/image/Header and Footer/Logo.png"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/Index/GioiThieuVeStamp/BG.svg",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/image/Index/GioiThieuVeStamp/BG.svg",
       "PackagePath": "staticwebassets/image/Index/GioiThieuVeStamp/BG.svg"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/Index/GioiThieuVeStamp/ColoredLine.svg",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/image/Index/GioiThieuVeStamp/ColoredLine.svg",
       "PackagePath": "staticwebassets/image/Index/GioiThieuVeStamp/ColoredLine.svg"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/Index/GioiThieuVeStamp/Ellipse 4.svg",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/image/Index/GioiThieuVeStamp/Ellipse 4.svg",
       "PackagePath": "staticwebassets/image/Index/GioiThieuVeStamp/Ellipse 4.svg"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/Index/GioiThieuVeStamp/GIẢI NHẤT (3) 1.png",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/image/Index/GioiThieuVeStamp/GIẢI NHẤT (3) 1.png",
       "PackagePath": "staticwebassets/image/Index/GioiThieuVeStamp/GIẢI NHẤT (3) 1.png"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/Index/GioiThieuVeStamp/GIẢI NHẤT (3) 2.png",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/image/Index/GioiThieuVeStamp/GIẢI NHẤT (3) 2.png",
       "PackagePath": "staticwebassets/image/Index/GioiThieuVeStamp/GIẢI NHẤT (3) 2.png"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/Index/GioiThieuVeStamp/GIẢI NHẤT 1.png",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/image/Index/GioiThieuVeStamp/GIẢI NHẤT 1.png",
       "PackagePath": "staticwebassets/image/Index/GioiThieuVeStamp/GIẢI NHẤT 1.png"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/Index/GioiThieuVeStamp/GIẢI NHẤT 2.png",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/image/Index/GioiThieuVeStamp/GIẢI NHẤT 2.png",
       "PackagePath": "staticwebassets/image/Index/GioiThieuVeStamp/GIẢI NHẤT 2.png"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/Index/GioiThieuVeStamp/GIẢI NHẤT 3.png",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/image/Index/GioiThieuVeStamp/GIẢI NHẤT 3.png",
       "PackagePath": "staticwebassets/image/Index/GioiThieuVeStamp/GIẢI NHẤT 3.png"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/Index/GioiThieuVeStamp/GIẢI NHẤT 4.png",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/image/Index/GioiThieuVeStamp/GIẢI NHẤT 4.png",
       "PackagePath": "staticwebassets/image/Index/GioiThieuVeStamp/GIẢI NHẤT 4.png"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/Index/GioiThieuVeStamp/Pattern.svg",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/image/Index/GioiThieuVeStamp/Pattern.svg",
       "PackagePath": "staticwebassets/image/Index/GioiThieuVeStamp/Pattern.svg"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/Index/GioiThieuVeStamp/THỜI GIAN.png",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/image/Index/GioiThieuVeStamp/THỜI GIAN.png",
       "PackagePath": "staticwebassets/image/Index/GioiThieuVeStamp/THỜI GIAN.png"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/Index/GioiThieuVeStamp/Untitled design (1) 1.png",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/image/Index/GioiThieuVeStamp/Untitled design (1) 1.png",
       "PackagePath": "staticwebassets/image/Index/GioiThieuVeStamp/Untitled design (1) 1.png"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/Index/ThoiGian.png",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/image/Index/ThoiGian.png",
       "PackagePath": "staticwebassets/image/Index/ThoiGian.png"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/Index/banner1.jpg",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/image/Index/banner1.jpg",
       "PackagePath": "staticwebassets/image/Index/banner1.jpg"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/Ranking/like.svg",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/image/Ranking/like.svg",
       "PackagePath": "staticwebassets/image/Ranking/like.svg"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/Ranking/like_bold.svg",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/image/Ranking/like_bold.svg",
       "PackagePath": "staticwebassets/image/Ranking/like_bold.svg"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/Ranking/stamp-ex.png",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/image/Ranking/stamp-ex.png",
       "PackagePath": "staticwebassets/image/Ranking/stamp-ex.png"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/mark.png",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/image/mark.png",
       "PackagePath": "staticwebassets/image/mark.png"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/js/Index.js",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/js/Index.js",
       "PackagePath": "staticwebassets/js/Index.js"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/js/site.js",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/LICENSE",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/LICENSE",
       "PackagePath": "staticwebassets/lib/bootstrap"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/jquery-validation/LICENSE.md",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/jquery-validation/LICENSE.md",
       "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/jquery-validation/dist/additional-methods.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/jquery/LICENSE.txt",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/jquery/LICENSE.txt",
       "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/jquery/dist/jquery.js",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/jquery/dist/jquery.js",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/jquery/dist/jquery.min.js",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/jquery/dist/jquery.min.js",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
     },
     {
-      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/lib/jquery/dist/jquery.min.map",
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP/wwwroot/lib/jquery/dist/jquery.min.map",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
     },
     {
