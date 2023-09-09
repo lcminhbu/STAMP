@@ -1,0 +1,77 @@
+.custom-form {
+    margin-top:70px;
+    width: 500px;
+  height: 300px;
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #000;
+  background-color: #fff;
+  border-radius: 10px;
+  display:none;
+  z-index: 900;
+}
+.login-form {
+    position: absolute;
+    height: 200px;
+  background-color: #C4C4C4;
+  border-radius: 10px;
+}
+
+
+.close-button {
+  position: absolute;
+  top: 10px; /* Đặt vị trí top tùy ý để đặt nút "X" ở góc trên cùng bên phải của form */
+  right: 10px; /* Đặt vị trí right tùy ý để đặt nút "X" ở góc trên cùng bên phải của form */
+  width: 30px; /* Đặt chiều rộng của nút "X" */
+  height: 30px; /* Đặt chiều cao của nút "X" */
+  background-color: transparent; /* Loại bỏ màu nền của nút "X" */
+  border: none; /* Loại bỏ đường viền của nút "X" */
+  cursor: pointer; /* Biểu tượng con trỏ khi di chuột qua nút "X" */
+}
+.close-icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #292D32; /* Màu đường viền vòng tròn */
+  border-radius: 50%; /* Tạo hình tròn cho nút "X" */
+  text-align: center;
+  line-height: 25px; /* Để chữ "X" nằm giữa nút "X" */
+  color: #292D32; /* Màu của chữ "X" */
+  font-weight: bold;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+.close-button:hover .close-icon {
+  background:#EA4335; /* Màu chữ đỏ khi di chuột vào */
+}
+.google-button {
+  margin-top:250px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: #fff; /* Đặt màu nền của nút */
+  border: 2px solid #4285f4; /* Đặt viền màu xanh */
+  color: #4285f4; /* Đặt màu chữ là xanh */
+  cursor: pointer;
+  padding: 10px 20px; /* Đặt khoảng cách bên trong nút */
+  font-size: 18px; /* Đặt kích thước chữ */
+  border-radius: 4px; /* Đặt bán kính viền */
+  font-family:Arial;
+}
+
+.login-notice
+{
+  font-family: 'Josefin Sans';
+  margin-top: 40px; /* Đặt giá trị margin-top là 20px */
+  font-size: 28px;
+}
+.notice
+{
+    font-family: 'Josefin Sans';
+  margin-top: 40px; /* Đặt giá trị margin-top là 20px */
+  font-weight: 500;
+}
+.google-icon {
+  font-weight: bold; /* Tạo chữ đậm */
+}
