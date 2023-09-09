@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="~/css/about.css" asp-append-version="true"/>
     <link rel="stylesheet" href="~/css/about-base.css" asp-append-version="true"/>
     <link rel="stylesheet" href="~/css/about-responsive.css" asp-append-version="true"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 <body>
     <header class="header"></header>
@@ -18,30 +19,30 @@
                         <div class="stamp-choose">
                             <ul class="stamp-list">
                                 <li class="stamp-item stamp-item--active">
-                                    <a href="#" class="stamp-item__link">S.T.A.M.P 2023</a>
+                                    <a href="#" class="stamp-item__link blue-text" id="stamp-2023">S.T.A.M.P 2023</a>
                                     <ul class="select-part">
                                         <li class="select-item">
-                                            <a href="#" class="select-part__link">Chủ đề</a>
+                                            <a href="#topic" class="select-part__link">Chủ đề</a>
                                         </li>
                                         <li class="select-item">
-                                            <a href="#" class="select-part__link">Đối tượng</a>
+                                            <a href="#objective" class="select-part__link">Đối tượng</a>
                                         </li>
                                         <li class="select-item">
-                                            <a href="#" class="select-part__link">Thể lệ</a>
+                                            <a href="#rule" class="select-part__link">Thể lệ</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="stamp-item">
-                                    <a href="#" class="stamp-item__link">S.T.A.M.P 2022</a>
+                                    <a href="#" class="stamp-item__link" id="stamp-2022">S.T.A.M.P 2022</a>
                                 </li>
                                 <li class="stamp-item">
-                                    <a href="#" class="stamp-item__link">S.T.A.M.P 2021</a>
+                                    <a href="#" class="stamp-item__link" id="stamp-2021">S.T.A.M.P 2021</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="grid__column-10">
-                        <div class="info">
+                        <div id="content-2023" class="info">
                             <img src="~/image/About/stamplogo.png"/>
                             <header class="info-header">S.T.A.M.P - STAND TOGETHER AND MAKE PROTECTION</header>
                             <div class="info-part info-introduce">
@@ -60,7 +61,7 @@
                                     tất cả mọi người.
                                 </span>
                             </div>
-                            <div class="info-part info-subject">
+                            <div class="info-part info-subject" id="topic">
                                 <header class="info__header">CHỦ ĐỀ TÁC PHẨM</header>
                                 <img src="~/image/About/line.png"/>
                                 <div class="blue-background text-content">
@@ -68,7 +69,7 @@
                                     <span class="info-text italic bolder">Thiết kế tem thư với nội dung liên quan đến tuyên truyền, lan tỏa tinh thần yêu thương, bảo vệ, khẳng định tầm quan trọng, quý báu của thiên nhiên, môi trường và đặc biệt là tầng Ozone.</span>
                                 </div>
                             </div>
-                            <div class="info-part info-competitor">
+                            <div class="info-part info-competitor" id="objective">
                                 <header class="info__header">ĐỐI TƯỢNG DỰ THI</header>
                                 <img src="~/image/About/line.png"/>
                                 <ul class="info-text alignleft text-content">
@@ -76,7 +77,7 @@
                                     <li>Thí sinh dự thi theo hình thức cá nhân hoặc nhóm 2 – 3 người. Thí sinh có thể dự thi ở cả 02 hình thức trên</li>
                                 </ul>
                             </div>
-                            <div class="info-part info-rule">
+                            <div class="info-part info-rule" id="rule">
                                 <header class="info__header">THỂ LỆ</header>
                                 <img src="~/image/About/line.png"/>
                                 <div class="grid info-text">
@@ -190,7 +191,7 @@
                                 </script>
                             </div>
                         </div>
-                        <div class="info   display-none">
+                        <div id="content-2022" class="info display-none">
                             <img src="~/image/About/stamplogo.png"/>
                             <header class="info-header">S.T.A.M.P - SEEK TALENT AND MAKE PASSION</header>
                             <div class="info-part info-introduce">
@@ -341,9 +342,114 @@
                                 </div>
                             </div>
                         </div>
+                        <div id="content-2021" class="info display-none">
+                            <img src="~/image/About/stamplogo.png"/>
+                            <header class="info-header">S.T.A.M.P - SPREAD TO A MEANINGFUL PLACE</header>
+                            <div class="info-part info-introduce">
+                                <span class="info-text">
+                                    S.T.A.M.P được tổ chức mùa đầu tiên vào năm 2021 - trong thời điểm đại dịch COVID-19 đang diễn ra rất căng thẳng. Nhằm chung tay phòng chống dịch bệnh trên toàn quốc, với chủ đề                                 </span>
+                                <span class="info-text bolder">
+                                    “S.T.A.M.P - Spread To A Meaningful Place”
+                                </span>
+                                <span class="info-text">
+                                    , cuộc thi đã tạo cơ hội giúp các bạn sinh viên cùng nhau lan tỏa tinh thần đoàn kết dân tộc tạo nên một tập thể vững mạnh. Ngoài ra, cuộc thi cũng giúp các bạn sinh viên khám phá, tìm hiểu về giá trị đích thực của tem thư để từ đó biết giữ gìn và phát huy những giá trị truyền thống tốt đẹp của dân tộc.
+                                </span>
+                            </div>
+                            <div class="info-part info-subject">
+                                <header class="info__header">TÁC PHẨM NỔI BẬT</header>
+                                <img src="~/image/About/line.png"/>
+                                <div class="grid">
+                                    <div class="grid__row" style="padding-top: 50px">
+                                        <div class="grid__column-12">
+                                            <div class="img_box">
+                                                <img class="frame" src="~/image/About/frame.png"/>
+                                                <img class="submission" src="~/image/About/submission.png"/>
+                                            </div>
+                                            <p class="submission-title">QUYẾT THẮNG COVID</p>
+                                            <p class="competitor">Lê Hồng Diểm</p>
+                                        </div>
+                                    </div>
+                                    <div class="grid__row" style="padding-top: 50px">
+                                        <div class="grid__column-6">
+                                            <div class="img_box">
+                                                <img class="frame" src="~/image/About/frame.png"/>
+                                                <img class="submission" src="~/image/About/submission.png"/>
+                                            </div>
+                                            <p class="submission-title">ANH HÙNG ÁO XANH</p>
+                                            <p class="competitor">Phạm Xuân Duy - Đỗ Thị Nga</p>
+                                        </div>
+                                        <div class="grid__column-6">
+                                            <div class="img_box">
+                                                <img class="frame" src="~/image/About/frame.png"/>
+                                                <img class="submission" src="~/image/About/submission.png"/>
+                                            </div>
+                                            <p class="submission-title" style="margin-bottom: 0">“MỘT CHÚT HY SINH VÌ HẠNH PHÚC CỦA NGƯỜI DÂN”</p>
+                                            <p class="submission-title" style="margin-top: 0">“CÙNG NHAU CỐ GẮNG”</p>
+                                            <p class="competitor">Hồ Thị Kim Vi - Nguyễn Thị Vàng - Nguyễn Uyên Phương</p>
+                                        </div>
+                                    </div>
+                                    <div class="grid__row" style="padding-top: 50px">
+                                        <div class="grid__column-6">
+                                            <div class="img_box">
+                                                <img class="frame" src="~/image/About/frame.png"/>
+                                                <img class="submission" src="~/image/About/submission.png"/>
+                                            </div>
+                                            <p class="submission-title">KHỞI NGHĨA BÀ TRIỆU</p>
+                                            <p class="competitor">Bùi Quốc Thịnh - Nguyễn Thị Quỳnh Ngọc</p>
+                                        </div>
+                                        <div class="grid__column-6">
+                                            <div class="img_box">
+                                                <img class="frame" src="~/image/About/frame.png"/>
+                                                <img class="submission" src="~/image/About/submission.png"/>
+                                            </div>
+                                            <p class="submission-title">BÌNH YÊN</p>
+                                            <p class="competitor">Phan Nguyễn Hoàng Trang - Lê Thị Thúy Hồng</p>
+                                        </div>
+                                    </div>
+                                    <div class="grid__row" style="padding-top: 50px">
+                                        <div class="grid__column-6">
+                                            <div class="img_box">
+                                                <img class="frame" src="~/image/About/frame.png"/>
+                                                <img class="submission" src="~/image/About/submission.png"/>
+                                            </div>
+                                            <p class="submission-title">KỶ NIỆM 76 NĂM QUỐC KHÁNH NƯỚC CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM (1945 - 2021)</p>
+                                            <p class="competitor">Nguyễn Thị Phương Uyên - Trần Công Danh</p>
+                                        </div>
+                                        <div class="grid__column-6">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
+    <script>
+        $("#stamp-2023").on("click", function() {
+            $("#content-2023").removeClass("display-none");
+            $("#content-2022").addClass("display-none");
+            $("#content-2021").addClass("display-none");
+            $("#stamp-2023").addClass("blue-text");
+            $("#stamp-2022").removeClass("blue-text");
+            $("#stamp-2021").removeClass("blue-text");
+        });
+        $("#stamp-2022").on("click", function() {
+            $("#content-2023").addClass("display-none");
+            $("#content-2022").removeClass("display-none");
+            $("#content-2021").addClass("display-none");
+            $("#stamp-2023").removeClass("blue-text");
+            $("#stamp-2022").addClass("blue-text");
+            $("#stamp-2021").removeClass("blue-text");
+        });
+        $("#stamp-2021").on("click", function() {
+            $("#content-2023").addClass("display-none");
+            $("#content-2022").addClass("display-none");
+            $("#content-2021").removeClass("display-none");
+            $("#stamp-2023").removeClass("blue-text");
+            $("#stamp-2022").removeClass("blue-text");
+            $("#stamp-2021").addClass("blue-text");
+        });
+    </script>
 </body>

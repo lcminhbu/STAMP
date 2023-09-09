@@ -117,6 +117,7 @@
     font-size: 38px;
     text-shadow: 2px 2px #00000036;
     color: #286AA3;
+    padding-top: 20px;
 }
 
 .blue-background {
@@ -235,6 +236,7 @@
     font-size: 24px;
     font-weight: 600;
     margin-top: 50px;
+    line-height: 26px;
 }
 
 .competitor {
