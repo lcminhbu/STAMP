@@ -67,3 +67,7 @@
 .display-none {
     display: none !important;
 }
+
+.blue-text {
+    color: #286AA3 !important;
+}
