@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "eSL9LEnzpQXEhsuL6ahfvPfhr0R5XBos3PEMoy2+HFw=",
+  "Hash": "32vxdUx9Tpp2HW1ov5F6ChnD/Y7naWNPch6JYR9NOq0=",
   "Source": "STAMP2023",
   "BasePath": "_content/STAMP2023",
   "Mode": "Default",
@@ -272,6 +272,40 @@
       "OriginalItemSpec": "wwwroot/fonts/JosefinSans-VariableFont_wght.ttf"
     },
     {
+      "Identity": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/fonts/Syne-VariableFont_wght.ttf",
+      "SourceId": "STAMP2023",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/",
+      "BasePath": "_content/STAMP2023",
+      "RelativePath": "fonts/Syne-VariableFont_wght.ttf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/fonts/Syne-VariableFont_wght.ttf"
+    },
+    {
+      "Identity": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/About/frame.png",
+      "SourceId": "STAMP2023",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/",
+      "BasePath": "_content/STAMP2023",
+      "RelativePath": "image/About/frame.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/image/About/frame.png"
+    },
+    {
       "Identity": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/About/line.png",
       "SourceId": "STAMP2023",
       "SourceType": "Discovered",
@@ -289,6 +323,23 @@
       "OriginalItemSpec": "wwwroot/image/About/line.png"
     },
     {
+      "Identity": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/About/rank.png",
+      "SourceId": "STAMP2023",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/",
+      "BasePath": "_content/STAMP2023",
+      "RelativePath": "image/About/rank.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/image/About/rank.png"
+    },
+    {
       "Identity": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/About/stamplogo.png",
       "SourceId": "STAMP2023",
       "SourceType": "Discovered",
@@ -304,6 +355,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/image/About/stamplogo.png"
+    },
+    {
+      "Identity": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/About/submission.png",
+      "SourceId": "STAMP2023",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/",
+      "BasePath": "_content/STAMP2023",
+      "RelativePath": "image/About/submission.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/image/About/submission.png"
     },
     {
       "Identity": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/Header and Footer/Logo.png",
@@ -559,6 +627,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/image/Index/ThoiGian.png"
+    },
+    {
+      "Identity": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/mark.png",
+      "SourceId": "STAMP2023",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/",
+      "BasePath": "_content/STAMP2023",
+      "RelativePath": "image/mark.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/image/mark.png"
     },
     {
       "Identity": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/Ranking/like_bold.svg",

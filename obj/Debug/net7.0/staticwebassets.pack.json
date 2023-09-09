@@ -57,12 +57,28 @@
       "PackagePath": "staticwebassets/fonts/JosefinSans-VariableFont_wght.ttf"
     },
     {
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/fonts/Syne-VariableFont_wght.ttf",
+      "PackagePath": "staticwebassets/fonts/Syne-VariableFont_wght.ttf"
+    },
+    {
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/About/frame.png",
+      "PackagePath": "staticwebassets/image/About/frame.png"
+    },
+    {
       "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/About/line.png",
       "PackagePath": "staticwebassets/image/About/line.png"
     },
     {
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/About/rank.png",
+      "PackagePath": "staticwebassets/image/About/rank.png"
+    },
+    {
       "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/About/stamplogo.png",
       "PackagePath": "staticwebassets/image/About/stamplogo.png"
+    },
+    {
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/About/submission.png",
+      "PackagePath": "staticwebassets/image/About/submission.png"
     },
     {
       "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/Header and Footer/Logo.png",
@@ -135,6 +151,10 @@
     {
       "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/Ranking/stamp-ex.png",
       "PackagePath": "staticwebassets/image/Ranking/stamp-ex.png"
+    },
+    {
+      "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/image/mark.png",
+      "PackagePath": "staticwebassets/image/mark.png"
     },
     {
       "Id": "/home/lmbuu/Downloads/STAMP2023/STAMP2023/wwwroot/js/Index.js",
