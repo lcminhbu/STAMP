@@ -55,3 +55,15 @@
     padding: 10px 10px 20px 10px;
     width: 50%;
 }
+
+.grid__column-12 {
+    width: 100%;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.display-none {
+    display: none !important;
+}
