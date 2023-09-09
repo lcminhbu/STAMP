@@ -34,7 +34,7 @@
     .footer {
         font-size: 70%;
         padding-top: 30px !important;
-        margin: 0 !important;
+        /* margin: 0 !important; */
     }
     
     .footer > .container {

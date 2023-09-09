@@ -165,4 +165,8 @@
     .grid__row {
         padding-top: 0 !important;
     }
+
+    .stamp-list {
+        margin-top: 10px;
+    }
 }
