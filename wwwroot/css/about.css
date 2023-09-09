@@ -102,8 +102,13 @@
 
 .info-part {
   margin-top: 70px;
-  margin-left: 7%;
-  margin-right: 7%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-introduce {
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 .info__header {
@@ -124,6 +129,8 @@
 
 .text-content {
     margin-top: 16px;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 .info-rule {
@@ -227,10 +234,31 @@
     font-family: JosefinSans;
     font-size: 24px;
     font-weight: 600;
+    margin-top: 50px;
 }
 
 .competitor {
     font-family: JosefinSans;
     font-size: 20px;
     color: #6EACE3;
+}
+
+.img_box {
+    position: relative;
+    width: 403px;
+    height: 326px;
+    left: 50%;
+    transform: translate(-50.3%);
+}
+
+.frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.submission {
+    position: absolute;
+    top: 33px;
+    left: 43px;
 }
