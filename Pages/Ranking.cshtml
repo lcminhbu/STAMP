@@ -77,7 +77,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container-fluid justify-content-center" id="popup">
+                <div class="container-fluid justify-content-center display-none" id="popup">
                     <div class="row">
                         <div class="col-6 popup-img">
                             <img class="" src="~/image/Ranking/stamp.png"/>
@@ -89,6 +89,7 @@
                         </div>
                     </div>
                 </div>
+                <div id="overlay" class="display-none" onclick="hidePopUp()"></div>
                 <script>
                     showPopUp = () => {
                         const title = event.currentTarget.querySelector(".cus-card-title");
@@ -99,24 +100,20 @@
                         popup.getElementsByClassName("popup-author")[0].innerText = author.innerText;
                         @* Load mô tả từ backend vào dòng bên dưới *@
                         popup.getElementsByClassName("popup-describe")[0].innerText = "Mô tả của tranh";
+                        popup.classList.remove("display-none");
+                        const overlay = document.getElementById("overlay");
+                        overlay.classList.remove("display-none");
+                        const body = document.querySelector("body");
+                        body.style.overflow = "hidden";
                     }
-                    function changeBackgroundColor() {
-                event.currentTarget.style.backgroundColor = "#4285F4";
-            }
-
-            function changeBGandFont() {
-                event.currentTarget.style.backgroundColor = "#4285F4";
-                
-                const collection = event.currentTarget.children;
-                collection[0].style.color = "#FFF";
-                collection[0].style.fontWeight = "700";
-                collection[1].src = "image/Ranking/like_bold.svg"
-
-                const parent = event.currentTarget.parentElement;
-                const siblings = parent.children;
-                siblings[1].style.color = "#6EACE3";
-            }
-
+                    hidePopUp = () => {
+                        const popup = document.getElementById("popup");
+                        popup.classList.add("display-none");
+                        const overlay = document.getElementById("overlay");
+                        overlay.classList.add("display-none");
+                        const body = document.querySelector("body");
+                        body.style.overflow = "auto";
+                    }
                 </script>
             </div>
         </div>
