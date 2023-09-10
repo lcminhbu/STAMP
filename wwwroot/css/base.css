@@ -1,0 +1,46 @@
+@font-face {
+    font-family: JosefinSans;
+    src: url(../fonts/JosefinSans-VariableFont_wght.ttf);
+}
+
+* {
+    box-sizing: inherit;
+}
+
+.light-blue-color {
+    color: #6EACE3 !important;
+}
+
+.light-blue-background {
+    background-color: #6EACE3 !important;
+}
+
+.grey-background {
+    background-color: #DEDBDB !important;
+}
+
+.blue-color {
+    color: #286AA3 !important;
+}
+
+.josefinsans-font {
+    font-family: JosefinSans !important;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.part-margin {
+    margin-top: 100px;
+}
+
+.col-4 {
+    padding: 0;
+}

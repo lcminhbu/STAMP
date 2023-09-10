@@ -1,15 +1,8 @@
-﻿@font-face {
-    font-family: JosefinSans;
-    src: url(../fonts/JosefinSans-VariableFont_wght.ttf);
-}
-
-.stamp-border {
+﻿.stamp-border {
     border: 5px solid #E8AA42;
     border-radius: 10px;
     padding: 20px;
 }
-
-
 
 .countdown-item {
     width: 25%;
@@ -297,11 +290,11 @@
 .award {
     margin-top: 100px;
 }
-
+/* 
 .container {
     margin-top: 100px;
-    max-width: 80%;
-}
+    max-width: 70%;
+} */
 
 .award_head {
     margin-top: 100px;
@@ -319,7 +312,28 @@
     margin-bottom: 0;
 }
 
+.award_price {
+    color:white;
+    text-align: center;
+    padding-top:10px;
+    font-size: 50px;
+}
 
+.timeline {
+    background-image: url("../image/Index/timeline.png");
+    margin-top: 100px;
+    background-size: cover;
+}
+
+.counterparty {
+    background-image: url("../image/Index/counterparty.png");
+    background-size: cover;
+}
+
+.party-header {
+    color: #6EACE3;
+    font-family: JosefinSans;
+}
 
 @media (max-width:768px)
 {
