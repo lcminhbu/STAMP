@@ -9,177 +9,128 @@
         <meta charset="utf-8" name="viewport" content="device-width, initial-scale=1, minimum-scale=1"/>
         <link rel="stylesheet" href="~/css/ranking-style.css" asp-append-version="true"/>
         <link rel="stylesheet" href="~/css/searchbar-style.css" asp-append-version="true"/>
+        <link rel="stylesheet" href="~/css/base.css" asp-append-version="true"/>
     </head>
 
     <body>
         <!-- Banner -->
         <div class="banner">
-            <h1 class="title">XẾP HẠNG</h1>
+            <h1 class="josefinsans-font">XẾP HẠNG</h1>
         </div>
         
-        <!-- Top stamps -->
-    <div class="container-not-framework">
-        <div class="row top-stamps">
-                <!-- Top 2 -->
-            <div class="col-12 col-md-3 col-lg-3 stamp-box">
-                    <div class="stamp-top-info">
-                        <p class="stamp-name">Mừng ngày Phụ nữ Việt Nam 20/10</p>
-                        <p class="stamp-author">Đ.M.Khoa</p>
+            <!-- Top stamps -->
+        <div class="container-fluid part-margin">
+            <div class="row justify-content-around">
+                <div class="col-4 info-card" onclick="showPopUp()">
+                    <div class="cus-card-header">
+                        <p class="cus-card-title">Mừng ngày Phụ nữ Việt Nam 20/10</p>
+                        <p class="cus-card-author">Đ.M.Khoa</p>
                     </div>
-
-                    <div class="stamp-top-img-container">
-                        <img id="stampButton2" class="stamp clickable stamp-top-box" src="~/image/Ranking/stamp-ex.png" alt="Stamp Top 1 Vote">
+                    <div class="cus-card-img">
+                        <img class="stamp" src="~/image/Ranking/stamp.png"/>
                     </div>
-                
-
-                    <div class="number-info">
-                        <button onclick="changeBackgroundColor()" class="like-box">
+                    <div class="cus-card-footer">
+                        <button onclick="changeBackgroundColor()" class="like-btn">
                             <p class="like-number number">00</p>
                             <img class="like-image" src="~/image/Ranking/like.svg"/>
                         </button>
-                        <div class="stt-box">
+                        <div class="stt-btn">
                             <p class="number stt-number">#02</p>
                         </div>
                     </div>
                 </div>
 
-                <div id="stampPopup2" class="popup">
-                    <div class="popup-content">
-                        <div class="popup-container">
-                            <img class="stamp stamp-popup" src="~/image/Ranking/stamp-ex.png" alt="Stamp Top 2 Vote"> 
-                            <div class="popup-info">
-                                <h3 class="popup-stamp-name">Mừng ngày phụ nữ Việt Nam</h3>
-                                <h4 class="popup-author">Đ.M.Khoa</h4>
-                                <h4 class="popup-description-title">Mô tả tác phẩm</h4>
-                                <p class="popup-description"></p>
-                            </div>
-                        </div>
+                <div class="col-4 info-card" onclick="showPopUp()">
+                    <div class="cus-card-header">
+                        <p class="cus-card-title">Mừng ngày Phụ nữ Việt Nam 20/10</p>
+                        <p class="cus-card-author">Đ.M.Khoa</p>
                     </div>
-                </div>
-
-                <script>
-                    stampButton2.addEventListener("click", function () {
-                        stampPopup2.classList.add("show");
-                    });
-
-                    window.addEventListener("click", function (event) {
-                        if (event.target == stampPopup2) {
-                            stampPopup2.classList.remove("show");
-                        }
-                    });
-                </script>
-
-                <!-- Top 1 -->
-                <div class="col-12 col-md-3 col-lg-3 stamp-box">
-                        <div class="stamp-top-info">
-                            <p class="stamp-name">Mừng ngày Phụ nữ Việt Nam 20/10</p>
-                            <p class="stamp-author">Đ.M.Khoa</p>
-                        </div>
-
-                        <div class="stamp-top-img-container">
-                            <img id="stampButton1" class="stamp clickable stamp-top-box" src="~/image/Ranking/stamp-ex.png" alt="Stamp Top 1 Vote">
-                        </div>
-
-                        <div class="number-info">
-                            <button onclick="changeBackgroundColor()" class="like-box">
-                                <p class="like-number number">01</p>
-                                <img class="like-image" src="~/image/Ranking/like.svg" />
-                            </button>
-
-                            <div class="stt-box">
-                                <p class="number stt-number">#01</p>
-                            </div>
-                        </div>
-                </div>
-
-                <div id="stampPopup1" class="popup">
-                    <div class="popup-content">
-                        <div class="popup-container">
-                            <img class="stamp stamp-popup" src="~/image/Ranking/stamp-ex.png" alt="Stamp Top 1 Vote"> 
-                            <div class="popup-info">
-                                <h3 class="popup-stamp-name">Mừng ngày phụ nữ Việt Nam</h3>
-                                <h4 class="popup-author">Đ.M.Khoa</h4>
-                                <h4 class="popup-description-title">Mô tả tác phẩm</h4>
-                                <p class="popup-description"></p>
-                            </div>
-                        </div>
+                    <div class="cus-card-img">
+                        <img class="stamp" src="~/image/Ranking/stamp.png"/>
                     </div>
-                </div>
-
-                <script>
-                    stampButton1.addEventListener("click", function () {
-                        stampPopup1.classList.add("show");
-                    });
-                
-                    window.addEventListener("click", function (event) {
-                        if (event.target == stampPopup1) {
-                            stampPopup1.classList.remove("show");
-                        }
-                    });
-                </script>
-
-
-                <!-- Top 3 -->
-                <div class="col-12 col-md-3 col-lg-3 stamp-box">
-                    <div class="stamp-top-info">
-                        <p class="stamp-name">Mừng ngày Phụ nữ Việt Nam 20/10</p>
-                        <p class="stamp-author">Đ.M.Khoa</p>
-                    </div>
-                
-                    <div class="stamp-top-img-container">
-                        <img id="stampButton3" class="stamp clickable stamp-top-box" src="~/image/Ranking/stamp-ex.png" alt="Stamp Top 1 Vote">
-                    </div>
-               
-                    <div class="number-info">
-                        <button onclick="changeBackgroundColor()" class="like-box">
-                            <p class="like-number number">00</p>
-                            <img class="like-image" src="~/image/Ranking/like.svg" />
+                    <div class="cus-card-footer">
+                        <button onclick="changeBackgroundColor()" class="like-btn">
+                            <p class="like-number number">01</p>
+                            <img class="like-image" src="~/image/Ranking/like.svg"/>
                         </button>
-
-                        <script>
-                            stampButton3.addEventListener("click", function () {
-                                stampPopup3.classList.add("show");
-                            });
-
-                            window.addEventListener("click", function (event) {
-                                if (event.target == stampPopup3) {
-                                    stampPopup3.classList.remove("show");
-                                }
-                            });
-                        </script>
-
-                        <div class="stt-box">
-                            <p class="number stt-number">#03</p>
-                        </div>
-                    </div>
-                
-
-                    <div id="stampPopup3" class="popup">
-                        <div class="popup-content">
-                            <div class="popup-container">
-                                <img class="stamp stamp-popup" src="~/image/Ranking/stamp-ex.png" alt="Stamp Top 3 Vote"> 
-                                <div class="popup-info">
-                                    <h3 class="popup-stamp-name">Mừng ngày phụ nữ Việt Nam</h3>
-                                    <h4 class="popup-author">Đ.M.Khoa</h4>
-                                    <h4 class="popup-description-title">Mô tả tác phẩm</h4>
-                                    <p class="popup-description"></p>
-                                </div>
-                            </div>
+                        <div class="stt-btn">
+                            <p class="number stt-number">#01</p>
                         </div>
                     </div>
                 </div>
-        </div>
+
+                <div class="col-4 info-card" onclick="showPopUp()">
+                    <div class="cus-card-header">
+                        <p class="cus-card-title">Mừng ngày Phụ nữ Việt Nam 20/10</p>
+                        <p class="cus-card-author">Đ.M.Khoa</p>
+                    </div>
+                    <div class="cus-card-img">
+                        <img class="stamp" src="~/image/Ranking/stamp.png"/>
+                    </div>
+                    <div class="cus-card-footer">
+                        <button onclick="changeBackgroundColor()" class="like-btn">
+                            <p class="like-number number">00</p>
+                            <img class="like-image" src="~/image/Ranking/like.svg"/>
+                        </button>
+                        <div class="stt-btn">
+                            <p class="number stt-number">#02</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid justify-content-center" id="popup">
+                    <div class="row">
+                        <div class="col-6 popup-img">
+                            <img class="" src="~/image/Ranking/stamp.png"/>
+                        </div>
+                        <div class="col-6 popup-info">
+                            <div class="popup-title">Hello</div>
+                            <div class="popup-author">Author</div>
+                            <div class="popup-describe">Describe</div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    showPopUp = () => {
+                        const title = event.currentTarget.querySelector(".cus-card-title");
+                        const author = event.currentTarget.querySelector(".cus-card-author");
+                        const popup = document.getElementById("popup");
+                        const ptitle = popup.getElementsByClassName("popup-title")[0];
+                        ptitle.innerText = title.innerText;
+                        popup.getElementsByClassName("popup-author")[0].innerText = author.innerText;
+                        @* Load mô tả từ backend vào dòng bên dưới *@
+                        popup.getElementsByClassName("popup-describe")[0].innerText = "Mô tả của tranh";
+                    }
+                    function changeBackgroundColor() {
+                event.currentTarget.style.backgroundColor = "#4285F4";
+            }
+
+            function changeBGandFont() {
+                event.currentTarget.style.backgroundColor = "#4285F4";
+                
+                const collection = event.currentTarget.children;
+                collection[0].style.color = "#FFF";
+                collection[0].style.fontWeight = "700";
+                collection[1].src = "image/Ranking/like_bold.svg"
+
+                const parent = event.currentTarget.parentElement;
+                const siblings = parent.children;
+                siblings[1].style.color = "#6EACE3";
+            }
+
+                </script>
+            </div>
         </div>
 
         <!-- Search bar -->
-       <div class="search">
-            <input type="checkbox" id="trigger" class="search__checkbox" />
-            <label class="search__label-init" for="trigger"></label>
-            <label class="search__label-active" for="trigger"></label>
-            <div class="search__border"></div>
-            <input type="text" class="search__input" />
-            <div class="search__close"></div>
+        <div class="search-box">
+            <div class="search">
+                <button class="search-btn" onclick="">
+                    <img class="search-img" src="~/image/Ranking/search-normal.png"/>
+                </button>
+                <input type="text" id="trigger" class="search-input" placeholder="Tìm kiếm"/>
+            </div>
         </div>
+       
 
         <!-- Contest Stamps -->
         <div class="big-space list-group">
@@ -187,7 +138,7 @@
                 <p class="stt-contest-box">#01</p>
                 <p class="contest-name">Mừng ngày Phụ nữ Việt Nam</p>
                 <p class="contest-author stamp-author">Đoàn Minh Khoa</p>
-                <button onclick="changeBGandFont()" class="contest-like-box like-box">
+                <button onclick="changeBGandFont()" class="contest-like-box like-btn">
                     <p class="contest-like-number like-number number">00</p>
                     <img class="like-image" src="~/image/Ranking/like.svg"/>
                 </button>
@@ -197,7 +148,7 @@
                 <p class="stt-contest-box">#02</p>
                 <p class="contest-name">Mừng ngày Phụ nữ Việt Nam</p>
                 <p class="contest-author stamp-author">Đoàn Minh Khoa</p>
-                <button onclick="changeBGandFont()" class="contest-like-box like-box">
+                <button onclick="changeBGandFont()" class="contest-like-box like-btn">
                     <p class="contest-like-number like-number number">01</p>
                     <img class="like-image" src="~/image/Ranking/like.svg"/>
                 </button>
@@ -207,7 +158,7 @@
                 <p class="stt-contest-box">#03</p>
                 <p class="contest-name">Mừng ngày Phụ nữ Việt Nam</p>
                 <p class="contest-author stamp-author">Đoàn Minh Khoa</p>
-                <button onclick="changeBGandFont()" class="contest-like-box like-box">
+                <button onclick="changeBGandFont()" class="contest-like-box like-btn">
                     <p class="contest-like-number like-number number">00</p>
                     <img class="like-image" src="~/image/Ranking/like.svg" />
                 </button>
@@ -217,7 +168,7 @@
                 <p class="stt-contest-box">#04</p>
                 <p class="contest-name">Mừng ngày Phụ nữ Việt Nam</p>
                 <p class="contest-author stamp-author">Đoàn Minh Khoa</p>
-                <button onclick="changeBGandFont()" class="contest-like-box like-box">
+                <button onclick="changeBGandFont()" class="contest-like-box like-btn">
                     <p class="contest-like-number like-number number">00</p>
                     <img class="like-image" src="~/image/Ranking/like.svg" />
                 </button>
@@ -228,28 +179,24 @@
                     <p class="stt-contest-box">#05</p>
                     <p class="contest-name">Mừng ngày Phụ nữ Việt Nam</p>
                     <p class="contest-author stamp-author">Đoàn Minh Khoa</p>
-                    <button onclick="changeBGandFont()" class="contest-like-box like-box">
+                    <button onclick="changeBGandFont()" class="contest-like-box like-btn">
                         <p class="contest-like-number like-number number">00</p>
                         <img class="like-image" src="~/image/Ranking/like.svg" />
                     </button>
                 </div>
 
-                <!--Cần thêm một div trống ở đây để tránh margin-collapse ở mục này-->
-                <div style="padding-top: 1px;"></div>
-
                 <div class="contest-container list-group-item">
                     <p class="stt-contest-box">#06</p>
                     <p class="contest-name">Mừng ngày Phụ nữ Việt Nam</p>
                     <p class="contest-author stamp-author">Đoàn Minh Khoa</p>
-                    <button onclick="changeBGandFont()" class="contest-like-box like-box">
+                    <button onclick="changeBGandFont()" class="contest-like-box like-btn">
                         <p class="contest-like-number like-number number">00</p>
                         <img class="like-image" src="~/image/Ranking/like.svg" />
                     </button>
                 </div>
             </div>
             
-
-            <button onclick="getMore()" class="readMoreBtn">
+            <button onclick="getMore()" class="readMoreBtn part-margin">
                 <p class="readMoreBtnContent">Xem thêm</p>
             </button>
         </div>
@@ -270,7 +217,7 @@
 
                 const parent = event.currentTarget.parentElement;
                 const siblings = parent.children;
-                siblings[1].style.color = "#E57C23";
+                siblings[1].style.color = "#6EACE3";
             }
 
             function getMore() {
