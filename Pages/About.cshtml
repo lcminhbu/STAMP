@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="~/css/about.css" asp-append-version="true"/>
     <link rel="stylesheet" href="~/css/about-base.css" asp-append-version="true"/>
     <link rel="stylesheet" href="~/css/about-responsive.css" asp-append-version="true"/>
-    <link rel="stylesheet" href="~/css/base.css" asp-append-version="true"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="~/css/base.css" asp-append-version="true"/>
 </head>
 <body>
     <header class="header"></header>
@@ -40,6 +40,32 @@
                                     <a href="#" class="stamp-item__link" id="stamp-2021">S.T.A.M.P 2021</a>
                                 </li>
                             </ul>
+                            <script>
+                                $("#stamp-2023").on("click", function() {
+                                    $("#content-2023").removeClass("display-none");
+                                    $("#content-2022").addClass("display-none");
+                                    $("#content-2021").addClass("display-none");
+                                    $("#stamp-2023").addClass("blue-text");
+                                    $("#stamp-2022").removeClass("blue-text");
+                                    $("#stamp-2021").removeClass("blue-text");
+                                });
+                                $("#stamp-2022").on("click", function() {
+                                    $("#content-2023").addClass("display-none");
+                                    $("#content-2022").removeClass("display-none");
+                                    $("#content-2021").addClass("display-none");
+                                    $("#stamp-2023").removeClass("blue-text");
+                                    $("#stamp-2022").addClass("blue-text");
+                                    $("#stamp-2021").removeClass("blue-text");
+                                });
+                                $("#stamp-2021").on("click", function() {
+                                    $("#content-2023").addClass("display-none");
+                                    $("#content-2022").addClass("display-none");
+                                    $("#content-2021").removeClass("display-none");
+                                    $("#stamp-2023").removeClass("blue-text");
+                                    $("#stamp-2022").removeClass("blue-text");
+                                    $("#stamp-2021").addClass("blue-text");
+                                });
+                            </script>
                         </div>
                     </div>
                     <div class="grid__column-10">
@@ -416,8 +442,6 @@
                                             <p class="submission-title">KỶ NIỆM 76 NĂM QUỐC KHÁNH NƯỚC CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM (1945 - 2021)</p>
                                             <p class="competitor">Nguyễn Thị Phương Uyên - Trần Công Danh</p>
                                         </div>
-                                        <div class="grid__column-6">
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -427,30 +451,4 @@
             </div>
         </div>
     </div>
-    <script>
-        $("#stamp-2023").on("click", function() {
-            $("#content-2023").removeClass("display-none");
-            $("#content-2022").addClass("display-none");
-            $("#content-2021").addClass("display-none");
-            $("#stamp-2023").addClass("blue-text");
-            $("#stamp-2022").removeClass("blue-text");
-            $("#stamp-2021").removeClass("blue-text");
-        });
-        $("#stamp-2022").on("click", function() {
-            $("#content-2023").addClass("display-none");
-            $("#content-2022").removeClass("display-none");
-            $("#content-2021").addClass("display-none");
-            $("#stamp-2023").removeClass("blue-text");
-            $("#stamp-2022").addClass("blue-text");
-            $("#stamp-2021").removeClass("blue-text");
-        });
-        $("#stamp-2021").on("click", function() {
-            $("#content-2023").addClass("display-none");
-            $("#content-2022").addClass("display-none");
-            $("#content-2021").removeClass("display-none");
-            $("#stamp-2023").removeClass("blue-text");
-            $("#stamp-2022").removeClass("blue-text");
-            $("#stamp-2021").addClass("blue-text");
-        });
-    </script>
 </body>
