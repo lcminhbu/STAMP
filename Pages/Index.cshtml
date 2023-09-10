@@ -8,10 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="~/css/Index.css"/>
+    <link rel="stylesheet" href="~/css/Index.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/base.css" asp-append-version="true"/>
 </head>
 
-<body>
+<body class="josefinsans-font">
     <!-- Banner and Countdown -->
     <div class="position-relative">
         <!--<img class="img-fluid" src="~/image/Index/banner1.jpg" style="width:100%; max-height:780px; object-fit:cover">-->
@@ -75,19 +76,19 @@
                 <h2 class="mb-4 thoigianthamgiacon">Thời gian tham gia còn</h2>
                 <div class="row justify-content-center">
                     <div class="col-6 col-md-3 countdown-item">
-                        <span class="display-4 text-danger countdown-value" id="day">00</span>
+                        <span class="blue-color display-4 text-danger countdown-value" id="day">00</span>
                         <span class="countdown-label">ngày</span>
                     </div>
                     <div class="col-6 col-md-3 countdown-item">
-                        <span class="display-4 text-primary countdown-value" id="hour">00</span>
+                        <span class="light-blue-color display-4 text-primary countdown-value" id="hour">00</span>
                         <span class="countdown-label">giờ</span>
                     </div>
                     <div class="col-6 col-md-3 countdown-item">
-                        <span class="display-4 text-warning countdown-value" id="minute">00</span>
+                        <span class="blue-color display-4 text-warning countdown-value" id="minute">00</span>
                         <span class="countdown-label">phút</span>
                     </div>
                     <div class="col-6 col-md-3 countdown-item">
-                        <span class="display-4 text-success countdown-value" id="second">00</span>
+                        <span class="light-blue-color display-4 text-success countdown-value" id="second">00</span>
                         <span class="countdown-label">giây</span>
                     </div>
                 </div>
@@ -151,7 +152,7 @@
                     <div style="min-height: 100px;">
                         <h3 class="award_head">GIẢI NHẤT</h3>
                         <div class="award_price_box">
-                            <p class="index-content-value-big" style="color:white; text-align: center; padding-top:10px">3.000.000 VNĐ</p>
+                            <p class="award_price index-content-value-big" style="font-size: 60px">3.000.000 VNĐ</p>
                         </div>
                     </div>
                 </div>
@@ -161,7 +162,7 @@
                     <div style="min-height: 100px;">
                         <h3 class="award_head">GIẢI NHÌ</h3>
                         <div class="award_price_box">
-                            <p class="index-content-value-big" style="color:white; text-align: center; padding-top:10px">2.000.000 VNĐ</p>
+                            <p class="award_price index-content-value-big" style="color:white; text-align: center; padding-top:10px">2.000.000 VNĐ</p>
                         </div>
                     </div>
                 </div>
@@ -170,7 +171,7 @@
                     <div style="min-height: 100px;">
                         <h3 class="award_head">GIẢI BA</h3>
                         <div class="award_price_box">
-                            <p class="index-content-value-big" style=" color:white; text-align: center; padding-top:10px">1.000.000 VNĐ</p>
+                            <p class="award_price index-content-value-big" style=" color:white; text-align: center; padding-top:10px">1.000.000 VNĐ</p>
                         </div>
                     </div>
                 </div>
@@ -180,7 +181,7 @@
                     <div style="min-height: 100px;">
                         <h3 class="award_head">GIẢI KHUYẾN KHÍCH</h3>
                         <div class="award_price_box">
-                            <p class="index-content-value-big" style="color:white; text-align: center; padding-top:10px">500.000 VNĐ</p>
+                            <p class="award_price index-content-value-big" style="color:white; text-align: center; padding-top:10px">500.000 VNĐ</p>
                         </div>
                     </div>
                 </div>
@@ -189,36 +190,87 @@
                     <div style="min-height: 100px;">
                         <h3 class="award_head">GIẢI YÊU THÍCH</h3>
                         <div class="award_price_box">
-                            <p class="index-content-value-big" style="color:white; text-align: center; padding-top:10px">500.000 VNĐ</p>
+                            <p class="award_price index-content-value-big" style="color:white; text-align: center; padding-top:10px">500.000 VNĐ</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Add space to separate the prize section -->
-    <div class="container-fluid py-5"></div>
-
-    <!-- Các mốc thời gian -->
-    <div class=" text-center position-relative" style="display: flex; align-items: center; justify-content: center;">
-        <!-- Background Image -->
-        <img class="background-img img-fluid" src="~/image/Index/GioiThieuVeStamp/BG.svg" alt="Background Image">
-        <div class="position-absolute top-0 w-100 h-100">
-            <!-- Pattern Image -->
-            <img class="pattern-img img-fluid" src="~/image/Index/GioiThieuVeStamp/Pattern.svg" alt="Pattern Image">
-            <!-- Title and line -->
-            <div class="position-absolute top-0 w-100 h-100" style="padding-top:8%; padding-inline:15%">
-                <h2 class="text-danger index-content-value-big" style="color: #EA4335">
-                    CÁC MỐC THỜI GIAN
-                </h2>
-                <div class="align-content-center">
-                    <img class="img-fluid" src="~/image/Index/GioiThieuVeStamp/ColoredLine.svg" alt="Stamp Image">
+    
+    <div class="timeline">
+        <h2 class="index-content-value-big">CÁC MỐC THỜI GIAN</h2>
+        <img class="line" src="~/image/About/line.png"/>
+        <div class="">
+            <img class="img-fluid" src="~/image/Index/ThoiGian.png" alt="Timeline">
+        </div>
+    </div>
+    
+    <div class="counterparty">
+        <h2 class="index-content-value-big">ĐỐI TÁC ĐỒNG HÀNH</h2>
+        <img class="line" src="~/image/About/line.png"/>
+        <div class="">
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <p class="party-header">ĐƠN VỊ TỔ CHỨC</p>
+                    <img class="" src="~/image/Index/large-logo.png"/>
                 </div>
-                <!-- Content TIMELINE -->
-                <div class="w3-container w3-bottombar w3-border-red w3-margin-bottom"></div>
-                <img class="img-fluid" src="~/image/Index/ThoiGian.png" alt="Timeline">
+            </div>
+            <div class="row justify-content-center">
+                <p class="party-header">NHÀ TÀI TRỢ KIM CƯƠNG</p>
+                <div class="col-6">
+                    <img class="" src="~/image/Index/large-logo.png"/>
+                </div>
+                <div class="col-6">
+                    <img class="" src="~/image/Index/large-logo.png"/>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <p class="party-header">NHÀ TÀI TRỢ VÀNG</p>
+                <div class="col-6">
+                    <img class="" src="~/image/Index/medium-logo.png"/>
+                </div>
+                <div class="col-6">
+                    <img class="" src="~/image/Index/medium-logo.png"/>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <p class="party-header">NHÀ TÀI TRỢ ĐỒNG HÀNH</p>
+                <div class="col-6">
+                    <img class="" src="~/image/Index/small-logo.png"/>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <p class="party-header">ĐỐI TÁC TRUYỀN THÔNG</p>
+                <div class="col-6">
+                    <img class="" src="~/image/Index/ybox-logo.png"/>
+                </div>
+                <div class="col-6">
+                    <img class="" src="~/image/Index/ivolunteer-logo.png"/>
+                </div>
             </div>
         </div>
     </div>
+    <footer class="container">
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <p class="">Đoàn - Hội Khoa Công nghệ thông tin kinh doanh</p>
+                <p class="">Trường Đại học Kinh tế TP.Hồ Chí Minh (UEH)</p>
+            </div>
+            <div class="col-4">
+                <p class="">Contact</p>
+                <p class="">doanhoi.bit@ueh.edu.vn</p>
+            </div>
+            <div class="col-4">
+                <p class="">Follow</p>
+                <ul class="">
+                    <li>Youtube</li>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Tiktok</li>
+                </ul>
+            </div>
+        </div>
 
+    </footer>
 </body>
