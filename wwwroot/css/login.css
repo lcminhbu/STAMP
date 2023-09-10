@@ -19,7 +19,7 @@
     position: absolute;
     /* height: 200px; */
     height :422px;
-    width:974px;
+    width:972px;
   background-color: #6EACE3;
   border-radius: 10px;
 }
@@ -198,9 +198,9 @@
 } */
 @media (min-width:541px) and (max-width: 974px) {
   .custom-form {
-    margin-top:-20px;
+    margin-top:-120px;
      width: 540px;;
-     height:300px;
+     height:340px;
   }
   .login-notice
   {
@@ -214,15 +214,15 @@
   }
   .google-button
   {
-    height:30px;
-    font-size:18px;
-    margin-top:260px;
+    height:55px;
+    font-size:20px;
+    margin-top:275px;
     width:280px;
   }
   .login-form
   {
     height:220px;
-    width:540px;
+    width:537px;
   }
   .close-button
   {
@@ -244,7 +244,7 @@
   .custom-form {
     margin-top:30px;
      width:300px;
-     height:260px;
+     height:265px;
   }
   .login-notice
   {
@@ -258,15 +258,16 @@
   }
   .google-button
   {
-    height:30px;
-    font-size:15px;
+    height:45px;
+    font-size:16px;
     margin-top:220px;
-    width:200px;
+    width:220px;
+    padding:5px;
   }
   .login-form
   {
     height:180px;
-    width:300px;
+    width:297px;
   }
   .close-button
   {
@@ -288,7 +289,7 @@
   .custom-form {
     margin-top:30px;
      width:240px;
-     height:220px;
+     height:230px;
   }
   .login-notice
   {
@@ -302,14 +303,16 @@
   }
   .google-button
   {
-    font-size:12px;
+    font-size:13px;
     margin-top:190px;
-    width:140px;
-    height:15px;
+    width:180px;
+    height:40px;
+    padding :2px;
+    text-align:center;
   }
   .login-form
   {
-    width:240px;
+    width:237px;
     height:160px;
   }
   .close-button
@@ -318,7 +321,7 @@
     height: 15px; 
   }
   .close-icon {
-    line-height: 15px;
+    line-height: 16px;
     font-size:8px;
   }
   .login-button
