@@ -5,6 +5,7 @@
 
 * {
     box-sizing: inherit;
+    font-family: JosefinSans !important;
 }
 
 .light-blue-color {
@@ -38,9 +39,66 @@ h2 {
 }
 
 .part-margin {
-    margin-top: 100px;
+    margin-top: 180px;
 }
-
+/* 
 .col-4 {
     padding: 0;
+} */
+/* 
+.col-3 {
+    padding: 0;
+} */
+
+.col-md-3 {
+    padding: 0;
+}
+
+.italic {
+    font-style: italic !important;
+}
+
+.normal-text {
+    font-size: 20px;
+    color: black;    
+}
+
+.font-weight-700 {
+    font-weight: 700 !important;
+}
+.font-weight-600 {
+    font-weight: 600 !important;
+}
+.font-weight-500 {
+    font-weight: 500 !important;
+}
+.font-weight-400 {
+    font-weight: 400 !important;
+}
+.font-weight-300 {
+    font-weight: 300 !important;
+}
+
+.font-size-27 {
+    font-size: 27px;
+}
+.font-size-24 {
+    font-size: 24px;
+}
+.font-size-32 {
+    font-size: 32px;
+}
+
+.line-height-35 {
+    line-height: 35px;
+}
+
+.blur-shadow {
+    text-shadow: 3px 5px 4px rgba(0,0,0,0.25);
+}
+
+.line {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 16%;
 }

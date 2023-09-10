@@ -249,19 +249,16 @@
 
 .introduce {
     background-image: url("../image/Index/introduce.svg");
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.line {
-    width: 30%;
 }
 
 .introduce-content {
     display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 36px;
+    justify-content: center;
+    align-items: center;
 }
 
 .introduce-text {
@@ -271,10 +268,9 @@
 }
 
 .introduce-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 30%;
 }
+
 .important {
     color: #286AA3;
     font-style: italic;
@@ -290,26 +286,17 @@
 .award {
     margin-top: 100px;
 }
-/* 
-.container {
-    margin-top: 100px;
-    max-width: 70%;
-} */
 
-.award_head {
-    margin-top: 100px;
-    margin-bottom: 30px;
-    color: black;
-    font-family: JosefinSans;
-    font-size: 40px;
-    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.50);
+.award_box {
+    margin-top: 50px;
+    justify-content: space-between;
 }
 
 .award_price_box {
     background-color: #6EACE3;
     border-radius: 20px;
     padding: 10px 20px;
-    margin-bottom: 0;
+    margin-top: 36px;
 }
 
 .award_price {
@@ -317,17 +304,18 @@
     text-align: center;
     padding-top:10px;
     font-size: 50px;
+    font-family: JosefinSans;
 }
 
 .timeline {
     background-image: url("../image/Index/timeline.png");
     margin-top: 100px;
-    background-size: cover;
+    background-size: contain;
 }
 
 .counterparty {
     background-image: url("../image/Index/counterparty.png");
-    background-size: cover;
+    background-size: contain;
 }
 
 .party-header {
@@ -335,9 +323,42 @@
     font-family: JosefinSans;
 }
 
-@media (max-width:768px)
-{
-    padding-block: 2%;
+.party-row {
+    justify-content: center;
+    margin-top: 100px;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400, 300, 600, 700);
+.party-img {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.footer-column {
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.footer-column.col-3 {
+    width: 30%;
+}
+
+.footer-column__header {
+    text-align: left;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.footer-column__info {
+    text-align: left;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.footer-column>ul{
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+}
+.container {
+    max-width: 1440px;
+}
