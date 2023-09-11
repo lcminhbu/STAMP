@@ -127,7 +127,7 @@ h2 {
 .stamp-frame {
     background-image: url("../image/stampframe.png");
     background-size: 100% 100%;
-    width: 70%;
+    max-width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
