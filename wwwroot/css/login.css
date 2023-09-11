@@ -69,7 +69,7 @@
   /* font-size: 18px; */
   font-size:40px ;/* Đặt kích thước chữ */
   border-radius: 4px; /* Đặt bán kính viền */
-  font-family:'Josefin Sans';
+  font-family:'JosefinSans';
   /* width:280px; */
   width:642px;
   height:112px;
@@ -79,7 +79,7 @@
 
 .login-notice
 {
-  font-family: 'Josefin Sans';
+  font-family: 'JosefinSans';
   margin-top: 80px; /* Đặt giá trị margin-top là 20px */
   /* font-size: 28px; */
   line-height: 48px;
@@ -88,7 +88,7 @@
 }
 .notice
 {
-    font-family: 'Josefin Sans';
+    font-family: 'JosefinSans';
   /* margin-top: 40px;  */
   margin-top: 120px;    /*Đặt giá trị margin-top là 120px */
   /* font-weight: 500; */
@@ -100,6 +100,7 @@
   font-weight: bold; /* Tạo chữ đậm */
 }
 .login-button {
+  font-family: 'JosefinSans';
   width:150px;
   border-radius: 30px; /* Đặt bán kính viền */
   border: 2px solid #286AA3; 
