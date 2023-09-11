@@ -1,0 +1,366 @@
+@page
+@model HomeUserModel
+@{
+    ViewData["Title"] = "Trang chủ";
+}
+<header>
+    <style>
+        .banner-container {
+            background:#6EACE3;
+            margin-top:40px; 
+            padding-left:20px;
+            margin-left:35px;
+            margin-right:35px;
+            border-radius: 0 0 60px 60px;
+            height:359px;
+        }
+        .avatar-frame { 
+            position:relative;
+            display:flex;
+            width:173px;
+            height:173px;
+            flex-direction: row;
+        }
+        .profile-container {
+            display: flex;
+            flex-direction: row;
+            height:173px;
+            width:487px;
+            margin-left:132px;
+            margin-top:-100px;
+        }
+        .account-name {
+            font-family:'JosefinSans';
+            font-size:32px;
+            line-height:32px;
+            font-weight:500px;
+            padding-left: 10px;
+            height:40px;
+            top: 70%;
+            margin-top:120px;
+            color:black;
+        }
+        .setting-button
+        {
+            position:absolute;
+            left: 70%;
+            top: 70%;
+            width:43px;
+            height:43px;
+            border-radius:50%;
+        }
+        .button-container
+        {
+            display:flex;
+            flex-direction: row;
+            height: 110px;
+            margin-top:120px;
+            margin-left:40px;
+            justify-content: center;
+            align-items: center;
+            margin-right:40px;
+        }
+         .home-button, .ranking-button, .register-button {
+            flex: 1;
+            margin: 0 10px;
+            height:110px;
+            width: 350px;
+            border-radius:30px;
+            border:3px solid #286AA3;
+            color: #286AA3;
+            font-size:50px;
+            background:#fff;
+            font-weight: 1000;
+            transition: color 0.3s; 
+        }
+        .home-button:hover {
+            color: #fff; /* Màu chữ khi di chuột qua */
+        }
+        .ranking-button:hover {
+            color: #fff; /* Màu chữ khi di chuột qua */
+        }
+        .register-button:hover {
+            color: #fff; /* Màu chữ khi di chuột qua */
+        }
+        .contest-container {
+            display :flex;
+            flex-direction: row;
+            margin-top:150px;
+            margin-left:40px;
+            width:65%;
+        }
+        .contest-frame {
+            
+            height:354px;
+            width:314px;
+        }
+        .contest-info-container
+        {
+            margin-top:10px;
+            display :flex;
+            flex-direction: column;
+            width:80%;
+        }
+        .contest-name-container {
+            margin-left:40px;
+            display :flex;
+            flex-direction: row;
+            margin-right: 50px;
+        }
+        .contest-ranking-container
+        {
+            margin-left:40px;
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .contest-descritption-container
+        {
+            margin-left:40px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        p {
+            font-family: "JosefinSans";
+            font-size:35px;
+            color:black;
+            padding-right:20px;
+            font-weight: 500;
+        }
+
+        /* CSS form */ */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 8;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            margin: 50px auto;
+            border: 1px solid #999;
+            width: 60%;
+        }
+
+        h2,
+        p {
+            margin: 0 0 20px;
+            /* font-weight: 400; */
+            color: black;
+        }
+
+        span {
+            color: #666;
+            display: block;
+            padding: 0 0 5px;
+        }
+
+        form {
+            padding: 25px;
+            margin: 25px;
+            box-shadow: 0 2px 5px #f5f5f5;
+            background: #eee;
+        }
+
+        input,
+        textarea {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #1c87c9;
+            outline: none;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background: #1c87c9;
+            font-size: 16px;
+            font-weight: 400;
+            color: #fff;
+        }
+
+        button:hover {
+            background: #2371a0;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+            .close:hover,
+            .close:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+        button.popupbtn {
+            background: none;
+            border-top: none;
+            outline: none;
+            border-right: none;
+            border-left: none;
+            border-bottom: #02274a 1px solid;
+            padding: 0 0 3px 0;
+            cursor: pointer;
+        }
+
+            button.popupbtn:hover {
+                border-bottom: #a99567 1px solid;
+                color: #a99567;
+            }
+
+        .glow {
+            transition: box-shadow 0.3s;
+        }
+
+            .glow:focus {
+                box-shadow: 0 0 5px #7ed321;
+            }
+
+
+    </style>
+</header>
+<body>
+    <div class="banner-container">
+        <img class="stamplogo" src="~/image/Voting/stamplogo.png" alt="">
+    </div>
+    <div class="profile-container">
+        <div class="avatar-frame">
+             <!-- Sử dụng thẻ img để hiển thị hình ảnh avatar -->
+            <img src="~/image/UserProfile/user-square.png" alt="">
+                <button class="setting-button" id="setting-button" data-modal="modalOne">
+                    <img src="~/image/UserProfile/setting.png">
+                </button>
+        </div>
+        <span class="account-name">
+            Tên người dùng
+        </span>
+    </div>
+    <div class="button-container">
+        <button class="home-button" id="setting-button" data-modal="modalOne">
+            Trang chủ
+        </button>
+        <button class="ranking-button" id="setting-button" data-modal="modalOne">
+            Bảng xếp hạng
+        </button>
+        <button class="register-button" id="setting-button" data-modal="modalOne">
+            Đăng ký
+        </button>
+    </div>
+
+        <div class="contest-container">
+            <div class="contest-frame">
+                <img src="~/image/UserProfile/stampframe.png">
+            </div>
+            <div class="contest-info-container">
+                <div class="contest-name-container">
+                    <p class="contest-name" id="quiz-title">Tên tác phẩm : <p class="contest-name-content">STAMP 2023</p></p>
+                </div>
+                <div class=contest-ranking-container>
+                    <p class="contest-rank">Hạng: <p id="contest-rank">00</p></p>
+                    <p class="contest-votes">Vote: <p id="quiz-votes">00</p></p>
+                </div>
+                <div class="contest-descritption-container">
+                    <p class="contest-description">Mô tả: <p class="contest-description-content" id="contest-description-content"></p></p>
+                </div>
+            </div>
+        </div>
+
+
+         <div class="contest-container">
+            <div class="contest-frame">
+                <img src="~/image/UserProfile/stampframe.png">
+            </div>
+            <div class="contest-info-container">
+                <div class="contest-name-container">
+                    <p class="contest-name" id="quiz-title">Tên tác phẩm : <p class="contest-name-content">STAMP 2023</p></p>
+                </div>
+                <div class=contest-ranking-container>
+                    <p class="contest-rank">Hạng: <p id="contest-rank">00</p></p>
+                    <p class="contest-votes">Vote: <p id="quiz-votes">00</p></p>
+                </div>
+                <div class="contest-descritption-container">
+                    <p class="contest-description">Mô tả: <p class="contest-description-content" id="contest-description-content"></p></p>
+                </div>
+            </div>
+        </div>   
+    <!-- Form thay đổi thông tin cá nhân  -->
+    <!-- <p>
+        <button class="popupbtn" data-modal="modalOne">Thay đổi thông tin</button>
+    </p> -->
+
+    <div id="modalOne" class="modal">
+        <div class="modal-content">
+            <div class="contact-form">
+                <form action="/" id="myForm">
+                    <h2>Thay đổi thông tin</h2>
+                    <div>
+                        <input class="fname glow" type="text" name="fullName" placeholder="Họ và Tên" required />
+                        <input class="glow" type="text" name="school" placeholder="Trường" required />
+                        <input class="glow" type="text" name="studentID" placeholder="Mã số sinh viên" required />
+                        <input class="glow" type="text" name="phoneNumber" placeholder="Số điện thoại" required />
+                    </div>
+                    <div class="btn btn-primary">Lưu thay đổi</div>
+                    <a href="~/HomeUser" class="btn btn-info" role="button">Thoát</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const form = document.getElementById('myForm');
+
+        form.addEventListener('blur', function (event) {
+            const input = event.target;
+            if (input.tagName === 'INPUT') {
+                input.classList.remove('glow');
+            }
+        }, true);
+
+        form.addEventListener('focus', function (event) {
+            const input = event.target;
+            if (input.tagName === 'INPUT') {
+                input.classList.add('glow');
+            }
+        }, true);
+    </script>
+
+    
+    <script>
+        let modalBtns = [...document.querySelectorAll(".setting-button")];
+        modalBtns.forEach(function (btn) {
+            btn.onclick = function () {
+                let modal = btn.getAttribute("data-modal");
+                document.getElementById(modal).style.display = "block";
+            };
+        });
+        let closeBtns = [...document.querySelectorAll(".close")];
+        closeBtns.forEach(function (btn) {
+            btn.onclick = function () {
+                let modal = btn.closest(".modal");
+                modal.style.display = "none";
+            };
+        });
+        window.onclick = function (event) {
+            if (event.target.className === "modal") {
+                event.target.style.display = "none";
+            }
+        };
+    </script>
+
+</body>
+
