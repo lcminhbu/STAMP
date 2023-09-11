@@ -8,15 +8,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: JosefinSans;
 }
 
 html {
     scroll-behavior: smooth;
-}
-
-* {
-    /* box-sizing: inherit; */
-    font-family: JosefinSans !important;
 }
 
 .display-none {
@@ -36,7 +32,7 @@ html {
 }
 
 .grey-background {
-    background-color: #DEDBDB !important;
+    background-color: rgba(0,0,0,0.2) !important;
 }
 
 .blue-color {
@@ -59,18 +55,6 @@ h2 {
 
 .part-margin {
     margin-top: 180px;
-}
-/* 
-.col-4 {
-    padding: 0;
-} */
-/* 
-.col-3 {
-    padding: 0;
-} */
-
-.col-md-3 {
-    padding: 0;
 }
 
 .italic {
@@ -122,6 +106,13 @@ h2 {
     width: 16%;
 }
 
+.line-bottom {
+    line-height: 100px;
+    border-bottom: 5px solid #6EACE3;
+    width: 60%;
+    margin: 100px auto 100px auto;
+}
+
 #overlay {
     position: fixed;
     width: 100%;
@@ -131,4 +122,20 @@ h2 {
     background-color: rgba(0,0,0,0.5);
     z-index: 2;
     cursor: pointer;
+}
+
+.stamp-frame {
+    background-image: url("../image/stampframe.png");
+    background-size: 100% 100%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.stamp-img {
+    padding-left: 1%;
+    padding-bottom: 1%;
+    object-fit: cover;
 }

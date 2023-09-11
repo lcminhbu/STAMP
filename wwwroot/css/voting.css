@@ -1,0 +1,18 @@
+.banner-container {
+    max-height: 500px;
+    min-height: 200px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 
+.stamplogo {
+    width: 30%;
+    height: 80%;
+    margin: auto;
+} */
+
+.stamp-name {
+    margin: 10px auto 50px auto;
+}
