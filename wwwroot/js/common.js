@@ -1,6 +1,5 @@
 function resize_frame () {
     const frame = document.getElementsByClassName("stamp-frame");
-    console.log(frame)
     for (var i=0; i<frame.length; i++) {
         f = frame[i];
 
