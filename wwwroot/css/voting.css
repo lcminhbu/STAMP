@@ -92,3 +92,8 @@
     width: 90%;
     margin: 0 auto;
 }
+
+.horizontal-scrollable > .row {
+    overflow-x: auto;
+    white-space: nowrap;
+}
