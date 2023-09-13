@@ -97,3 +97,58 @@
     overflow-x: auto;
     white-space: nowrap;
 }
+
+
+#pagination {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.number_btns {
+    display: flex;
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.number_btns > div {
+    width: 14%;
+    max-width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 70px;
+    padding-top: 20px;
+}
+
+.number_btns > div:hover {
+    cursor: pointer;
+}
+
+.disable_btn {
+    cursor: default !important;
+}
+
+.current_btn {
+    border-radius: 20px;
+    background-color: #286AA3;
+    color: white;
+}
+
+.pag_btn {
+    width: 100px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 80px;
+    height: 100px;
+}
+
+.pag_btn:hover {
+    cursor: pointer;
+}
