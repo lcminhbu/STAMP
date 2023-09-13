@@ -120,7 +120,7 @@
             </div>
         </div>
     </div>
-    <!-- Popup chỉnh sửa  -->
+    <!-- Popup chỉnh sửa tác phẩm -->
      <div class="popup-modal" id="modifyModal">
         <div id=popup class="popup-container" > 
         <h4> Tác phẩm dự thi của bạn </h4>
@@ -133,14 +133,15 @@
             </div>
           <button class="exit-modify-button" id="exit-modify-button">
         <span class="exit-modify-icon">X</span>  </button>
+        <!-- Popup sau khi nhấn nút "Xóa" -->
         <div class="delete-popup" id="deletePopup">
-        <h4 class="caution">Bạn có chắc chắn xóa tác phẩm này</h4>
-        <p class="notify">Tác phẩm sau khi xóa sẽ không thể khôi phục</p>
+            <h4 class="caution">Bạn có chắc chắn xóa tác phẩm này</h4>
+            <p class="notify">Tác phẩm sau khi xóa sẽ không thể khôi phục</p>
         <div class="button-caution-container">
-        <button class="yes-button" id="yes-button">Có</button>
-        <button class="cancel-button" id="cancel-delete-button">Hủy</button>
-        <button class="exit-caution-button" id="exit-delete-button">
-        <span class="exit-caution-icon">X</span>  </button>
+            <button class="yes-button" id="yes-button">Có</button>
+            <button class="cancel-button" id="cancel-delete-button">Hủy</button>
+            <button class="exit-caution-button" id="exit-delete-button">
+            <span class="exit-caution-icon">X</span>  </button>
         </div>
     </div>
 
@@ -148,15 +149,15 @@
     <div class="edit-popup" id="editPopup">
         <h4 class="caution">Bạn có chắc chắn lưu tác phẩm này</h4>
         <div class="button-caution-container">
-        <button class="yes-button" id="yes-button">Có</button>
-        <button class="cancel-button" id="cancel-edit-button">Hủy</button>
-        <button class="exit-caution-button" id="exit-edit-button">
-        <span class="exit-caution-icon">X</span>  </button>
+            <button class="yes-button" id="yes-button">Có</button>
+            <button class="cancel-button" id="cancel-edit-button">Hủy</button>
+            <button class="exit-caution-button" id="exit-edit-button">
+            <span class="exit-caution-icon">X</span>  </button>
         </div>
     </div>
         </div>
     </div>
-     <!-- Popup sau khi nhấn nút "Xóa" -->
+    <!-- JavaScript điều khiển popup thay đổi thông tin cá nhân -->
     <script>
         const modalOne = document.getElementById('modalOne');
         const settingButton = document.getElementById('setting-button');
@@ -167,6 +168,7 @@
                 overlay.style.display = 'block'; // Hiển thị nền mờ
             });
     </script>
+    <!-- JavaScript điều khiển popup chỉnh sửa tác phẩm -->
     <script>
         // JavaScript để hiển thị và điều khiển popup
         const images = document.querySelectorAll('.frame');
@@ -204,31 +206,32 @@
             deletePopup.style.display = 'block';
         });
     </script>
+    <!--  JavaScript điều khiển cảnh báo khi chỉnh sửa tác phẩm -->
 <script>
-const yesButton = document.getElementById('yes-button');
-const exitEditButton = document.getElementById('exit-edit-button');
-const exitDeleteButton = document.getElementById('exit-delete-button');
-const cancelEditButton = document.getElementById('cancel-edit-button');
-const cancelDeleteButton = document.getElementById('cancel-delete-button');
+    const yesButton = document.getElementById('yes-button');
+    const exitEditButton = document.getElementById('exit-edit-button');
+    const exitDeleteButton = document.getElementById('exit-delete-button');
+    const cancelEditButton = document.getElementById('cancel-edit-button');
+    const cancelDeleteButton = document.getElementById('cancel-delete-button');
 
- exitEditButton.addEventListener('click', () => {
-            editPopup.style.display = 'none';
-        });
-         exitDeleteButton.addEventListener('click', () => {
-            deletePopup.style.display = 'none';
-        });
-           cancelEditButton.addEventListener('click', () => {
-            editPopup.style.display = 'none';
-        });
-           cancelDeleteButton.addEventListener('click', () => {
-            deletePopup.style.display = 'none';
-        });
+    exitEditButton.addEventListener('click', () => {
+        editPopup.style.display = 'none';
+    });
+    exitDeleteButton.addEventListener('click', () => {
+        deletePopup.style.display = 'none';
+    });
+    cancelEditButton.addEventListener('click', () => {
+        editPopup.style.display = 'none';
+    });
+    cancelDeleteButton.addEventListener('click', () => {
+        deletePopup.style.display = 'none';
+    });
 
-        //Xử lý khi nút "Chỉnh sửa" được nhấp vào
-        yesButton.addEventListener('click', () => {
+    //Xử lý khi nút "Chỉnh sửa" được nhấp vào
+    yesButton.addEventListener('click', () => {
             
-           alert ("Xử lý khi chỉnh sửa");
-        });
+        alert ("Xử lý khi chỉnh sửa");
+    });
 </script>
 </body>
 
