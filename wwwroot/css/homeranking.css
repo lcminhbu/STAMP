@@ -1,0 +1,91 @@
+.row
+{
+    display:flex;
+    width:100%;
+    margin-top:20%;
+    width: 100%; 
+    overflow-x: auto; 
+    white-space: nowrap;
+    padding-left:10%;
+} 
+.stamp-container
+{
+    position: relative;
+    height:100%;
+    width: 80%;
+    background:  #D4D7D8;
+    border-radius:30px;
+    border:1.5px solid black;
+    margin-bottom:15%;
+}
+.author-container
+{
+    display:flex;
+    justify-content: space-between;
+    padding: 5% 5% 8% 5% ;
+}
+.author-stamp-container
+{
+    width:50%;
+    height:100%;
+}
+.author,.author-content
+{
+    text-align: right;
+    font-family:"JosefinSans";
+}
+.ranking-container 
+{
+    position:absolute;
+    height:72px;
+    border:1px solid black;
+    display:  flex;
+    border-radius:35px;
+    bottom:2%;
+    width:50%;
+    justify-content: space-between;
+    margin-left: 25%;
+    align-items: center;
+}
+.voting,.ranking {
+    font-family:"JosefinSans";
+}
+.stamp,.stamp-name
+{
+    text-align: left;
+    font-family:"JosefinSans";
+}
+.stamp-name
+{
+    width:100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Màu nền mờ với độ mờ 70% */
+    z-index: 1; /* Độ ưu tiên thấp của lớp mờ */
+}
+.popup-container
+{
+    position:fixed;
+    top: 50%;
+    /* display:none; */
+    z-index:3;/* Độ ưu tiên lớn hơn so với popup chỉnh sửa tác phẩm  */
+    /* top:35%;
+    left:20%;
+    height:200px;
+    width:60%;
+    border-radius:28px;
+    background:#fff; */
+    border:1px solid black;
+    width:30px;
+}
+

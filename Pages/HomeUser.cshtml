@@ -6,8 +6,10 @@
 <head>
 <link rel="stylesheet" href="~/css/userprofile.css" asp-append-version="true"/>
 <link rel="stylesheet" href="~/css/homeuser.css" asp-append-version="true"/>
+<link rel="stylesheet" href="~/css/base.css" asp-append-version="true"/>
 </head>
 <body>
+<script src="~/js/common.js"></script>
     <!-- Banner -->
     <div class="banner-container">
         <img class="stamplogo" src="~/image/Voting/stamplogo.png" alt="">
@@ -39,8 +41,8 @@
     </div>
     <!-- Tác phẩm của người dùng -->
         <div class="contest-container">
-            <div class="contest-frame">
-                <img src="~/image/stampframe.png" class="frame">
+            <div class="stamp-frame">
+                <img src="~/image/stamp.png" class="stamp-img">
             </div>
             <div class="contest-info-container">
                 <div class="contest-name-container">
@@ -60,11 +62,11 @@
                 </div>
             </div>
         </div>
-
+    
 
          <div class="contest-container">
-            <div class="contest-frame">
-                <img src="~/image/stampframe.png" class="frame">
+            <div class="stamp-frame">
+                <img src="~/image/stamp.png" class="stamp-img">
             </div>
             <div class="contest-info-container">
                 <div class="contest-name-container">
@@ -125,7 +127,7 @@
         <div id=popup class="popup-container" > 
         <h4> Tác phẩm dự thi của bạn </h4>
             <div class="stamp-frame">
-                <img src="~/image/modifystamp.png" class="modify-stamp-frame">
+                <img src="~/image/stamp.png" class="stamp-img">
             </div>
             <div class="button-modify-container">
                 <button class="edit-button" id="edit-button">Chỉnh sửa</button>
@@ -171,7 +173,7 @@
     <!-- JavaScript điều khiển popup chỉnh sửa tác phẩm -->
     <script>
         // JavaScript để hiển thị và điều khiển popup
-        const images = document.querySelectorAll('.frame');
+        const images = document.querySelectorAll('.stamp-img');
         const modal = document.getElementById('modifyModal');
         const editButton = document.getElementById('edit-button');
         const deleteButton = document.getElementById('delete-button');
