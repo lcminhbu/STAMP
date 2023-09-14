@@ -1,0 +1,209 @@
+@page
+@model HomeRankingModel
+@{
+    ViewData["Title"] = "Trang chủ";
+}
+<head>
+<link rel="stylesheet" href="~/css/userprofile.css" asp-append-version="true"/>
+<link rel="stylesheet" href="~/css/homeranking.css" asp-append-version="true"/>
+</head>
+<body>
+<script src="~/js/common.js"></script>
+    <!-- Banner -->
+    <div class="banner-container">
+        <img class="stamplogo" src="~/image/Voting/stamplogo.png" alt="">
+    </div>
+    <!-- Avatar người dùng -->
+    <div class="profile-container">
+        <div class="avatar-frame">
+             <!-- Sử dụng thẻ img để hiển thị hình ảnh avatar -->
+            <img src="~/image/UserProfile/user-square.png" alt="">
+                <button class="setting-button" id="setting-button">
+                    <img src="~/image/UserProfile/setting.png">
+                </button>
+        </div>
+        <span class="account-name">
+            Tên người dùng
+        </span>
+    </div>
+    <!-- Các nút trang chủ,đăng kí, bảng xếp hạng -->
+    <div class="button-container">
+        <button class="home-button" id="home-button">
+            Trang chủ
+        </button>
+        <button class="ranking-button" id="ranking-button">
+            Bảng xếp hạng
+        </button>
+        <button class="register-button" id="register-button">
+            Đăng ký
+        </button>
+    </div>
+    <div class="row flex-nowrap" id="row">
+        <div class="col-6">
+            <div class="stamp-container">
+                <div class="author-container">
+                    <div class="author-stamp-container">
+                        <h3 class="stamp">Tác phẩm tem </h3>
+                        <h3 class="stamp-name"> Hoàng hôn thiên văn </h3>
+                    </div>
+                    <div class="author-name-container">
+                        <h3 class="author">Tác giả </h3>
+                        <h3 class="author">D.P.H.My </h3>
+                    </div>
+                </div>
+                <div class="stamp-frame">
+                    <img src="~/image/UserProfile/image4.png" class="stamp-img">
+                </div>
+                <div class="ranking-container">
+                    <h3 class="voting"> Vote </h3>
+                    <h3 class="ranking"> #Rank </h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="stamp-container">
+                <div class="author-container">
+                    <div class="author-stamp-container">
+                        <h3 class="stamp">Tác phẩm tem </h3>
+                        <h3 class="stamp-name"> Dinh độc lập </h3>
+                    </div>
+                    <div class="author-name-container">
+                        <h3 class="author">Tác giả </h3>
+                        <h3 class="author">N.V.Yến </h3>
+                    </div>
+                </div>
+                <div class="stamp-frame">
+                    <img src="~/image/UserProfile/image7.png" class="stamp-img">
+                </div>
+                <div class="ranking-container">
+                    <h3 class="voting"> Vote </h3>
+                    <h3 class="ranking"> #Rank </h3>
+                </div>
+            </div> 
+        </div>
+        <div class="col-6">
+            <div class="stamp-container">
+                <div class="author-container">
+                    <div class="author-stamp-container">
+                        <h3 class="stamp">Tác phẩm tem </h3>
+                        <h3 class="stamp-name"> Mừng ngày phụ nữ Việt Nam 20/10 </h3>
+                    </div>
+                    <div class="author-name-container">
+                        <h3 class="author">Tác giả </h3>
+                        <h3 class="author">Đ.M.Khoa </h3>
+                    </div>
+                </div>
+                <div class="stamp-frame">
+                    <img src="~/image/UserProfile/image5.png" class="stamp-img">
+                </div>
+                <div class="ranking-container">
+                    <h3 class="voting"> Vote </h3>
+                    <h3 class="ranking"> #Rank </h3>
+                </div>
+            </div> 
+        </div>
+         <div class="col-6">
+            <div class="stamp-container">
+                <div class="author-container">
+                    <div class="author-stamp-container">
+                        <h3 class="stamp">Tác phẩm tem </h3>
+                        <h3 class="stamp-name"> Mừng ngày phụ nữ Việt Nam 20/10 </h3>
+                    </div>
+                    <div class="author-name-container">
+                        <h3 class="author">Tác giả </h3>
+                        <h3 class="author">Đ.M.Khoa </h3>
+                    </div>
+                </div>
+                <div class="stamp-frame">
+                    <img src="~/image/stamp.png" class="stamp-img">
+                </div>
+                <div class="ranking-container">
+                    <h3 class="voting"> Vote </h3>
+                    <h3 class="ranking"> #Rank </h3>
+                </div>
+            </div> 
+        </div>
+    </div> 
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <div id="modalOne" class="modal" id="modal" display:none>
+        <div class="modal-content">
+            <div class="contact-form" id="contact-form">
+                <form action="/" id="myForm">
+                    <h2>THÔNG TIN CÁ NHÂN</h2>
+                    <div>
+                        <div class="image-container">
+                            <img src="~/image/UserProfile/user-circle-add.png">
+                        </div>
+                        <div class="input-box">
+                            <input class="glow" type="text" name="fullName" required />
+                            <label> Họ và tên </label>
+                        </div>
+                        <div class="input-box">
+                            <input class="glow" type="text" name="school" required />
+                            <label> Trường </label>
+                        </div>
+                        <div class="input-box">
+                            <input class="glow" type="text" name="studentID"  required />
+                            <label> MSSV </label>
+                        </div>
+                        <div class="input-box">
+                            <input class="glow" type="text" name="phoneNumber" required />
+                            <label> Số điện thoại </label>
+                        </div>
+                    </div>
+                    <div class="info-button-container">
+                        <button class="save-button" id="save-button"> Lưu thông tin </button>
+                        <a href="~/HomeUser" class="exit-button" role="button">Thoát</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Popup hiển thị số lượng vote -->
+     <div class="popup-modal" id="votingModal">
+        <div id=popup class="popup-container" > 
+            <p> Hello</p>
+        </div>
+     </div>
+ <script>
+        // JavaScript để hiển thị và điều khiển popup
+        const images = document.querySelectorAll('.stamp-frame');
+        const modal = document.getElementById('votingModal');
+        // Hiện popup khi hình ảnh được nhấp vào
+        images.forEach(image => {
+            image.addEventListener('click', () => {
+                modal.style.display = 'block';
+                //document.body.style.overflow = 'hidden'; // Tắt cuộn
+                //overlay.style.display = 'block'; // Hiển thị nền mờ
+            });
+        });
+    </script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const customRow = document.getElementById("row");
+  const stampContainers = document.querySelectorAll(".stamp-container");
+  // Kiểm tra số lượng cột con
+  const cols = customRow.querySelectorAll(".col-6");
+  if (cols.length === 1) {
+    customRow.style.paddingLeft = "35%";
+    cols[0].style.width = "70%";
+  } else  {
+    customRow.style.paddingLeft = "10%";
+  }
+});
+    </script>
+
+     <!-- JavaScript điều khiển popup thay đổi thông tin cá nhân -->
+    <script>
+        const modalOne = document.getElementById('modalOne');
+        const settingButton = document.getElementById('setting-button');
+       
+            settingButton.addEventListener('click', () => {
+                modalOne.style.display = 'block';
+                 document.body.style.overflow = 'hidden'; // Tắt cuộn
+                overlay.style.display = 'block'; // Hiển thị nền mờ
+            });
+    </script>
+    
+</body>
