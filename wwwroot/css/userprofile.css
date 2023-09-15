@@ -15,6 +15,10 @@
     height:173px;
     flex-direction: row;
 }
+.avatar-img {
+    width:173px;
+    height:173px;
+}
 .profile-container {
     display: flex;
     flex-direction: row;
@@ -107,11 +111,16 @@ form {
     width:90%;
     text-align: left;
 }
-.image-container
+.modify-avatar-frame
 {
     width:147px;
     height:147px;
     margin-top:40px;
+}
+.modify-avatar-img
+{
+    width:147px;
+    height:147px;
 }
 .input-box input {
     transition:  0.3s;
