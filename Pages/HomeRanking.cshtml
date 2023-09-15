@@ -17,7 +17,7 @@
     <div class="profile-container">
         <div class="avatar-frame">
              <!-- Sử dụng thẻ img để hiển thị hình ảnh avatar -->
-            <img src="~/image/UserProfile/user-square.png" alt="">
+            <img src="~/image/UserProfile/user-square.png" alt="" class="avatar-img">
                 <button class="setting-button" id="setting-button">
                     <img src="~/image/UserProfile/setting.png">
                 </button>
@@ -132,8 +132,8 @@
                 <form action="/" id="myForm">
                     <h2>THÔNG TIN CÁ NHÂN</h2>
                     <div>
-                        <div class="image-container">
-                            <img src="~/image/UserProfile/user-circle-add.png">
+                        <div class="modify-avatar-frame">
+                            <img src="~/image/UserProfile/user-circle-add.png" class="modify-avatar-img">
                         </div>
                         <div class="input-box">
                             <input class="glow" type="text" name="fullName" required />
@@ -161,23 +161,148 @@
         </div>
     </div>
     <!-- Popup hiển thị số lượng vote -->
-     <div class="popup-modal" id="votingModal">
-        <div id=popup class="popup-container" > 
-            <p> Hello</p>
+     <div class="voting-popup" id="votingPopup">
+            <h2>Số lượt đã vote</h2>
+        <div class="col">
+            <div class="voting-wrapper">
+                <div class="voting-container">
+                    <h3 class="voting-number"> 1 </h3>
+                        <div class="voting-avatar-frame">
+                            <img src="~/image/UserProfile/user-square1.png" class="voting-avatar-img">
+                        </div>
+                    <h3 class="voting-name">Tên tài khoản </h3>
+                        <div class="voted">
+                            Đã vote
+                        </div>
+                </div>
+            </div>
+            <div class="voting-wrapper">
+                <div class="voting-container">
+                    <h3 class="voting-number"> 2 </h3>
+                        <div class="voting-avatar-frame">
+                            <img src="~/image/UserProfile/user-square1.png" class="voting-avatar-img">
+                        </div>
+                    <h3 class="voting-name">Tên tài khoản </h3>
+                        <div class="voted">
+                            Đã vote
+                        </div>
+                </div>
+            </div>
+            <div class="voting-wrapper">
+                <div class="voting-container">
+                    <h3 class="voting-number"> 3 </h3>
+                        <div class="voting-avatar-frame">
+                            <img src="~/image/UserProfile/user-square1.png" class="voting-avatar-img">
+                        </div>
+                    <h3 class="voting-name">Tên tài khoản </h3>
+                        <div class="voted">
+                            Đã vote
+                        </div>
+                </div>
+            </div>
+            <div class="voting-wrapper">
+                <div class="voting-container">
+                    <h3 class="voting-number"> 4 </h3>
+                        <div class="voting-avatar-frame">
+                            <img src="~/image/UserProfile/user-square1.png" class="voting-avatar-img">
+                        </div>
+                    <h3 class="voting-name">Tên tài khoản </h3>
+                        <div class="voted">
+                            Đã vote
+                        </div>
+                </div>
+            </div>
+            <div class="voting-wrapper">
+                <div class="voting-container">
+                    <h3 class="voting-number"> 5 </h3>
+                        <div class="voting-avatar-frame">
+                            <img src="~/image/UserProfile/user-square1.png" class="voting-avatar-img">
+                        </div>
+                    <h3 class="voting-name">Tên tài khoản </h3>
+                        <div class="voted">
+                            Đã vote
+                        </div>
+                </div>
+            </div>
+            <div class="voting-wrapper">
+                <div class="voting-container">
+                    <h3 class="voting-number"> 6</h3>
+                        <div class="voting-avatar-frame">
+                            <img src="~/image/UserProfile/user-square1.png" class="voting-avatar-img">
+                        </div>
+                    <h3 class="voting-name">Tên tài khoản </h3>
+                        <div class="voted">
+                            Đã vote
+                        </div>
+                </div>
+            </div>
+            <div class="voting-wrapper">
+                <div class="voting-container">
+                    <h3 class="voting-number"> 7</h3>
+                        <div class="voting-avatar-frame">
+                            <img src="~/image/UserProfile/user-square1.png" class="voting-avatar-img">
+                        </div>
+                    <h3 class="voting-name">Tên tài khoản </h3>
+                        <div class="voted">
+                            Đã vote
+                        </div>
+                </div>
+            </div>
+            <div class="voting-wrapper">
+                <div class="voting-container">
+                    <h3 class="voting-number"> 8 </h3>
+                        <div class="voting-avatar-frame">
+                            <img src="~/image/UserProfile/user-square1.png" class="voting-avatar-img">
+                        </div>
+                    <h3 class="voting-name">Tên tài khoản </h3>
+                        <div class="voted">
+                            Đã vote
+                        </div>
+                </div>
+            </div>
+            <div class="voting-wrapper">
+                <div class="voting-container">
+                    <h3 class="voting-number"> 9</h3>
+                        <div class="voting-avatar-frame">
+                            <img src="~/image/UserProfile/user-square1.png" class="voting-avatar-img">
+                        </div>
+                    <h3 class="voting-name">Tên tài khoản </h3>
+                        <div class="voted">
+                            Đã vote
+                        </div>
+                </div>
+            </div>
+            <div class="voting-wrapper">
+                <div class="voting-container">
+                    <h3 class="voting-number"> 10000</h3>
+                        <div class="voting-avatar-frame">
+                            <img src="~/image/UserProfile/user-square1.png" class="voting-avatar-img">
+                        </div>
+                    <h3 class="voting-name">Tên tài khoản </h3>
+                        <div class="voted">
+                            Đã vote
+                        </div>
+                </div>
+            </div>
         </div>
-     </div>
+    </div>
  <script>
         // JavaScript để hiển thị và điều khiển popup
-        const images = document.querySelectorAll('.stamp-frame');
-        const modal = document.getElementById('votingModal');
+        const images = document.querySelectorAll('.stamp-container');
+        const popup = document.getElementById('votingPopup');
         // Hiện popup khi hình ảnh được nhấp vào
         images.forEach(image => {
             image.addEventListener('click', () => {
-                modal.style.display = 'block';
-                //document.body.style.overflow = 'hidden'; // Tắt cuộn
-                //overlay.style.display = 'block'; // Hiển thị nền mờ
+                popup.style.display = 'block';
+                document.body.style.overflow = 'hidden'; // Tắt cuộn
+                overlay.style.display = 'block'; // Hiển thị nền mờ
             });
         });
+       overlay.addEventListener('click', () => {
+    popup.style.display = 'none'; // Ẩn popup
+    document.body.style.overflow = 'auto'; // Bật lại cuộn
+    overlay.style.display = 'none'; // Ẩn overlay
+    });
     </script>
     <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -205,5 +330,4 @@
                 overlay.style.display = 'block'; // Hiển thị nền mờ
             });
     </script>
-    
 </body>
