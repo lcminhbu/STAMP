@@ -275,8 +275,7 @@
 
                 resize_frame();
                 popup_title.innerText = title;
-                @* Code để lấy tên tác giả và tác phẩm từ database *@
-                    popup_author.innerText = "Tên tác giả của tác phẩm " + title;
+                popup_author.innerText = "Tên tác giả của tác phẩm " + title;
                 popup_description.innerText = "Mô tả của tác phẩm:\n" + title;
                 overlay.classList.remove("display-none");
                 body.style.overflow = "hidden";
@@ -346,6 +345,29 @@
                 row += 1;
             }
             data_container.innerHTML = temp_container.innerHTML;
+            const cards = data_container.getElementsByClassName("submission-box");
+            const popup = document.getElementById("popup");
+            const body = document.querySelector("body");
+            const overlay = document.getElementById("overlay");
+            for (var i = 0; i < cards.length; i++) {
+                var card = cards[i];
+                card.addEventListener("click", function () {
+                    var stamp = this.getElementsByClassName("stamp-name")[0];
+                    var title = stamp.innerText;
+                    popup.classList.remove("display-none");
+                    var popup_title = popup.getElementsByClassName("title")[0];
+                    var popup_author = popup.getElementsByClassName("author")[0];
+                    var popup_description = popup.getElementsByClassName("description")[0];
+                    var popup_frame = popup.getElementsByClassName("stamp-frame")[0];
+
+                    resize_frame();
+                    popup_title.innerText = title;
+                    popup_author.innerText = "Tên tác giả của tác phẩm " + title;
+                    popup_description.innerText = "Mô tả của tác phẩm:\n" + title;
+                    overlay.classList.remove("display-none");
+                    body.style.overflow = "hidden";
+                })
+            };
             @* data_container.style.height = null; *@
             resize_frame();
             is_loading = false;
