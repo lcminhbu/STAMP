@@ -1,0 +1,24 @@
+.register-button
+{
+    color: #fff; /* Màu chữ khi di chuột qua */
+    background:#286AA3;
+}
+.content {
+    margin-top:10%;
+    display: flex;
+    justify-content: space-between;
+    width:70%;
+    margin-left: 15%;
+}
+.register-stamp, .register-talkshow
+{
+    font-weight: 500;
+    font-size: 32px;
+    line-height:32px;
+    font-family: "JosefinSans";
+    color:#286AA3;
+}
+a:hover
+{
+    color:#286AA3;
+}
