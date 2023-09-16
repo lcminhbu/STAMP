@@ -1,7 +1,7 @@
 @page
 @model HomeRankingModel
 @{
-    ViewData["Title"] = "Trang chủ";
+    ViewData["Title"] = "Bảng xếp hạng";
 }
 <head>
 <link rel="stylesheet" href="~/css/userprofile.css" asp-append-version="true"/>
@@ -35,11 +35,11 @@
             Bảng xếp hạng
         </button>
         <button class="register-button" id="register-button">
-            Đăng ký
+            Đăng kí
         </button>
     </div>
     <div class="row flex-nowrap" id="row">
-        <div class="col-6">
+        <div class="col-7">
             <div class="stamp-container">
                 <div class="author-container">
                     <div class="author-stamp-container">
@@ -60,7 +60,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-6">
+        <div class="col-7">
             <div class="stamp-container">
                 <div class="author-container">
                     <div class="author-stamp-container">
@@ -81,7 +81,7 @@
                 </div>
             </div> 
         </div>
-        <div class="col-6">
+        <div class="col-7">
             <div class="stamp-container">
                 <div class="author-container">
                     <div class="author-stamp-container">
@@ -102,7 +102,7 @@
                 </div>
             </div> 
         </div>
-         <div class="col-6">
+         <div class="col-7">
             <div class="stamp-container">
                 <div class="author-container">
                     <div class="author-stamp-container">
@@ -154,7 +154,7 @@
                     </div>
                     <div class="info-button-container">
                         <button class="save-button" id="save-button"> Lưu thông tin </button>
-                        <a href="~/HomeUser" class="exit-button" role="button">Thoát</a>
+                        <a href="~/HomeRanking" class="exit-button" role="button">Thoát</a>
                     </div>
                 </form>
             </div>
@@ -274,7 +274,7 @@
             </div>
             <div class="voting-wrapper">
                 <div class="voting-container">
-                    <h3 class="voting-number"> 10000</h3>
+                    <h3 class="voting-number"> 10</h3>
                         <div class="voting-avatar-frame">
                             <img src="~/image/UserProfile/user-square1.png" class="voting-avatar-img">
                         </div>
@@ -286,6 +286,158 @@
             </div>
         </div>
     </div>
+    <!-- Popup đâng kí sản phẩm-->
+    <!-- Popup đăng kí hình  thức cá nhân hay nhóm -->
+    <div class="method-popup" id="register-method">
+        <h3 class="method-title"> Hình thức thi của bạn là </h3>
+        <div class="method-button-container">
+            <button class="invidual-method-button" id="invidual-method-button">
+                <div class="invidual-container">
+                    <div>
+                        <img src="~/image/UserProfile/profile.png">
+                        <h3 class="invidual-method"> Cá nhân </h3>
+                    </div>
+                </div>
+            </button>
+            <button class="people-method-button" id="people-method-button">
+                <div class="people-container">
+                    <img src="~/image/UserProfile/people.png">
+                    <h3 class="people-method"> Nhóm </h3>
+                </div>
+            </button>
+        </div>
+        <button class="exit-method-button" id="exit-method-button">
+            <span class="exit-method-icon">X</span>  
+        </button>
+    </div>
+    <!-- Form đăng kí cá nhân -->
+     <form action="/HomeRegisterStamp" class="invidual-form" id="invidual-form">
+            <h3 class="invidual-form-title">Đăng kí</h3>
+                <div>
+                    <div class="input-box">
+                        <input class="glow" type="text" name="school" required />
+                        <label> Trường </label>
+                    </div>
+                    <div class="input-box">
+                        <input class="glow" type="text" name="studentID"  required />
+                        <label> MSSV </label>
+                    </div>
+                    <div class="input-box">
+                        <input class="glow" type="text" name="phoneNumber" required />
+                        <label> Số điện thoại </label>
+                    </div>
+                    </div>
+                    <div class="invidual-button-container">
+                        <button class="save-invidual-button" id="save-invidual-button"> Lưu </button>
+                        <button type="button" class="cancel-invidual-button" id="cancel-invidual-button"> Hủy </button>
+                </div>
+    </form>
+    <!-- Form đăng kí theo nhóm -->
+     <form action="/HomeRegisterStamp" class="people-form" id="people-form">
+            <h3 class="people-form-title">Đăng kí tác phẩm nhóm</h3>
+                <div>
+                    <div class="input-box">
+                        <input class="glow" type="text" name="stamp-name" required />
+                        <label> Tên tác phẩm </label>
+                    </div>
+                <div class="member">
+                        <h3> Trưởng nhóm </h3>
+                        <div class="input-box">
+                            <input class="glow" type="text" name="membername"  required />
+                            <label> Họ và tên </label>
+                        </div>
+                        <div class="input-box">
+                            <input class="glow" type="text" name="memberemail" required />
+                            <label> Email </label>
+                        </div>
+                </div>
+                <div class="member">
+                        <h3> Thành viên 1 </h3>
+                        <div class="input-box">
+                            <input class="glow" type="text" name="membername"  required />
+                            <label> Họ và tên </label>
+                        </div>
+                        <div class="input-box">
+                            <input class="glow" type="text" name="memberemail" required />
+                            <label> Email </label>
+                        </div>
+                </div>
+                <div class="member">
+                        <h3> Thành viên 2 </h3>
+                        <div class="input-box">
+                            <input class="glow" type="text" name="membername"  required />
+                            <label> Họ và tên </label>
+                        </div>
+                        <div class="input-box">
+                            <input class="glow" type="text" name="memberemail" required />
+                            <label> Email </label>
+                        </div>
+                </div>
+                <div class="people-button-container">
+                    <button type="submit" class="save-people-button" id="save-people-button"> Lưu </button>
+                    <button type="button"  class="cancel-people-button" id="cancel-people-button"> Hủy </button>
+                </div>
+    </form>
+    <script>
+    var rankingButton = document.querySelector(".home-button");
+      rankingButton.addEventListener("click", function() {
+            window.location.href = "HomeUser"; 
+        });
+    </script>
+     <!-- JavaScript điều khiển popup đăng kí  -->
+     <script>
+        var registerButton = document.querySelector(".register-button");
+        var popupRegister = document.getElementById("register-method");
+        var closeButton = document.getElementById("exit-method-button");
+        var invidualForm = document.getElementById("invidual-form");
+        var invidualMethodButton=document.getElementById("invidual-method-button");
+        var saveInvidualButton=document.getElementById("save-invidual-button");
+        var cancelInvidualButton=document.getElementById("cancel-invidual-button");
+        var peopleForm = document.getElementById("people-form");
+        var peopleMethodButton=document.getElementById("people-method-button");
+        var savePeopleButton=document.getElementById("save-people-button");
+        var cancelPeopleButton=document.getElementById("cancel-people-button");
+        registerButton.addEventListener("click", function() {
+            popupRegister.style.display = "block";
+            document.body.style.overflow = 'hidden'; 
+            overlay.style.display = 'block';
+        });
+        invidualMethodButton.addEventListener("click", function() {
+            invidualForm.style.display = "block";
+            popupRegister.style.display = "none";
+            document.body.style.overflow = 'hidden'; 
+            overlay.style.display = 'block';
+        });
+        cancelInvidualButton.addEventListener("click", function() {
+            popupRegister.style.display = "block";
+            document.body.style.overflow = 'hidden'; 
+            overlay.style.display = 'block';
+            invidualForm.style.display = "none";
+        });
+         saveInvidualButton.addEventListener("click", function() {
+           //Chỉnh sửa thêm javascipt truyền nhận dữ liệu
+        });
+         peopleMethodButton.addEventListener("click", function() {
+            peopleForm.style.display = "block";
+            popupRegister.style.display = "none";
+            document.body.style.overflow = 'hidden'; 
+            overlay.style.display = 'block';
+        });
+          cancelPeopleButton.addEventListener("click", function() {
+            popupRegister.style.display = "block";
+            document.body.style.overflow = 'hidden'; 
+            overlay.style.display = 'block';
+            peopleForm.style.display = "none";
+        });
+         savePeopleButton.addEventListener("click", function() {
+           //Chỉnh sửa thêm javascipt truyền nhận dữ liệu
+        });
+        closeButton.addEventListener('click', () => {
+            popupRegister.style.display = "none";
+            document.body.style.overflow = 'auto'; // Bật lại cuộn
+            overlay.style.display = 'none'; // Ẩn nền mờ
+        });
+    </script>
  <script>
         // JavaScript để hiển thị và điều khiển popup
         const images = document.querySelectorAll('.stamp-container');

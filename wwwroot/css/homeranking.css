@@ -1,3 +1,8 @@
+.ranking-button
+{
+    color: #fff; 
+    background:#286AA3;
+}
 .row
 {
     display:flex;
