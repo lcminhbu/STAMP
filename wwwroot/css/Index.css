@@ -1,6 +1,6 @@
 ﻿.banner {
     position: relative;
-    height: 1200px;
+    height: 760px;
 }
 
 #slideshow-container {
@@ -30,9 +30,9 @@
     top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 84%;
+    width: 56%;
     max-width: 1200px;
-    height: 600px;
+    height: fit-content;
     max-height: 700px;
     border-radius: 30px;
     background-color: white;
@@ -41,14 +41,14 @@
 }
 
 .time-remain{
-    margin-top: 7%;
-    font-size: 64px;
-    margin-bottom: 6%;
+    margin-top: 5%;
+    font-size: 40px;
+    margin-bottom: 4%;
 }
 
 .time-box {
     display: flex;
-    margin-bottom: 5%;
+    margin-bottom: 4%;
     padding: 0 60px;
 }
 
@@ -61,26 +61,26 @@
 }
 
 .countdown-value {
-    font-size: 100px;
+    font-size: 54px;
     font-weight: 600;
 }
 
 .countdown-label {
-    font-size: 52px;
+    font-size: 40px;
 }
 
 
 .countdown-button {
     display: block;
-    margin: 0 auto 40px auto;
+    margin: 0 auto 5% auto;
     width: 60%;
-    padding: 28px 40px;
-    font-size: 60px;
+    padding: 20px 32px;
+    font-size: 48px;
     font-weight: bold;
     text-align: center;
     color: var(--blue);
     border: 5px solid var(--blue);
-    border-radius: 50px;
+    border-radius: 60px;
     transition: background-color 0.3s ease;
 }
 
@@ -89,19 +89,6 @@
     border-color: var(--light-blue);
     color:white;
     cursor: pointer;
-}
-
-.timeline-img {
-    width: 70%;
-}
-
-.party-container {
-    width: 70%;
-    margin: auto;
-}
-
-.party-container img {
-    width: 50%;
 }
 
 .introduce {
@@ -121,13 +108,12 @@
 .introduce-text {
     max-width: 65%;
     margin-right: 10px;
-    font-size: 40px;
+    font-size: 27px;
 }
 
 .introduce-img {
     width: 35%;
 }
-
 
 .award {
     margin-top: 100px;
@@ -141,7 +127,6 @@
 .award_price_box {
     background-color: #6EACE3;
     border-radius: 20px;
-    padding: 10px 20px;
     margin-top: 36px;
 }
 
@@ -150,8 +135,24 @@
     text-align: center;
     padding-top:10px;
     font-size: 50px;
-    font-family: JosefinSans;
 }
+
+
+.timeline-img {
+    width: 70%;
+}
+
+.party-container {
+    width: 70%;
+    margin: auto;
+}
+
+.party-container img {
+    width: 50%;
+}
+
+
+
 
 .timeline {
     background-image: url("../image/Index/timeline.png");
@@ -171,11 +172,11 @@
 
 .party-row {
     justify-content: center;
-    margin-top: 160px;
+    margin-top: 80px;
 }
 
 .party-img {
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -186,23 +187,24 @@
 .footer-column__header {
     text-align: left;
     font-weight: 600;
-    font-size: 48px;
+    font-size: 32px;
     padding-top: 40px;
 }
 
 .footer-column__info {
     text-align: left;
     font-weight: 600;
-    font-size: 36px;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .footer-column__info * {
-    font-size: 36px;
+    font-size: 24px;
     text-align: left;
     font-weight: 600;
     text-decoration: none;
     color: black;
-    line-height: 70px;
+    line-height: 24px;
 }
 
 .footer-column__info  *:hover {
