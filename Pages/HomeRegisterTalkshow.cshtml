@@ -1,0 +1,152 @@
+@page
+@model HomeRegisterTalkshowModel
+@{
+    ViewData["Title"] = "Đăng ki";
+}
+<head>
+<link rel="stylesheet" href="~/css/userprofile.css" asp-append-version="true"/>
+<!-- <link rel="stylesheet" href="~/css/base.css" asp-append-version="true"/> -->
+<link rel="stylesheet" href="~/css/common.js" asp-append-version="true"/>
+<link rel="stylesheet" href="~/css/homeregister.css" asp-append-version="true"/>
+<link rel="stylesheet" href="~/css/homeregistertalkshow.css" asp-append-version="true"/>
+</head>
+<body>
+<script src="~/js/common.js"></script>
+    <!-- Banner -->
+    <div class="banner-container">
+        <img class="stamplogo" src="~/image/Voting/stamplogo.png" alt="">
+    </div>
+    <!-- Avatar người dùng -->
+    <div class="profile-container">
+        <div class="avatar-frame">
+             <!-- Sử dụng thẻ img để hiển thị hình ảnh avatar -->
+            <img src="~/image/UserProfile/user-square.png" alt="">
+                <button class="setting-button" id="setting-button">
+                    <img src="~/image/UserProfile/setting.png">
+                </button>
+        </div>
+        <span class="account-name">
+            Tên người dùng
+        </span>
+    </div>
+    <!-- Các nút trang chủ,đăng kí, bảng xếp hạng -->
+    <div class="button-container">
+        <button class="home-button" id="home-button">
+            Trang chủ
+        </button>
+        <button class="ranking-button" id="ranking-button">
+            Bảng xếp hạng
+        </button>
+        <button class="register-button" id="register-button">
+            Đăng kí
+        </button>
+    </div>
+     <!-- Popup thay đổi thông tin cá nhân -->
+    <div class="overlay" id="overlay" style="display:none"></div>
+    <div id="modalOne" class="modal" id="modal" display:none>
+        <div class="modal-content">
+            <div class="contact-form" id="contact-form">
+                <form action="/" id="myForm">
+                    <h2>THÔNG TIN CÁ NHÂN</h2>
+                    <div>
+                        <div class="modify-avatar-frame">
+                            <img src="~/image/UserProfile/user-circle-add.png" class="modify-avatar-img">
+                        </div>
+                        <div class="input-box">
+                            <input class="glow" type="text" name="fullName" required />
+                            <label> Họ và tên </label>
+                        </div>
+                        <div class="input-box">
+                            <input class="glow" type="text" name="school" required />
+                            <label> Trường </label>
+                        </div>
+                        <div class="input-box">
+                            <input class="glow" type="text" name="studentID"  required />
+                            <label> MSSV </label>
+                        </div>
+                        <div class="input-box">
+                            <input class="glow" type="text" name="phoneNumber" required />
+                            <label> Số điện thoại </label>
+                        </div>
+                    </div>
+                    <div class="info-button-container">
+                        <button class="save-button" id="save-button"> Lưu thông tin </button>
+                        <a href="~/HomeRegisterStamp" class="exit-button" role="button">Thoát</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div>
+            <a class="register-stamp" asp-area="" asp-page="/HomeRegisterStamp">Đăng kí tác phẩm</a>
+        </div>
+        <div>
+            <a class="register-talkshow">Đăng kí Talkshow</a>
+        </div>
+    </div>
+    <!-- Thông tin talkshow -->
+    <div class="row flex-nowrap" id="row">
+        <div class="col-6">
+            <div class="talkshow-container">
+                <div class="frame">
+                <div class="stamp-frame">
+                    <img src="~/image/UserProfile/image3.png" class="stamp-img">
+                </div>
+                </div>
+                <div class="info-container">
+                    <span class="info-name">S.T.A.M.P 2023 - Stand Together And Make</span>
+                    <div class=info-content-container>
+                        <h3 class="info-content"><span class="info-name">Protection</span> là cuộc thi về thiết kế và triển lãm tem thư </h3>
+                        <h3 class="info-content">được tổ chức bởi Đoàn - Hội khoa Công nghệ thông</h3>
+                    </div>
+                        <h3 class="info-content1">tin kinh doanh </h3>
+                </div>
+                <div class="talkshow-button-container"> 
+                    <button class="register-talkshow-button"> Đăng kí </button>
+                </div>
+            </div>
+        </div>
+         <div class="col-6">
+            <div class="talkshow-container">
+                <div class="stamp-frame">
+                    <img src="~/image/UserProfile/image3.png" class="stamp-img">
+                </div>
+                <div class="info-container">
+                    <span class="info-name">S.T.A.M.P 2023 - Stand Together And Make</span>
+                    <div class=info-content-container>
+                        <h3 class="info-content"><span class="info-name">Protection</span> là cuộc thi về thiết kế và triển lãm tem thư </h3>
+                        <h3 class="info-content">được tổ chức bởi Đoàn - Hội khoa Công nghệ thông</h3>
+                    </div>
+                        <h3 class="info-content1">tin kinh doanh </h3>
+                </div>
+                <div class="talkshow-button-container"> 
+                    <button class="register-talkshow-button"> Đăng kí </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+     <!-- JavaScript điều khiển popup thay đổi thông tin cá nhân -->
+    <script>
+        const modalOne = document.getElementById('modalOne');
+        const settingButton = document.getElementById('setting-button');
+       
+            settingButton.addEventListener('click', () => {
+                modalOne.style.display = 'block';
+                 document.body.style.overflow = 'hidden'; // Tắt cuộn
+                overlay.style.display = 'block'; // Hiển thị nền mờ
+            });
+    </script>
+    <script>
+    // JavaScript chuyển trang
+    var rankingButton = document.querySelector(".ranking-button");
+      rankingButton.addEventListener("click", function() {
+            window.location.href = "HomeRanking"; 
+        });
+    var homeButton = document.querySelector(".home-button");
+      homeButton.addEventListener("click", function() {
+            window.location.href = "HomeUser"; 
+        });
+    </script>
+</body>
