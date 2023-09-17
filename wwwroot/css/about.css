@@ -170,7 +170,8 @@
 }
 
 .countdown-button:hover {
-    background-color: #286AA3;
+    background-color: var(--light-blue);
+    border-color: var(--light-blue);
     color:white;
     cursor: pointer;
 }
