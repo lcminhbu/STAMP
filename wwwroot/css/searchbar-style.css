@@ -1,11 +1,11 @@
 ﻿.search-box {
-  margin-top: 100px;
+  margin-top: 60px;
 }
 .search {
   border-radius: 40px;
   margin-left: 55%;
-  height: 80px;
-  width: 35%;
+  height: 50px;
+  width: 40%;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -15,7 +15,7 @@
 }
 
 .search-img {
-  height: 40px;
+  height: 20px;
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -23,15 +23,14 @@
 .search-input {
   width: 100%;
   height: 90%;
-  /* padding-top: 5%; */
-  /* padding-bottom: 5%; */
   border: none;
-  font-size: 32px;
+  font-size: 26px;
 }
 
 .search-btn {
   background-color: white;
   border: none;
+  padding-bottom: 3px;
 }
 /*****/
 
