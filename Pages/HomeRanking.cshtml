@@ -38,6 +38,7 @@
             Đăng kí
         </button>
     </div>
+    <!-- Tác phẩm cá nhân -->
     <div class="row flex-nowrap" id="row">
         <div class="col-7">
             <div class="stamp-container">
@@ -465,8 +466,13 @@
   if (cols.length === 1) {
     customRow.style.paddingLeft = "35%";
     cols[0].style.width = "70%";
-  } else  {
+  }
+  else if(cols.length === 2)
+  {
     customRow.style.paddingLeft = "10%";
+  }
+   else  {
+    customRow.style.paddingLeft = "2%";
   }
 });
     </script>

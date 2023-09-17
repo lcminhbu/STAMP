@@ -1,10 +1,74 @@
-﻿@page
+@page
 @model NewsModel
 @{
     ViewData["Title"] = "Tin Tức";
 }
 
--<div class="text-center">
-    <h1 class="display-4">Tin Tức</h1>
-</div>
+<header>
+    <link rel="stylesheet" href="~/css/searchbar-style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/js/common.js" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/news.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/base.css" asp-append-version="true" />
+</header>
+<body>
+    <!-- search-box -->
+     <div class="search-box">
+        <div class="search">
+            <button class="search-btn" onclick="">
+                <img class="search-img" src="~/image/Ranking/search-normal.png" />
+            </button>
+            <input type="text" id="trigger" class="search-input" placeholder="Tìm kiếm" />
+        </div>
+    </div>
+    <!-- Các tin mới -->
+     <div class="container-fluid news-container-fluid">
+        <div class="row flex-nowrap">
+            <div class="col-6 container-fluid">
+                <div class="row">
+                    <div class="news-box">
+                        <div class="stamp-frame">
+                            <img src="~/image/News/Rectangle.png" alt="" class="stamp-img">
+                        </div>
+                        <h2 class="title">Title</h2>
+                        <p class="dated"> Ngày đăng </p>
+                        <p class="sapo"> 1 đoạn sapo ngắn</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="news-box">
+                        <div class="stamp-frame">
+                            <img src="~/image/News/Rectangle.png" alt="" class="stamp-img">
+                        </div>
+                        <h2 class="title">Title</h2>
+                        <p class="dated"> Ngày đăng </p>
+                        <p class="sapo">1 đoạn sapo ngắn </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 container-fluid">
+                <div class="row">
+                    <div class="news-box">
+                        <div class="stamp-frame">
+                            <img src="~/image/News/Rectangle.png" alt="" class="stamp-img">
+                        </div>
+                       <h2 class="title">Title</h2>
+                        <p class="dated"> Ngày đăng </p>
+                        <p class="sapo"> 1 đoạn sapo ngắn </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="news-box">
+                        <div class="stamp-frame">
+                            <img src="~/image/News/Rectangle.png" alt="" class="stamp-img">
+                        </div>
+                        <h2 class="title">Title</h2>
+                        <p class="dated"> Ngày đăng </p>
+                        <p class="sapo"> 1 đoạn sapo ngắn</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+</body>
 
