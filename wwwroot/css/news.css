@@ -1,0 +1,39 @@
+.news-container-fluid
+{
+    margin-top:5%;
+    margin-bottom:5%;
+}
+.news-box
+{
+    width:90%;
+    padding-bottom: 30%;
+}
+.title {
+    text-align: left;
+    margin-left:10%;
+    margin-top:4%;
+    font-size:24px;
+    line-height:24px;
+    font-weight: 600;
+}
+.dated {
+    text-align: left;
+    margin-left:10%;
+    margin-top:4%;
+    font-size:24px;
+    line-height:24px;
+    font-weight: 300;
+    color:#6EACE3;
+    font-style: italic;
+}
+.sapo {
+    text-align: left;
+    margin-left:10%;
+    margin-top:4%;
+    font-size:20px;
+    line-height:20px;
+    font-weight: 300;
+}
+.stamp-frame {
+    height:80%;
+}

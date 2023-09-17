@@ -331,3 +331,53 @@
   }
 
 }
+/* CSS cho nút thông báo và nút người dùng */
+.notification-button
+{
+  width: 57px;
+  height: 57px;
+  background-image:  url("../image/Index/notify.png");
+  border:none;
+  margin-left:5px;
+}
+.user-button
+{
+  width: 57px;
+  height: 57px;
+  background-image:  url("../image/Index/user.png");
+  border:none;
+}
+.personal-button
+{
+  display: flex;
+}
+.notify-popup
+{
+  position:fixed;
+  z-index:100;
+  right:0;
+  height:495px;
+  width:378px;
+  background: #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  margin-top:15px;
+  overflow: auto; 
+}
+.notify-title
+{
+  font-weight:500;
+  font-size:32px;
+  line-height:32px;
+}
+.notify-content
+{
+  border-radius:15px;
+  height:91px;
+  width:378px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.notify-content:hover {
+  background: #D4D7D8;
+}
