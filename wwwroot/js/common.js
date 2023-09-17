@@ -4,6 +4,7 @@ function resize_frame () {
         f = frame[i];
 
         const img = f.getElementsByClassName("stamp-img")[0];
+        console.log(f.offsetWidth);
         img.style.width = f.offsetWidth*81/100+"px";
         const height = img.offsetHeight *100/83 +"px";
         f.style.height = height;

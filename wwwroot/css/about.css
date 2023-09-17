@@ -97,19 +97,6 @@
     margin-right: 7%;
 }
 
-.info__header {
-    font-family: JosefinSans;
-    font-weight: 800;
-    font-size: 38px;
-    text-shadow: 2px 2px #00000036;
-    color: #286AA3;
-    padding-top: 20px;
-}
-
-.blue-background {
-    background-color: rgba(110, 172, 227, 0.3)
-}
-
 .alignleft {
     text-align: left;
 }
@@ -167,8 +154,6 @@
 }
 
 .countdown-button {
-    font-family: JosefinSans;
-    display: inline-block;
     padding: 20px;
     padding-top: 30px;
     font-size: 40px;
@@ -177,7 +162,6 @@
     color: #286AA3;
     border: 5px solid var(--blue);
     border-radius: 50px;
-    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
@@ -187,7 +171,8 @@
 
 .countdown-button:hover {
     background-color: #286AA3;
-    color:white
+    color:white;
+    cursor: pointer;
 }
 
 .center {
@@ -201,31 +186,15 @@
 }
 
 .submission-title {
-    font-family: JosefinSans;
     font-size: 24px;
     font-weight: 600;
-    margin-top: 50px;
+    margin-top: 20px;
     line-height: 26px;
 }
 
 .competitor {
-    font-family: JosefinSans;
-    font-size: 20px;
+    font-size: 17px;
     color: #6EACE3;
-}
-
-.img_box {
-    position: relative;
-    width: 403px;
-    height: 326px;
-    left: 50%;
-    transform: translate(-50.3%);
-}
-
-.frame {
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .submission {
@@ -238,4 +207,13 @@
     width: 47%;
     margin: 10px;
     border-radius: 30px;
+}
+
+.submission-box {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.stamp-frame {
+    max-width: 360px;
 }
