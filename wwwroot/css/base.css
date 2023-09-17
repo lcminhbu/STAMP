@@ -37,6 +37,10 @@ html {
     background-color: #6EACE3 !important;
 }
 
+.light-light-blue-background {
+    background-color: rgba(110, 172, 227, 0.3) !important;
+}
+
 .grey-background {
     background-color: rgba(0,0,0,0.2) !important;
 }
@@ -96,6 +100,10 @@ h2 {
 
 .line-height-35 {
     line-height: 35px;
+}
+
+.line-height-30 {
+    line-height: 30px;
 }
 
 .blur-shadow {
