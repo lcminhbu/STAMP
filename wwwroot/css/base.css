@@ -149,3 +149,8 @@ h2 {
     padding-bottom: 1%;
     object-fit: cover;
 }
+
+.horizontal-scrollable > .row {
+    overflow-x: auto;
+    white-space: nowrap;
+}
