@@ -5,444 +5,432 @@
 }
 <head>
     <link rel="stylesheet" href="~/css/about.css" asp-append-version="true"/>
-    <link rel="stylesheet" href="~/css/about-base.css" asp-append-version="true"/>
     <link rel="stylesheet" href="~/css/about-responsive.css" asp-append-version="true"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="~/css/base.css" asp-append-version="true"/>
 </head>
 <body>
-    <header class="header"></header>
-    <div>
-        <div class="app__container">
-            <div class="grid">
-                <div class="grid__row app__content">
-                    <div class="grid__column-2">
-                        <div class="stamp-choose">
-                            <ul class="stamp-list">
-                                <li class="stamp-item stamp-item--active">
-                                    <a href="#" class="stamp-item__link blue-text" id="stamp-2023">S.T.A.M.P 2023</a>
-                                    <ul class="select-part">
-                                        <li class="select-item">
-                                            <a href="#topic" class="select-part__link">Chủ đề</a>
-                                        </li>
-                                        <li class="select-item">
-                                            <a href="#objective" class="select-part__link">Đối tượng</a>
-                                        </li>
-                                        <li class="select-item">
-                                            <a href="#rule" class="select-part__link">Thể lệ</a>
-                                        </li>
-                                    </ul>
+    <div class="light-light-blue-background container-fluid" style="padding-bottom: 40px">
+        <div class="row app__content">
+            <div class="col-2">
+                <div class="stamp-choose">
+                    <ul class="stamp-list">
+                        <li class="stamp-item stamp-item--active">
+                            <a href="#" class="stamp-item__link blue-color" id="stamp-2023">S.T.A.M.P 2023</a>
+                            <ul class="select-part">
+                                <li class="select-item">
+                                    <a href="#topic" class="select-part__link">Chủ đề</a>
                                 </li>
-                                <li class="stamp-item">
-                                    <a href="#" class="stamp-item__link" id="stamp-2022">S.T.A.M.P 2022</a>
+                                <li class="select-item">
+                                    <a href="#objective" class="select-part__link">Đối tượng</a>
                                 </li>
-                                <li class="stamp-item">
-                                    <a href="#" class="stamp-item__link" id="stamp-2021">S.T.A.M.P 2021</a>
+                                <li class="select-item">
+                                    <a href="#rule" class="select-part__link">Thể lệ</a>
                                 </li>
                             </ul>
-                            <script>
-                                $("#stamp-2023").on("click", function() {
-                                    $("#content-2023").removeClass("display-none");
-                                    $("#content-2022").addClass("display-none");
-                                    $("#content-2021").addClass("display-none");
-                                    $("#stamp-2023").addClass("blue-text");
-                                    $("#stamp-2022").removeClass("blue-text");
-                                    $("#stamp-2021").removeClass("blue-text");
-                                });
-                                $("#stamp-2022").on("click", function() {
-                                    $("#content-2023").addClass("display-none");
-                                    $("#content-2022").removeClass("display-none");
-                                    $("#content-2021").addClass("display-none");
-                                    $("#stamp-2023").removeClass("blue-text");
-                                    $("#stamp-2022").addClass("blue-text");
-                                    $("#stamp-2021").removeClass("blue-text");
-                                });
-                                $("#stamp-2021").on("click", function() {
-                                    $("#content-2023").addClass("display-none");
-                                    $("#content-2022").addClass("display-none");
-                                    $("#content-2021").removeClass("display-none");
-                                    $("#stamp-2023").removeClass("blue-text");
-                                    $("#stamp-2022").removeClass("blue-text");
-                                    $("#stamp-2021").addClass("blue-text");
-                                });
-                            </script>
+                        </li>
+                        <li class="stamp-item">
+                            <a href="#" class="stamp-item__link" id="stamp-2022">S.T.A.M.P 2022</a>
+                        </li>
+                        <li class="stamp-item">
+                            <a href="#" class="stamp-item__link" id="stamp-2021">S.T.A.M.P 2021</a>
+                        </li>
+                    </ul>
+                    <script>
+                        $("#stamp-2023").on("click", function() {
+                            $("#content-2023").removeClass("display-none");
+                            $("#content-2022").addClass("display-none");
+                            $("#content-2021").addClass("display-none");
+                            $("#stamp-2023").addClass("blue-text");
+                            $("#stamp-2022").removeClass("blue-text");
+                            $("#stamp-2021").removeClass("blue-text");
+                        });
+                        $("#stamp-2022").on("click", function() {
+                            $("#content-2023").addClass("display-none");
+                            $("#content-2022").removeClass("display-none");
+                            $("#content-2021").addClass("display-none");
+                            $("#stamp-2023").removeClass("blue-text");
+                            $("#stamp-2022").addClass("blue-text");
+                            $("#stamp-2021").removeClass("blue-text");
+                        });
+                        $("#stamp-2021").on("click", function() {
+                            $("#content-2023").addClass("display-none");
+                            $("#content-2022").addClass("display-none");
+                            $("#content-2021").removeClass("display-none");
+                            $("#stamp-2023").removeClass("blue-text");
+                            $("#stamp-2022").removeClass("blue-text");
+                            $("#stamp-2021").addClass("blue-text");
+                        });
+                    </script>
+                </div>
+            </div>
+            <div class="col-10">
+                <div id="content-2023" class="info">
+                    <img src="~/image/About/stamplogo.png"/>
+                    <header class="info-header">S.T.A.M.P - STAND TOGETHER AND MAKE PROTECTION</header>
+                    <div class="info-part info-introduce">
+                        <span class="info-text">
+                            Cuộc thi S.T.A.M.P 2023 với chủ đề  
+                        </span>
+                        <span class="info-text blue-color font-weight-500">
+                            “S.T.A.M.P - Stand Together And Make Protection”
+                        </span>
+                        <span class="info-text">
+                            được tổ chức nhằm hưởng ứng
+                            ngày Quốc tế Bảo vệ tầng Ozone 16/09. Cuộc thi là sân chơi giúp các bạn sinh viên phát huy khả năng sáng tạo vô hạn
+                            của bản thân để thiết kế ra những chiếc tem thư hướng về mái nhà xanh của chúng ta. Đồng thời, qua các hoạt động
+                            triển lãm, BTC mong muốn sức sống mãnh liệt của nghệ thuật thiết kế tem thư sẽ luôn trường tồn mãi với thời gian và hy
+                            vọng, những chiếc tem đặc biệt này sẽ chung tay lan tỏa tinh thần bảo vệ tầng Ozone và bảo vệ môi trường xanh đến
+                            tất cả mọi người.
+                        </span>
+                    </div>
+                    <div id="topic">
+                        <h2 class="blue-color part-margin blur-shadow">CHỦ ĐỀ TÁC PHẨM</h2>
+                        <img src="~/image/About/line.png"/>
+                        <div class="blue-background text-content">
+                            <img src="~/image/mark.png"/>
+                            <span class="info-text italic font-weight-500">Thiết kế tem thư với nội dung liên quan đến tuyên truyền, lan tỏa tinh thần yêu thương, bảo vệ, khẳng định tầm quan trọng, quý báu của thiên nhiên, môi trường và đặc biệt là tầng Ozone.</span>
                         </div>
                     </div>
-                    <div class="grid__column-10">
-                        <div id="content-2023" class="info">
-                            <img src="~/image/About/stamplogo.png"/>
-                            <header class="info-header">S.T.A.M.P - STAND TOGETHER AND MAKE PROTECTION</header>
-                            <div class="info-part info-introduce">
-                                <span class="info-text">
-                                    Cuộc thi S.T.A.M.P 2023 với chủ đề  
-                                </span>
-                                <span class="info-text bolder">
-                                    “S.T.A.M.P - Stand Together And Make Protection”
-                                </span>
-                                <span class="info-text">
-                                    được tổ chức nhằm hưởng ứng
-                                    ngày Quốc tế Bảo vệ tầng Ozone 16/09. Cuộc thi là sân chơi giúp các bạn sinh viên phát huy khả năng sáng tạo vô hạn
-                                    của bản thân để thiết kế ra những chiếc tem thư hướng về mái nhà xanh của chúng ta. Đồng thời, qua các hoạt động
-                                    triển lãm, BTC mong muốn sức sống mãnh liệt của nghệ thuật thiết kế tem thư sẽ luôn trường tồn mãi với thời gian và hy
-                                    vọng, những chiếc tem đặc biệt này sẽ chung tay lan tỏa tinh thần bảo vệ tầng Ozone và bảo vệ môi trường xanh đến
-                                    tất cả mọi người.
-                                </span>
-                            </div>
-                            <div class="info-part info-subject" id="topic">
-                                <header class="info__header">CHỦ ĐỀ TÁC PHẨM</header>
-                                <img src="~/image/About/line.png"/>
-                                <div class="blue-background text-content">
-                                    <img src="~/image/mark.png"/>
-                                    <span class="info-text italic bolder">Thiết kế tem thư với nội dung liên quan đến tuyên truyền, lan tỏa tinh thần yêu thương, bảo vệ, khẳng định tầm quan trọng, quý báu của thiên nhiên, môi trường và đặc biệt là tầng Ozone.</span>
-                                </div>
-                            </div>
-                            <div class="info-part info-competitor" id="objective">
-                                <header class="info__header">ĐỐI TƯỢNG DỰ THI</header>
-                                <img src="~/image/About/line.png"/>
-                                <ul class="info-text alignleft text-content">
-                                    <li>Toàn thể sinh viên hệ Chính quy đang học tại các trường Cao đẳng, Đại học trên địa bàn TP. Hồ Chí Minh.</li>
-                                    <li>Thí sinh dự thi theo hình thức cá nhân hoặc nhóm 2 – 3 người. Thí sinh có thể dự thi ở cả 02 hình thức trên</li>
-                                </ul>
-                            </div>
-                            <div class="info-part info-rule" id="rule">
-                                <header class="info__header">THỂ LỆ</header>
-                                <img src="~/image/About/line.png"/>
-                                <div class="grid info-text">
-                                    <div class="grid__row">
-                                        <div class="grid__column-6 blue-background">
-                                            <div class="rule-title">Thiết kế dự thi</div>
-                                            <div class="alignleft padding-rule">
-                                                <ul>
-                                                    <li>Sinh viên đăng ký và tham gia dự thi bằng cách điền thông tin, gửi tác phẩm dự thi vào trang nhận bài trên website của cuộc thi S.T.A.M.P.</li>
-                                                    <li>Với mỗi tác phẩm chưa đúng quy định, BTC sẽ gửi mail thông báo sửa tác phẩm, thí sinh gửi lại tác phẩm hoàn thiện trước khi kết thúc thời gian tổng hợp bài thi.</li>
-                                                    <li>Lưu ý: Tác phẩm chưa đúng quy định sẽ bị loại ở vòng nộp bài nếu thí sinh không gửi lại tác phẩm. Trong trường hợp này, thí sinh không được công nhận tham gia cuộc thi.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="grid__column-6 blue-background">
-                                            <div class="rule-title">Bình chọn</div>
-                                            <div class="alignleft padding-rule">
-                                                <div>Những tác phẩm dự thi đúng quy định sẽ được đưa lên bình chọn trên website cuộc thi.</div>
-                                                <div class="bolder">Quy tắc tính điểm:</div>
-                                                <ul>
-                                                    <li>Mỗi lượt bình chọn = 1 điểm;</li>
-                                                    <li>Top 20 tác phẩm có lượt bình chọn cao nhất sẽ vào vòng triển lãm;</li>
-                                                    <li>Số điểm vòng bình chọn chiếm 10% tổng điểm chung cuộc của cuộc thi;</li>
-                                                    <li>Tác phẩm có lượt bình chọn cao nhất sẽ được tối đa điểm quy đổi của vòng bình
-                                                    chọn theo thang điểm 10 (tức 1 điểm).</li>
-                                                </ul>
-                                                <div>
-                                                    Top 20 tác phẩm xuất sắc của vòng bình chọn sẽ nhận được lời mời tham gia vòng
-                                                    triển lãm. Nếu thí sinh không phản hồi email trong vòng 24h sẽ mất quyền dự thi.
-                                                </div>
-                                            </div>
-                                        </div>
+                    <div id="objective">
+                        <h2 class="blue-color part-margin blur-shadow">ĐỐI TƯỢNG DỰ THI</h2>
+                        <img src="~/image/About/line.png"/>
+                        <ul class="info-text alignleft text-content">
+                            <li>Toàn thể sinh viên hệ Chính quy đang học tại các trường Cao đẳng, Đại học trên địa bàn TP. Hồ Chí Minh.</li>
+                            <li>Thí sinh dự thi theo hình thức cá nhân hoặc nhóm 2 – 3 người. Thí sinh có thể dự thi ở cả 02 hình thức trên</li>
+                        </ul>
+                    </div>
+                    <div id="rule">
+                        <h2 class="blue-color part-margin blur-shadow">THỂ LỆ</h2>
+                        <img src="~/image/About/line.png"/>
+                        <div class="container-fluid info-text">
+                            <div class="row justify-content-evenly">
+                                <div class="col-6 blue-background">
+                                    <div class="rule-title">Thiết kế dự thi</div>
+                                    <div class="alignleft padding-rule line-height-30">
+                                        <ul>
+                                            <li>Sinh viên đăng ký và tham gia dự thi bằng cách điền thông tin, gửi tác phẩm dự thi vào trang nhận bài trên website của cuộc thi S.T.A.M.P.</li>
+                                            <li>Với mỗi tác phẩm chưa đúng quy định, BTC sẽ gửi mail thông báo sửa tác phẩm, thí sinh gửi lại tác phẩm hoàn thiện trước khi kết thúc thời gian tổng hợp bài thi.</li>
+                                            <li>Lưu ý: Tác phẩm chưa đúng quy định sẽ bị loại ở vòng nộp bài nếu thí sinh không gửi lại tác phẩm. Trong trường hợp này, thí sinh không được công nhận tham gia cuộc thi.</li>
+                                        </ul>
                                     </div>
-                                    <div class="grid__row">
-                                        <div class="grid__column-6 blue-background">
-                                            <div class="rule-title">Triển lãm</div>
-                                        </div>
-                                        <div class="grid__column-6 blue-background">
-                                            <div class="rule-title">Quy định tác phẩm</div>
-                                            <div class="alignleft padding-rule">
-                                                <div class="bolder">Tác phẩm dự thi bao gồm:</div>
-                                                <ul>
-                                                    <li>Con tem: vẽ bằng tay (tô kín màu, gửi file chụp hình rõ nét) hoặc
-                                            thiết kế bằng phần mềm đồ hoạ (gửi file gốc hoặc link gốc tác phẩm).</li>
-                                                    <li>Bản thuyết minh tác phẩm, trình bày ngắn gọn trên 01 mặt giấy A4, font
-                                            chữ Times New Roman, cỡ chữ 13.</li>
-                                                    <li>Nếu tác phẩm được vào vòng triển lãm, cần bổ sung thêm 01 video giới thiệu
-                                            về tác phẩm dự thi.</li>
-                                                </ul>
-                                                <div class="bolder">Số lượng tác phẩm dự thi:</div>
-                                                <ul>
-                                                    <li>Mỗi cá nhân hoặc mỗi nhóm chỉ đăng ký 01 tác phẩm dự thi đạt yêu cầu của BTC.</li>
-                                                    <li>Các cá nhân muốn nộp nhiều tác phẩm có thể tham gia dưới hình thức nhiều nhóm.</li>
-                                                </ul>
-                                            </div>
+                                </div>
+                                <div class="col-6 blue-background">
+                                    <div class="rule-title">Bình chọn</div>
+                                    <div class="alignleft padding-rule line-height-30">
+                                        <div>Những tác phẩm dự thi đúng quy định sẽ được đưa lên bình chọn trên website cuộc thi.</div>
+                                        <div class="bolder">Quy tắc tính điểm:</div>
+                                        <ul>
+                                            <li>Mỗi lượt bình chọn = 1 điểm;</li>
+                                            <li>Top 20 tác phẩm có lượt bình chọn cao nhất sẽ vào vòng triển lãm;</li>
+                                            <li>Số điểm vòng bình chọn chiếm 10% tổng điểm chung cuộc của cuộc thi;</li>
+                                            <li>Tác phẩm có lượt bình chọn cao nhất sẽ được tối đa điểm quy đổi của vòng bình
+                                            chọn theo thang điểm 10 (tức 1 điểm).</li>
+                                        </ul>
+                                        <div>
+                                            Top 20 tác phẩm xuất sắc của vòng bình chọn sẽ nhận được lời mời tham gia vòng
+                                            triển lãm. Nếu thí sinh không phản hồi email trong vòng 24h sẽ mất quyền dự thi.
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            
-                            <div class="footer grid">
-                                <div class="grid__row">
-                                    <div class="grid__column-6">
-                                        <h2 class="time-remain">Thời gian tham gia còn</h2>
-                                        <div class="grid grid__row timer flex-row">
-                                            <div class="grid__column-3">
-                                                <div class="time-number color-1" id="day">00</div>
-                                                <span class="time-text">Ngày</span>
-                                            </div>
-                                            <div class="grid__column-3">
-                                                <div class="time-number color-2" id="hour">00</div>
-                                                <span class="time-text">Giờ</span>
-                                            </div>
-                                            <div class="grid__column-3">
-                                                <div class="time-number color-1" id="minute">00</div>
-                                                <span class="time-text">Phút</span>
-                                            </div>
-                                            <div class="grid__column-3">
-                                                <div class="time-number color-2" id="second">00</div>
-                                                <span class="time-text">Giây</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="grid__column-6 center">
-                                        <div class="countdown-button"><span>THAM GIA NGAY</span></div>
-                                    </div>
+                            <div class="row justify-content-evenly">
+                                <div class="col-6 blue-background">
+                                    <div class="rule-title">Triển lãm</div>
                                 </div>
-
-                                <script>
-                                    const countdownDate = new Date("2023-09-19").getTime();
-
-                                    const countdownInterval = setInterval(() => {
-                                        const now = new Date().getTime();
-                                        const timeRemaining = countdownDate - now;
-
-                                        const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-                                        const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                                        const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-                                        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-
-                                        document.getElementById("day").textContent = days < 10 ? "0" + days : days;
-                                        document.getElementById("hour").textContent = hours < 10 ? "0" + hours : hours;
-                                        document.getElementById("minute").textContent = minutes < 10 ? "0" + minutes : minutes;
-                                        document.getElementById("second").textContent = seconds < 10 ? "0" + seconds : seconds;
-
-                                        if (timeRemaining < 0) {
-                                            clearInterval(countdownInterval);
-                                            // Ket thuc thi lam gi do o day
-                                        }
-                                    }, 1000);
-                                </script>
-                            </div>
-                        </div>
-                        <div id="content-2022" class="info display-none">
-                            <img src="~/image/About/stamplogo.png"/>
-                            <header class="info-header">S.T.A.M.P - SEEK TALENT AND MAKE PASSION</header>
-                            <div class="info-part info-introduce">
-                                <span class="info-text">
-                                    S.T.A.M.P 2022 đã quay trở lại với chủ đề
-                                </span>
-                                <span class="info-text bolder">
-                                    “S.T.A.M.P - Seek talent and Make passion”
-                                </span>
-                                <span class="info-text">
-                                     với sứ mệnh giúp sinh viên UEH khám phá và phát triển tài năng thiết kế tem thư, đồng thời hưởng ứng ngày Quốc Khánh Việt Nam 2/9. Đặc biệt trong mùa 2 của cuộc thi, Ban Tổ chức đã nhận được sự hỗ trợ chuyên môn của Hội Tem TP. Hồ Chí Minh nên đã có sự khắt khe hơn về hình thức tiêu chuẩn của từng tác phẩm.
-                                </span>
-                            </div>
-                            <div class="info-part info-subject">
-                                <header class="info__header">TÁC PHẨM NỔI BẬT</header>
-                                <img src="~/image/About/line.png"/>
-                                <div class="grid">
-                                    <div class="grid__row" style="padding-top: 50px">
-                                        <div class="grid__column-12">
-                                            <div class="img_box">
-                                                <img class="frame" src="~/image/About/frame.png"/>
-                                                <img class="submission" src="~/image/About/submission.png"/>
-                                            </div>
-                                            <p class="submission-title">ẨM THỰC</p>
-                                            <p class="competitor">Phạm Minh Thắng - Lê Mai Hương</p>
-                                        </div>
-                                    </div>
-                                    <div class="grid__row" style="padding-top: 50px">
-                                        <div class="grid__column-6">
-                                            <div class="img_box">
-                                                <img class="frame" src="~/image/About/frame.png"/>
-                                                <img class="submission" src="~/image/About/submission.png"/>
-                                            </div>
-                                            <p class="submission-title">MỪNG NGÀY PHỤ NỮ VIỆT NAM 20/10</p>
-                                            <p class="competitor">Đoàn Minh Khoa</p>
-                                        </div>
-                                        <div class="grid__column-6">
-                                            <div class="img_box">
-                                                <img class="frame" src="~/image/About/frame.png"/>
-                                                <img class="submission" src="~/image/About/submission.png"/>
-                                            </div>
-                                            <p class="submission-title">THE HEROES</p>
-                                            <p class="competitor">Phạm Dương Thị Thúy Truyền</p>
-                                        </div>
-                                    </div>
-                                    <div class="grid__row" style="padding-top: 50px">
-                                        <div class="grid__column-6">
-                                            <div class="img_box">
-                                                <img class="frame" src="~/image/About/frame.png"/>
-                                            </div>
-                                            <p class="submission-title">BÁC VÀ SEN</p>
-                                            <p class="competitor">Phan Huỳnh Khánh Tâm - Nguyễn Thị Huyền Trang - Nguyễn Thị Thuỳ Trang</p>
-                                        </div>
-                                        <div class="grid__column-6">
-                                            <div class="img_box">
-                                                <img class="frame" src="~/image/About/frame.png"/>
-                                                <img class="submission" src="~/image/About/submission.png"/>
-                                            </div>
-                                            <p class="submission-title">VIỆT NAM TÔI YÊU</p>
-                                            <p class="competitor">Trần Huyền Trân - Trần Nữ Hoài Như - Nguyễn Phúc Minh Thuỳ</p>
-                                        </div>
-                                    </div>
-                                    <div class="grid__row" style="padding-top: 50px">
-                                        <div class="grid__column-6">
-                                            <div class="img_box">
-                                                <img class="frame" src="~/image/About/frame.png"/>
-                                            </div>
-                                            <p class="submission-title">CHẤT VIỆT</p>
-                                            <p class="competitor">Nguyễn Hoàng Khánh Nguyên - Phạm Ngân Hà</p>
-                                        </div>
-                                        <div class="grid__column-6">
-                                            <div class="img_box">
-                                                <img class="frame" src="~/image/About/frame.png"/>
-                                                <img class="submission" src="~/image/About/submission.png"/>
-                                            </div>
-                                            <p class="submission-title">LỊCH SỬ QUA 4 MÙA</p>
-                                            <p class="competitor">Lê Gia Hân - Đặng Trí Thành</p>
-                                        </div>
-                                    </div>
-                                    <div class="grid__row" style="padding-top: 50px">
-                                        <div class="grid__column-6">
-                                            <div class="img_box">
-                                                <img class="frame" src="~/image/About/frame.png"/>
-                                            </div>
-                                            <p class="submission-title">NHỮNG ĐÓA HOA BẤT TỬ</p>
-                                            <p class="competitor">Hoàng Khánh Nhi - Phan Minh Trí</p>
-                                        </div>
-                                        <div class="grid__column-6">
-                                            <div class="img_box">
-                                                <img class="frame" src="~/image/About/frame.png"/>
-                                                <img class="submission" src="~/image/About/submission.png"/>
-                                            </div>
-                                            <p class="submission-title">VIỆT NAM TÔI YÊU</p>
-                                            <p class="competitor">Trần Huyền Trân - Trần Nữ Hoài Như - Nguyễn Phúc Minh Thuỳ</p>
-                                        </div>
-                                    </div>
-                                    <div class="grid__row" style="padding-top: 50px">
-                                        <div class="grid__column-6">
-                                            <div class="img_box">
-                                                <img class="frame" src="~/image/About/frame.png"/>
-                                            </div>
-                                            <p class="submission-title">VIỆT NAM QUYẾT THẮNG ĐẠI DỊCH</p>
-                                            <p class="competitor">Lê Hải My</p>
-                                        </div>
-                                        <div class="grid__column-6">
-                                            <div class="img_box">
-                                                <img class="frame" src="~/image/About/frame.png"/>
-                                                <img class="submission" src="~/image/About/submission.png"/>
-                                            </div>
-                                            <p class="submission-title">THÀNH PHỐ MANG TÊN BÁC</p>
-                                            <p class="competitor">Nguyễn Võ Thu Hương - Phạm Xuân Duy</p>
-                                        </div>
-                                    </div>
-                                    <div class="grid__row" style="padding-top: 50px">
-                                        <div class="grid__column-6">
-                                            <div class="img_box">
-                                                <img class="frame" src="~/image/About/frame.png"/>
-                                            </div>
-                                            <p class="submission-title">VỮNG BƯỚC NON SÔNG</p>
-                                            <p class="competitor">Đào Bảo Ngọc</p>
-                                        </div>
-                                        <div class="grid__column-6">
-                                            <div class="img_box">
-                                                <img class="frame" src="~/image/About/frame.png"/>
-                                                <img class="submission" src="~/image/About/submission.png"/>
-                                            </div>
-                                            <p class="submission-title">VIỆT NAM KIÊN CƯỜNG</p>
-                                            <p class="competitor">Nguyễn Hà An - Nguyễn Thị Trúc Vy - Hồ Thị Kim Vi</p>
-                                        </div>
-                                    </div>
-                                    <div class="grid__row" style="padding-top: 50px">
-                                        <div class="grid__column-6">
-                                            <div class="img_box">
-                                                <img class="frame" src="~/image/About/frame.png"/>
-                                            </div>
-                                            <p class="submission-title">AI TRONG CHÚNG TA CŨNG CÓ THỂ TRỞ THÀNH ANH HÙNG</p>
-                                            <p class="competitor">Đoàn Minh Khoa</p>
-                                        </div>
-                                        <div class="grid__column-6">
-                                            <div class="img_box">
-                                                <img class="frame" src="~/image/About/frame.png"/>
-                                                <img class="submission" src="~/image/About/submission.png"/>
-                                            </div>
-                                            <p class="submission-title">VIỆT NAM TÔI YÊU</p>
-                                            <p class="competitor">Trần Huyền Trân - Trần Nữ Hoài Như - Nguyễn Phúc Minh Thuỳ</p>
-                                        </div>
+                            <div class="col-6 blue-background">
+                                <div class="rule-title">Quy định tác phẩm</div>
+                                <div class="alignleft padding-rule line-height-30">
+                                    <div class="bolder">Tác phẩm dự thi bao gồm:</div>
+                                    <ul>
+                                            <li>Con tem: vẽ bằng tay (tô kín màu, gửi file chụp hình rõ nét) hoặc
+                                    thiết kế bằng phần mềm đồ hoạ (gửi file gốc hoặc link gốc tác phẩm).</li>
+                                            <li>Bản thuyết minh tác phẩm, trình bày ngắn gọn trên 01 mặt giấy A4, font
+                                    chữ Times New Roman, cỡ chữ 13.</li>
+                                            <li>Nếu tác phẩm được vào vòng triển lãm, cần bổ sung thêm 01 video giới thiệu
+                                    về tác phẩm dự thi.</li>
+                                        </ul>
+                                        <div class="bolder">Số lượng tác phẩm dự thi:</div>
+                                        <ul>
+                                            <li>Mỗi cá nhân hoặc mỗi nhóm chỉ đăng ký 01 tác phẩm dự thi đạt yêu cầu của BTC.</li>
+                                            <li>Các cá nhân muốn nộp nhiều tác phẩm có thể tham gia dưới hình thức nhiều nhóm.</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div id="content-2021" class="info display-none">
-                            <img src="~/image/About/stamplogo.png"/>
-                            <header class="info-header">S.T.A.M.P - SPREAD TO A MEANINGFUL PLACE</header>
-                            <div class="info-part info-introduce">
-                                <span class="info-text">
-                                    S.T.A.M.P được tổ chức mùa đầu tiên vào năm 2021 - trong thời điểm đại dịch COVID-19 đang diễn ra rất căng thẳng. Nhằm chung tay phòng chống dịch bệnh trên toàn quốc, với chủ đề                                 </span>
-                                <span class="info-text bolder">
-                                    “S.T.A.M.P - Spread To A Meaningful Place”
-                                </span>
-                                <span class="info-text">
-                                    , cuộc thi đã tạo cơ hội giúp các bạn sinh viên cùng nhau lan tỏa tinh thần đoàn kết dân tộc tạo nên một tập thể vững mạnh. Ngoài ra, cuộc thi cũng giúp các bạn sinh viên khám phá, tìm hiểu về giá trị đích thực của tem thư để từ đó biết giữ gìn và phát huy những giá trị truyền thống tốt đẹp của dân tộc.
-                                </span>
+                    </div>
+                    
+                    <div class="timer-box container-fluid">
+                        <div class="row justify-content-center">
+                            <div class="col-6">
+                                <h2 class="time-remain">Thời gian tham gia còn</h2>
+                                <div class="row timer flex-row">
+                                    <div class="col-3">
+                                        <div class="time-number blue-color" id="day">00</div>
+                                        <span class="time-text">ngày</span>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="time-number light-blue-color" id="hour">00</div>
+                                        <span class="time-text">giờ</span>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="time-number blue-color" id="minute">00</div>
+                                        <span class="time-text">phút</span>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="time-number light-blue-color" id="second">00</div>
+                                        <span class="time-text">giây</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="info-part info-subject">
-                                <header class="info__header">TÁC PHẨM NỔI BẬT</header>
-                                <img src="~/image/About/line.png"/>
-                                <div class="grid">
-                                    <div class="grid__row" style="padding-top: 50px">
-                                        <div class="grid__column-12">
-                                            <div class="img_box">
-                                                <img class="frame" src="~/image/About/frame.png"/>
-                                                <img class="submission" src="~/image/About/submission.png"/>
-                                            </div>
-                                            <p class="submission-title">QUYẾT THẮNG COVID</p>
-                                            <p class="competitor">Lê Hồng Diểm</p>
-                                        </div>
+                            <div class="col-5 center">
+                                <div class="countdown-button"><span>THAM GIA NGAY</span></div>
+                            </div>
+                        </div>
+                        <script>
+                            const countdownDate = new Date("2023-09-19").getTime();
+                            const countdownInterval = setInterval(() => {
+                                const now = new Date().getTime();
+                                const timeRemaining = countdownDate - now;
+                                const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+                                const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+                                const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+                                document.getElementById("day").textContent = days < 10 ? "0" + days : days;
+                                document.getElementById("hour").textContent = hours < 10 ? "0" + hours : hours;
+                                document.getElementById("minute").textContent = minutes < 10 ? "0" + minutes : minutes;
+                                document.getElementById("second").textContent = seconds < 10 ? "0" + seconds : seconds;
+                                if (timeRemaining < 0) {
+                                    clearInterval(countdownInterval);
+                                    // Ket thuc thi lam gi do o day
+                                }
+                            }, 1000);
+                        </script>
+                    </div>
+                </div>
+                <div id="content-2022" class="info display-none">
+                    <img src="~/image/About/stamplogo.png"/>
+                    <header class="info-header">S.T.A.M.P - SEEK TALENT AND MAKE PASSION</header>
+                    <div class="info-part info-introduce">
+                        <span class="info-text">
+                            S.T.A.M.P 2022 đã quay trở lại với chủ đề
+                        </span>
+                        <span class="info-text bolder">
+                            “S.T.A.M.P - Seek talent and Make passion”
+                        </span>
+                        <span class="info-text">
+                             với sứ mệnh giúp sinh viên UEH khám phá và phát triển tài năng thiết kế tem thư, đồng thời hưởng ứng ngày Quốc Khánh Việt Nam 2/9. Đặc biệt trong mùa 2 của cuộc thi, Ban Tổ chức đã nhận được sự hỗ trợ chuyên môn của Hội Tem TP. Hồ Chí Minh nên đã có sự khắt khe hơn về hình thức tiêu chuẩn của từng tác phẩm.
+                        </span>
+                    </div>
+                    <div class="info-part info-subject">
+                        <header class="info__header">TÁC PHẨM NỔI BẬT</header>
+                        <img src="~/image/About/line.png"/>
+                        <div class="grid">
+                            <div class="grid__row" style="padding-top: 50px">
+                                <div class="grid__column-12">
+                                    <div class="img_box">
+                                        <img class="frame" src="~/image/About/frame.png"/>
+                                        <img class="submission" src="~/image/About/submission.png"/>
                                     </div>
-                                    <div class="grid__row" style="padding-top: 50px">
-                                        <div class="grid__column-6">
-                                            <div class="img_box">
-                                                <img class="frame" src="~/image/About/frame.png"/>
-                                                <img class="submission" src="~/image/About/submission.png"/>
-                                            </div>
-                                            <p class="submission-title">ANH HÙNG ÁO XANH</p>
-                                            <p class="competitor">Phạm Xuân Duy - Đỗ Thị Nga</p>
-                                        </div>
-                                        <div class="grid__column-6">
-                                            <div class="img_box">
-                                                <img class="frame" src="~/image/About/frame.png"/>
-                                                <img class="submission" src="~/image/About/submission.png"/>
-                                            </div>
-                                            <p class="submission-title" style="margin-bottom: 0">“MỘT CHÚT HY SINH VÌ HẠNH PHÚC CỦA NGƯỜI DÂN”</p>
-                                            <p class="submission-title" style="margin-top: 0">“CÙNG NHAU CỐ GẮNG”</p>
-                                            <p class="competitor">Hồ Thị Kim Vi - Nguyễn Thị Vàng - Nguyễn Uyên Phương</p>
-                                        </div>
+                                    <p class="submission-title">ẨM THỰC</p>
+                                    <p class="competitor">Phạm Minh Thắng - Lê Mai Hương</p>
+                                </div>
+                            </div>
+                            <div class="grid__row" style="padding-top: 50px">
+                                <div class="grid__column-6">
+                                    <div class="img_box">
+                                        <img class="frame" src="~/image/About/frame.png"/>
+                                        <img class="submission" src="~/image/About/submission.png"/>
                                     </div>
-                                    <div class="grid__row" style="padding-top: 50px">
-                                        <div class="grid__column-6">
-                                            <div class="img_box">
-                                                <img class="frame" src="~/image/About/frame.png"/>
-                                                <img class="submission" src="~/image/About/submission.png"/>
-                                            </div>
-                                            <p class="submission-title">KHỞI NGHĨA BÀ TRIỆU</p>
-                                            <p class="competitor">Bùi Quốc Thịnh - Nguyễn Thị Quỳnh Ngọc</p>
-                                        </div>
-                                        <div class="grid__column-6">
-                                            <div class="img_box">
-                                                <img class="frame" src="~/image/About/frame.png"/>
-                                                <img class="submission" src="~/image/About/submission.png"/>
-                                            </div>
-                                            <p class="submission-title">BÌNH YÊN</p>
-                                            <p class="competitor">Phan Nguyễn Hoàng Trang - Lê Thị Thúy Hồng</p>
-                                        </div>
+                                    <p class="submission-title">MỪNG NGÀY PHỤ NỮ VIỆT NAM 20/10</p>
+                                    <p class="competitor">Đoàn Minh Khoa</p>
+                                </div>
+                                <div class="grid__column-6">
+                                    <div class="img_box">
+                                        <img class="frame" src="~/image/About/frame.png"/>
+                                        <img class="submission" src="~/image/About/submission.png"/>
                                     </div>
-                                    <div class="grid__row" style="padding-top: 50px">
-                                        <div class="grid__column-6">
-                                            <div class="img_box">
-                                                <img class="frame" src="~/image/About/frame.png"/>
-                                                <img class="submission" src="~/image/About/submission.png"/>
-                                            </div>
-                                            <p class="submission-title">KỶ NIỆM 76 NĂM QUỐC KHÁNH NƯỚC CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM (1945 - 2021)</p>
-                                            <p class="competitor">Nguyễn Thị Phương Uyên - Trần Công Danh</p>
-                                        </div>
+                                    <p class="submission-title">THE HEROES</p>
+                                    <p class="competitor">Phạm Dương Thị Thúy Truyền</p>
+                                </div>
+                            </div>
+                            <div class="grid__row" style="padding-top: 50px">
+                                <div class="grid__column-6">
+                                    <div class="img_box">
+                                        <img class="frame" src="~/image/About/frame.png"/>
                                     </div>
+                                    <p class="submission-title">BÁC VÀ SEN</p>
+                                    <p class="competitor">Phan Huỳnh Khánh Tâm - Nguyễn Thị Huyền Trang - Nguyễn Thị Thuỳ Trang</p>
+                                </div>
+                                <div class="grid__column-6">
+                                    <div class="img_box">
+                                        <img class="frame" src="~/image/About/frame.png"/>
+                                        <img class="submission" src="~/image/About/submission.png"/>
+                                    </div>
+                                    <p class="submission-title">VIỆT NAM TÔI YÊU</p>
+                                    <p class="competitor">Trần Huyền Trân - Trần Nữ Hoài Như - Nguyễn Phúc Minh Thuỳ</p>
+                                </div>
+                            </div>
+                            <div class="grid__row" style="padding-top: 50px">
+                                <div class="grid__column-6">
+                                    <div class="img_box">
+                                        <img class="frame" src="~/image/About/frame.png"/>
+                                    </div>
+                                    <p class="submission-title">CHẤT VIỆT</p>
+                                    <p class="competitor">Nguyễn Hoàng Khánh Nguyên - Phạm Ngân Hà</p>
+                                </div>
+                                <div class="grid__column-6">
+                                    <div class="img_box">
+                                        <img class="frame" src="~/image/About/frame.png"/>
+                                        <img class="submission" src="~/image/About/submission.png"/>
+                                    </div>
+                                    <p class="submission-title">LỊCH SỬ QUA 4 MÙA</p>
+                                    <p class="competitor">Lê Gia Hân - Đặng Trí Thành</p>
+                                </div>
+                            </div>
+                            <div class="grid__row" style="padding-top: 50px">
+                                <div class="grid__column-6">
+                                    <div class="img_box">
+                                        <img class="frame" src="~/image/About/frame.png"/>
+                                    </div>
+                                    <p class="submission-title">NHỮNG ĐÓA HOA BẤT TỬ</p>
+                                    <p class="competitor">Hoàng Khánh Nhi - Phan Minh Trí</p>
+                                </div>
+                                <div class="grid__column-6">
+                                    <div class="img_box">
+                                        <img class="frame" src="~/image/About/frame.png"/>
+                                        <img class="submission" src="~/image/About/submission.png"/>
+                                    </div>
+                                    <p class="submission-title">VIỆT NAM TÔI YÊU</p>
+                                    <p class="competitor">Trần Huyền Trân - Trần Nữ Hoài Như - Nguyễn Phúc Minh Thuỳ</p>
+                                </div>
+                            </div>
+                            <div class="grid__row" style="padding-top: 50px">
+                                <div class="grid__column-6">
+                                    <div class="img_box">
+                                        <img class="frame" src="~/image/About/frame.png"/>
+                                    </div>
+                                    <p class="submission-title">VIỆT NAM QUYẾT THẮNG ĐẠI DỊCH</p>
+                                    <p class="competitor">Lê Hải My</p>
+                                </div>
+                                <div class="grid__column-6">
+                                    <div class="img_box">
+                                        <img class="frame" src="~/image/About/frame.png"/>
+                                        <img class="submission" src="~/image/About/submission.png"/>
+                                    </div>
+                                    <p class="submission-title">THÀNH PHỐ MANG TÊN BÁC</p>
+                                    <p class="competitor">Nguyễn Võ Thu Hương - Phạm Xuân Duy</p>
+                                </div>
+                            </div>
+                            <div class="grid__row" style="padding-top: 50px">
+                                <div class="grid__column-6">
+                                    <div class="img_box">
+                                        <img class="frame" src="~/image/About/frame.png"/>
+                                    </div>
+                                    <p class="submission-title">VỮNG BƯỚC NON SÔNG</p>
+                                    <p class="competitor">Đào Bảo Ngọc</p>
+                                </div>
+                                <div class="grid__column-6">
+                                    <div class="img_box">
+                                        <img class="frame" src="~/image/About/frame.png"/>
+                                        <img class="submission" src="~/image/About/submission.png"/>
+                                    </div>
+                                    <p class="submission-title">VIỆT NAM KIÊN CƯỜNG</p>
+                                    <p class="competitor">Nguyễn Hà An - Nguyễn Thị Trúc Vy - Hồ Thị Kim Vi</p>
+                                </div>
+                            </div>
+                            <div class="grid__row" style="padding-top: 50px">
+                                <div class="grid__column-6">
+                                    <div class="img_box">
+                                        <img class="frame" src="~/image/About/frame.png"/>
+                                    </div>
+                                    <p class="submission-title">AI TRONG CHÚNG TA CŨNG CÓ THỂ TRỞ THÀNH ANH HÙNG</p>
+                                    <p class="competitor">Đoàn Minh Khoa</p>
+                                </div>
+                                <div class="grid__column-6">
+                                    <div class="img_box">
+                                        <img class="frame" src="~/image/About/frame.png"/>
+                                        <img class="submission" src="~/image/About/submission.png"/>
+                                    </div>
+                                    <p class="submission-title">VIỆT NAM TÔI YÊU</p>
+                                    <p class="competitor">Trần Huyền Trân - Trần Nữ Hoài Như - Nguyễn Phúc Minh Thuỳ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content-2021" class="info display-none">
+                    <img src="~/image/About/stamplogo.png"/>
+                    <header class="info-header">S.T.A.M.P - SPREAD TO A MEANINGFUL PLACE</header>
+                    <div class="info-part info-introduce">
+                        <span class="info-text">
+                            S.T.A.M.P được tổ chức mùa đầu tiên vào năm 2021 - trong thời điểm đại dịch COVID-19 đang diễn ra rất căng thẳng. Nhằm chung tay phòng chống dịch bệnh trên toàn quốc, với chủ đề                                 </span>
+                        <span class="info-text bolder">
+                            “S.T.A.M.P - Spread To A Meaningful Place”
+                        </span>
+                        <span class="info-text">
+                            , cuộc thi đã tạo cơ hội giúp các bạn sinh viên cùng nhau lan tỏa tinh thần đoàn kết dân tộc tạo nên một tập thể vững mạnh. Ngoài ra, cuộc thi cũng giúp các bạn sinh viên khám phá, tìm hiểu về giá trị đích thực của tem thư để từ đó biết giữ gìn và phát huy những giá trị truyền thống tốt đẹp của dân tộc.
+                        </span>
+                    </div>
+                    <div class="info-part info-subject">
+                        <header class="info__header">TÁC PHẨM NỔI BẬT</header>
+                        <img src="~/image/About/line.png"/>
+                        <div class="grid">
+                            <div class="grid__row" style="padding-top: 50px">
+                                <div class="grid__column-12">
+                                    <div class="img_box">
+                                        <img class="frame" src="~/image/About/frame.png"/>
+                                        <img class="submission" src="~/image/About/submission.png"/>
+                                    </div>
+                                    <p class="submission-title">QUYẾT THẮNG COVID</p>
+                                    <p class="competitor">Lê Hồng Diểm</p>
+                                </div>
+                            </div>
+                            <div class="grid__row" style="padding-top: 50px">
+                                <div class="grid__column-6">
+                                    <div class="img_box">
+                                        <img class="frame" src="~/image/About/frame.png"/>
+                                        <img class="submission" src="~/image/About/submission.png"/>
+                                    </div>
+                                    <p class="submission-title">ANH HÙNG ÁO XANH</p>
+                                    <p class="competitor">Phạm Xuân Duy - Đỗ Thị Nga</p>
+                                </div>
+                                <div class="grid__column-6">
+                                    <div class="img_box">
+                                        <img class="frame" src="~/image/About/frame.png"/>
+                                        <img class="submission" src="~/image/About/submission.png"/>
+                                    </div>
+                                    <p class="submission-title" style="margin-bottom: 0">“MỘT CHÚT HY SINH VÌ HẠNH PHÚC CỦA NGƯỜI DÂN”</p>
+                                    <p class="submission-title" style="margin-top: 0">“CÙNG NHAU CỐ GẮNG”</p>
+                                    <p class="competitor">Hồ Thị Kim Vi - Nguyễn Thị Vàng - Nguyễn Uyên Phương</p>
+                                </div>
+                            </div>
+                            <div class="grid__row" style="padding-top: 50px">
+                                <div class="grid__column-6">
+                                    <div class="img_box">
+                                        <img class="frame" src="~/image/About/frame.png"/>
+                                        <img class="submission" src="~/image/About/submission.png"/>
+                                    </div>
+                                    <p class="submission-title">KHỞI NGHĨA BÀ TRIỆU</p>
+                                    <p class="competitor">Bùi Quốc Thịnh - Nguyễn Thị Quỳnh Ngọc</p>
+                                </div>
+                                <div class="grid__column-6">
+                                    <div class="img_box">
+                                        <img class="frame" src="~/image/About/frame.png"/>
+                                        <img class="submission" src="~/image/About/submission.png"/>
+                                    </div>
+                                    <p class="submission-title">BÌNH YÊN</p>
+                                    <p class="competitor">Phan Nguyễn Hoàng Trang - Lê Thị Thúy Hồng</p>
+                                </div>
+                            </div>
+                            <div class="grid__row" style="padding-top: 50px">
+                                <div class="grid__column-6">
+                                    <div class="img_box">
+                                        <img class="frame" src="~/image/About/frame.png"/>
+                                        <img class="submission" src="~/image/About/submission.png"/>
+                                    </div>
+                                    <p class="submission-title">KỶ NIỆM 76 NĂM QUỐC KHÁNH NƯỚC CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM (1945 - 2021)</p>
+                                    <p class="competitor">Nguyễn Thị Phương Uyên - Trần Công Danh</p>
                                 </div>
                             </div>
                         </div>
