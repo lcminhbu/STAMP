@@ -11,10 +11,16 @@
 
 <body>
     <script src="~/js/common.js"></script>
-    @* Banner *@
-    <div class="banner-container grey-background">
-        <img class="stamplogo" src="~/image/Voting/stamplogo.png" alt="">
+    <script src="~/js/slideshow.js"></script>
+    <script>
+        window.onload = ()=>{init_slide_show(["./image/Index/banner1.jpg",
+        "./image/Index/banner2.jpg", "./image/Index/banner3.jpg"]);};
+    </script>
+    <div class="banner">
+        <!-- Slideshow container -->
+        <div id="slideshow-container"></div>
     </div>
+
     @* Search box *@
     <div class="search-box">
         <div class="search">
@@ -24,12 +30,13 @@
             <input type="text" id="trigger" class="search-input" placeholder="Tìm kiếm" />
         </div>
     </div>
+
     @* Top 20 *@
     <h1 class="line-bottom blue-color">Top 20</h1>
     <div class="container-fluid horizontal-scrollable">
         <div class="row flex-nowrap">
             <div class="col-4 container-fluid">
-                <div class="row">
+                <div class="row" style="margin-bottom: 40px;">
                     <div class="submission-box">
                         <div class="stamp-frame">
                             <img src="~/image/stamp.png" alt="" class="stamp-img">
@@ -37,7 +44,7 @@
                         <h2 class="stamp-name">Tên tác phẩm 1</h2>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" style="margin-bottom: 40px;">
                     <div class="submission-box">
                         <div class="stamp-frame">
                             <img src="~/image/stamp.png" alt="" class="stamp-img">
@@ -47,7 +54,7 @@
                 </div>
             </div>
             <div class="col-4 container-fluid">
-                <div class="row">
+                <div class="row" style="margin-bottom: 40px;">
                     <div class="submission-box">
                         <div class="stamp-frame">
                             <img src="~/image/stamp.png" alt="" class="stamp-img">
@@ -55,7 +62,7 @@
                         <h2 class="stamp-name">Tên tác phẩm 3</h2>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" style="margin-bottom: 40px;">
                     <div class="submission-box">
                         <div class="stamp-frame">
                             <img src="~/image/stamp.png" alt="" class="stamp-img">
@@ -65,7 +72,7 @@
                 </div>
             </div>
             <div class="col-4 container-fluid">
-                <div class="row">
+                <div class="row" style="margin-bottom: 40px;">
                     <div class="submission-box">
                         <div class="stamp-frame">
                             <img src="~/image/stamp.png" alt="" class="stamp-img">
@@ -73,7 +80,7 @@
                         <h2 class="stamp-name">Tên tác phẩm 5</h2>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" style="margin-bottom: 40px;">
                     <div class="submission-box">
                         <div class="stamp-frame">
                             <img src="~/image/stamp.png" alt="" class="stamp-img">
@@ -83,7 +90,7 @@
                 </div>
             </div>
             <div class="col-4 container-fluid">
-                <div class="row">
+                <div class="row" style="margin-bottom: 40px;">
                     <div class="submission-box">
                         <div class="stamp-frame">
                             <img src="~/image/stamp.png" alt="" class="stamp-img">
@@ -91,7 +98,7 @@
                         <h2 class="stamp-name">Tên tác phẩm 7</h2>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" style="margin-bottom: 40px;">
                     <div class="submission-box">
                         <div class="stamp-frame">
                             <img src="~/image/stamp.png" alt="" class="stamp-img">
@@ -101,7 +108,7 @@
                 </div>
             </div>
             <div class="col-4 container-fluid">
-                <div class="row">
+                <div class="row" style="margin-bottom: 40px;">
                     <div class="submission-box">
                         <div class="stamp-frame">
                             <img src="~/image/stamp.png" alt="" class="stamp-img">
@@ -109,7 +116,7 @@
                         <h2 class="stamp-name">Tên tác phẩm 9</h2>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" style="margin-bottom: 40px;">
                     <div class="submission-box">
                         <div class="stamp-frame">
                             <img src="~/image/stamp.png" alt="" class="stamp-img">
@@ -119,7 +126,7 @@
                 </div>
             </div>
             <div class="col-4 container-fluid">
-                <div class="row">
+                <div class="row" style="margin-bottom: 40px;">
                     <div class="submission-box">
                         <div class="stamp-frame">
                             <img src="~/image/stamp.png" alt="" class="stamp-img">
@@ -127,7 +134,7 @@
                         <h2 class="stamp-name">Tên tác phẩm 11</h2>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" style="margin-bottom: 40px;">
                     <div class="submission-box">
                         <div class="stamp-frame">
                             <img src="~/image/stamp.png" alt="" class="stamp-img">
@@ -137,7 +144,7 @@
                 </div>
             </div>
             <div class="col-4 container-fluid">
-                <div class="row">
+                <div class="row" style="margin-bottom: 40px;">
                     <div class="submission-box">
                         <div class="stamp-frame">
                             <img src="~/image/stamp.png" alt="" class="stamp-img">
@@ -145,7 +152,7 @@
                         <h2 class="stamp-name">Tên tác phẩm 13</h2>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" style="margin-bottom: 40px;">
                     <div class="submission-box">
                         <div class="stamp-frame">
                             <img src="~/image/stamp.png" alt="" class="stamp-img">
@@ -155,7 +162,7 @@
                 </div>
             </div>
             <div class="col-4 container-fluid">
-                <div class="row">
+                <div class="row" style="margin-bottom: 40px;">
                     <div class="submission-box">
                         <div class="stamp-frame">
                             <img src="~/image/stamp.png" alt="" class="stamp-img">
@@ -163,7 +170,7 @@
                         <h2 class="stamp-name">Tên tác phẩm 15</h2>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" style="margin-bottom: 40px;">
                     <div class="submission-box">
                         <div class="stamp-frame">
                             <img src="~/image/stamp.png" alt="" class="stamp-img">
@@ -173,7 +180,7 @@
                 </div>
             </div>
             <div class="col-4 container-fluid">
-                <div class="row">
+                <div class="row" style="margin-bottom: 40px;">
                     <div class="submission-box">
                         <div class="stamp-frame">
                             <img src="~/image/stamp.png" alt="" class="stamp-img">
@@ -181,7 +188,7 @@
                         <h2 class="stamp-name">Tên tác phẩm 17</h2>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" style="margin-bottom: 40px;">
                     <div class="submission-box">
                         <div class="stamp-frame">
                             <img src="~/image/stamp.png" alt="" class="stamp-img">
@@ -191,7 +198,7 @@
                 </div>
             </div>
             <div class="col-4 container-fluid">
-                <div class="row">
+                <div class="row" style="margin-bottom: 40px;">
                     <div class="submission-box">
                         <div class="stamp-frame">
                             <img src="~/image/stamp.png" alt="" class="stamp-img">
@@ -199,7 +206,7 @@
                         <h2 class="stamp-name">Tên tác phẩm 19</h2>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" style="margin-bottom: 40px;">
                     <div class="submission-box">
                         <div class="stamp-frame">
                             <img src="~/image/stamp.png" alt="" class="stamp-img">
@@ -210,14 +217,13 @@
             </div>
         </div>
     </div>
+    
     @* STAMP 2023 *@
     <h1 class="line-bottom blue-color">S.T.A.M.P 2023</h1>
-    <div id="data-container" class="container-fluid">
-        
-    </div>
+    <div id="data-container" class="container-fluid"></div>
+
     @* Chuyển nội dung *@
-    <div id="pagination">
-    </div>
+    <div id="pagination"></div>
 
     @* Popup *@
     <div id="overlay" class="display-none"></div>
@@ -341,6 +347,7 @@
                         </div>
                     </div>`
                 }
+                row_element.style.marginBottom="40px";
                 temp_container.appendChild(row_element);
                 row += 1;
             }
