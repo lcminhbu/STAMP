@@ -151,7 +151,7 @@ form {
         background:#fff;
     }
 .input-box input:focus {
-    border-color: #007bff; /* Màu border khi focus */
+    border-color: #007bff; 
 }
 .info-button-container
 {
