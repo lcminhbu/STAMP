@@ -10,6 +10,7 @@
 </head>
 <body>
     <script src="~/js/common.js"></script>
+    <script src="~/js/timing.js"></script>
     <div class="light-light-blue-background container-fluid" style="padding-bottom: 40px">
         <div class="row app__content">
             <div class="col-2">
@@ -164,19 +165,19 @@
                                 <h2 class="time-remain">Thời gian tham gia còn</h2>
                                 <div class="row timer flex-row">
                                     <div class="col-3">
-                                        <div class="time-number blue-color" id="day">00</div>
+                                        <div class="time-number blue-color" id="day"></div>
                                         <span class="time-text">ngày</span>
                                     </div>
                                     <div class="col-3">
-                                        <div class="time-number light-blue-color" id="hour">00</div>
+                                        <div class="time-number light-blue-color" id="hour"></div>
                                         <span class="time-text">giờ</span>
                                     </div>
                                     <div class="col-3">
-                                        <div class="time-number blue-color" id="minute">00</div>
+                                        <div class="time-number blue-color" id="minute"></div>
                                         <span class="time-text">phút</span>
                                     </div>
                                     <div class="col-3">
-                                        <div class="time-number light-blue-color" id="second">00</div>
+                                        <div class="time-number light-blue-color" id="second"></div>
                                         <span class="time-text">giây</span>
                                     </div>
                                 </div>
@@ -185,25 +186,7 @@
                                 <div class="countdown-button"><span>THAM GIA NGAY</span></div>
                             </div>
                         </div>
-                        <script>
-                            const countdownDate = new Date("2023-09-19").getTime();
-                            const countdownInterval = setInterval(() => {
-                                const now = new Date().getTime();
-                                const timeRemaining = countdownDate - now;
-                                const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-                                const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                                const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-                                const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-                                document.getElementById("day").textContent = days < 10 ? "0" + days : days;
-                                document.getElementById("hour").textContent = hours < 10 ? "0" + hours : hours;
-                                document.getElementById("minute").textContent = minutes < 10 ? "0" + minutes : minutes;
-                                document.getElementById("second").textContent = seconds < 10 ? "0" + seconds : seconds;
-                                if (timeRemaining < 0) {
-                                    clearInterval(countdownInterval);
-                                    // Ket thuc thi lam gi do o day
-                                }
-                            }, 1000);
-                        </script>
+
                     </div>
                 </div>
                 <div id="content-2022" class="info display-none">

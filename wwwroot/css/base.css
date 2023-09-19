@@ -19,6 +19,14 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 14px;
+    position: relative;
+}
+
+body {
+    text-align: center;
+    font-size: 24px;
+    line-height: normal;
 }
 
 .display-none {
@@ -153,4 +161,43 @@ h2 {
 .horizontal-scrollable > .row {
     overflow-x: auto;
     white-space: nowrap;
+}
+
+.footer-column {
+    padding: 10px;
+}
+
+.footer-column__header {
+    text-align: left;
+    font-weight: 600;
+    font-size: 32px;
+    padding-top: 40px;
+}
+
+.footer-column__info {
+    text-align: left;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-column__info * {
+    font-size: 24px;
+    text-align: left;
+    font-weight: 600;
+    text-decoration: none;
+    color: black !important;
+    line-height: 24px;
+}
+
+.footer-column__info  *:hover {
+    cursor: pointer;
+    color: var(--light-blue);
+
+}
+
+.footer-column>ul{
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
 }
