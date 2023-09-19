@@ -336,7 +336,7 @@
 {
   width: 57px;
   height: 57px;
-  background-image:  url("../image/Index/notify.png");
+  background-image:  url("../image/Index/icons/notify.png");
   border:none;
   margin-left:5px;
 }
@@ -344,7 +344,7 @@
 {
   width: 57px;
   height: 57px;
-  background-image:  url("../image/Index/user.png");
+  background-image:  url("../image/Index/icons/user.png");
   border:none;
 }
 .personal-button
