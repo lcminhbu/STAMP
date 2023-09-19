@@ -134,8 +134,8 @@ h4
     position: absolute;
     top: 10px; /* Đặt vị trí top tùy ý để đặt nút "X" ở góc trên cùng bên phải của form */
     right: 10px; /* Đặt vị trí right tùy ý để đặt nút "X" ở góc trên cùng bên phải của form */
-    width: 50px; /* Đặt chiều rộng của nút "X" */
-    height: 50px; /* Đặt chiều cao của nút "X" */
+    width: 45px; /* Đặt chiều rộng của nút "X" */
+    height: 45px; /* Đặt chiều cao của nút "X" */
     background-color: transparent; /* Loại bỏ màu nền của nút "X" */
     border: none; /* Loại bỏ đường viền của nút "X" */
     cursor: pointer; /* Biểu tượng con trỏ khi di chuột qua nút "X" */
@@ -148,10 +148,10 @@ h4
     border:none;
     border-radius: 50%; /* Tạo hình tròn cho nút "X" */
     text-align: center;
-    line-height: 55px; /* Để chữ "X" nằm giữa nút "X" */
+    line-height: 50px; /* Để chữ "X" nằm giữa nút "X" */
     color: #fff; /* Màu của chữ "X" */
     font-weight: bold;
-    font-size: 25px;
+    font-size: 30px;
     transition: color 0.3s;
     background:#EA4335; 
 }
@@ -168,8 +168,8 @@ h4
 } 
 .exit-caution-icon {
     display: block;
-    width:40px;
-    height:40px;
+    width:35px;
+    height:35px;
     border:none;
     border-radius: 50%;
     text-align: center;
