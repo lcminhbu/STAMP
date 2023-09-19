@@ -36,8 +36,7 @@
   cursor: pointer; /* Biểu tượng con trỏ khi di chuột qua nút "X" */
   color:#fff;
   /* width:30px;
-  height:30px; */
-  
+  height:30px; */ 
 }
 .close-icon {
   display: block;
