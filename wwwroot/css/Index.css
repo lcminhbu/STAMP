@@ -151,7 +151,7 @@
 }
 
 .timeline {
-    background-image: url("../image/Index/timeline.png");
+    background-image: url("../image/Index/backgrounds/timeline.png");
     margin-top: 100px;
     background-size: contain;
 }
