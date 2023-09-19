@@ -13,6 +13,7 @@
 <body>
     <!-- Banner and Countdown -->
     <script src="~/js/slideshow.js"></script>
+    <script src="~/js/timing.js"></script>
     <script>
         window.onload = ()=>{init_slide_show(["./image/Index/banner1.jpg",
         "./image/Index/banner2.jpg", "./image/Index/banner3.jpg"]);};
@@ -24,48 +25,24 @@
             <h2 class="time-remain">Thời gian tham gia còn</h2>
                 <div class="time-box">
                     <div class="countdown-item">
-                        <span class="blue-color countdown-value" id="day">00</span>
+                        <span class="blue-color countdown-value" id="day"></span>
                         <span class="countdown-label">ngày</span>
                     </div>
                     <div class="countdown-item">
-                        <span class="light-blue-color countdown-value" id="hour">00</span>
+                        <span class="light-blue-color countdown-value" id="hour"></span>
                         <span class="countdown-label">giờ</span>
                     </div>
                     <div class="countdown-item">
-                        <span class="blue-color countdown-value" id="minute">00</span>
+                        <span class="blue-color countdown-value" id="minute"></span>
                         <span class="countdown-label">phút</span>
                     </div>
                     <div class="countdown-item">
-                        <span class="light-blue-color countdown-value" id="second">00</span>
+                        <span class="light-blue-color countdown-value" id="second"></span>
                         <span class="countdown-label">giây</span>
                     </div>
                 </div>
                 <div class="countdown-button">THAM GIA NGAY</div>
             </div>
-
-            <script>
-                const countdownDate = new Date("2023-09-19").getTime();
-
-                const countdownInterval = setInterval(() => {
-                    const now = new Date().getTime();
-                    const timeRemaining = countdownDate - now;
-
-                    const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-                    const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                    const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-                    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-
-                    document.getElementById("day").textContent = days < 10 ? "0" + days : days;
-                    document.getElementById("hour").textContent = hours < 10 ? "0" + hours : hours;
-                    document.getElementById("minute").textContent = minutes < 10 ? "0" + minutes : minutes;
-                    document.getElementById("second").textContent = seconds < 10 ? "0" + seconds : seconds;
-
-                    if (timeRemaining < 0) {
-                        clearInterval(countdownInterval);
-                        // Ket thuc thi lam gi do o day
-                    }
-                }, 1000);
-            </script>
         </div>
     </div>
     
@@ -193,33 +170,4 @@
             </div>
         </div>
     </div>
-    <footer class="container-fluid part-margin grey-background" style="border-top: 1px solid black">
-        <div class="row justify-content-around">
-            <div class="col-4 footer-column">
-                <p class="footer-column__header">Đoàn - Hội Khoa Công nghệ thông tin kinh doanh</p>
-            </div>
-            <div class="col-3 footer-column">
-                <p class="footer-column__header">Contact</p>
-            </div>
-            <div class="col-2 footer-column">
-                <p class="footer-column__header">Follow</p>
-            </div>
-        </div>
-        <div class="row justify-content-around">
-            <div class="col-4 footer-column">
-                <p class="footer-column__info">Trường Đại học Kinh tế TP.Hồ Chí Minh (UEH)</p>
-            </div>
-            <div class="col-3 footer-column">
-                <p class="footer-column__info">doanhoi.bit@ueh.edu.vn</p>
-            </div>
-            <div class="col-2 footer-column">
-                <ul class="footer-column__info">
-                    <li><a href="#" class="">Youtube</a></li>
-                    <li><a href="#" class="">Facebook</a></li>
-                    <li><a href="#" class="">Instagram</a></li>
-                    <li><a href="#" class="">Tiktok</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
 </body>

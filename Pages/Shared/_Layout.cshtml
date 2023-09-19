@@ -84,11 +84,34 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted" style="position:relative">
-        <div class="container">
-            &copy; 2023 - STAMP2023 - <a asp-area="" asp-page="/Privacy">Privacy</a>
+    <footer class="container-fluid grey-background">
+        <div class="row justify-content-around">
+            <div class="col-4 footer-column">
+                <p class="footer-column__header">Đoàn - Hội Khoa Công nghệ thông tin kinh doanh</p>
+            </div>
+            <div class="col-3 footer-column">
+                <p class="footer-column__header">Contact</p>
+            </div>
+            <div class="col-2 footer-column">
+                <p class="footer-column__header">Follow</p>
+            </div>
         </div>
-
+        <div class="row justify-content-around">
+            <div class="col-4 footer-column">
+                <p class="footer-column__info">Trường Đại học Kinh tế TP.Hồ Chí Minh (UEH)</p>
+            </div>
+            <div class="col-3 footer-column">
+                <p class="footer-column__info">doanhoi.bit@ueh.edu.vn</p>
+            </div>
+            <div class="col-2 footer-column">
+                <ul class="footer-column__info">
+                    <li><a href="#" class="">Youtube</a></li>
+                    <li><a href="#" class="">Facebook</a></li>
+                    <li><a href="#" class="">Instagram</a></li>
+                    <li><a href="#" class="">Tiktok</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
     <!-- JavaScript thay đổi button đăng nhập thành các nút chức năng khi người dùng đã đăng nhập -->
     <script>
@@ -133,7 +156,7 @@
     </script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    @* <script src="~/js/site.js" asp-append-version="true"></script> *@
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
