@@ -141,7 +141,7 @@ h2 {
 }
 
 .stamp-frame {
-    background-image: url("../image/stampframe.png");
+    background-image: url("../image/shared/stampframe.png");
     background-size: 100% 100%;
     max-width: 90%;
     display: flex;

@@ -11,7 +11,7 @@
 <script src="~/js/common.js"></script>
     <!-- Banner -->
     <div class="banner-container">
-        <img class="stamplogo" src="~/image/Voting/stamplogo.png" alt="">
+        <img class="stamplogo" src="~/image/Voting/stamplogo-big.png" alt="">
     </div>
     <!-- Avatar người dùng -->
     <div class="profile-container">
@@ -40,7 +40,7 @@
     </div>
     <!-- Tác phẩm cá nhân -->
     <div class="row flex-nowrap" id="row">
-        <div class="col-7">
+        <div class="col-6">
             <div class="stamp-container">
                 <div class="author-container">
                     <div class="author-stamp-container">
@@ -61,7 +61,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-7">
+        <div class="col-6">
             <div class="stamp-container">
                 <div class="author-container">
                     <div class="author-stamp-container">
@@ -82,7 +82,7 @@
                 </div>
             </div> 
         </div>
-        <div class="col-7">
+        <div class="col-6">
             <div class="stamp-container">
                 <div class="author-container">
                     <div class="author-stamp-container">
@@ -103,7 +103,7 @@
                 </div>
             </div> 
         </div>
-         <div class="col-7">
+         <div class="col-6">
             <div class="stamp-container">
                 <div class="author-container">
                     <div class="author-stamp-container">
@@ -116,7 +116,7 @@
                     </div>
                 </div>
                 <div class="stamp-frame">
-                    <img src="~/image/stamp.png" class="stamp-img">
+                    <img src="~/image/shared/stamp.png" class="stamp-img">
                 </div>
                 <div class="ranking-container">
                     <h3 class="voting"> Vote </h3>
@@ -391,6 +391,42 @@
                     <button type="button"  class="cancel-people-button" id="cancel-people-button"> Hủy </button>
                 </div>
     </form>
+    <script>
+  window.onload = function() {
+    // Lấy danh sách tất cả các phần tử có lớp "stamp-img"
+    var stampImgs = document.querySelectorAll('.stamp-img');
+
+    // Duyệt qua từng phần tử hình ảnh và thực hiện xử lý
+    stampImgs.forEach(function(stampImg) {
+      // Tạo một đối tượng hình ảnh mới
+      var img = new Image();
+
+      // Đặt nguồn hình ảnh cho đối tượng hình ảnh từ phần tử stamp-img
+      img.src = stampImg.src;
+
+      // Kiểm tra kích thước của hình ảnh
+      img.onload = function() {
+        var stampFrame = stampImg.closest('.stamp-frame');
+        if (!stampFrame) {
+          console.log('Không tìm thấy khung cho hình ảnh có lớp "stamp-img".');
+          return;
+        }
+
+        if (img.width > img.height) {
+          // Hình ảnh ngang
+          stampFrame.style.backgroundImage = "url('../image/shared/stampframe.png')";
+          console.log(stampFrame.style.backgroundImage);
+          console.log('ngua');
+        } else {
+          // Hình ảnh dọc
+          stampFrame.style.backgroundImage = "url('../image/shared/stampframe.png')";
+          console.log('nguacac');
+          console.log(stampFrame.style.backgroundImage);
+        }
+      };
+    });
+  };
+</script>
     <script>
     var rankingButton = document.querySelector(".home-button");
       rankingButton.addEventListener("click", function() {

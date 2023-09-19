@@ -164,5 +164,19 @@ h2
     margin-bottom:5%;
     
 }
+.stamp-frame {
+    background-size: 100% 100%;
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.stamp-img {
+    /* padding-left: 1%;
+    padding-bottom: 1%; */
+    object-fit: cover;
+}
 
 
