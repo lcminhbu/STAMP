@@ -20,8 +20,8 @@
     /* height: 200px; */
     height :422px;
     width:971px;
-  background-color: #6EACE3;
-  border-radius: 10px;
+    background-color: rgba(110, 172, 227, 0.30); 
+  border-radius: 8px;
 }
 
 
@@ -51,6 +51,10 @@
   font-size: 30px;
   transition: color 0.3s;
   background:#EA4335; 
+  transition: opacity 0.3s ease; 
+}
+.close-icon:hover {
+  opacity: 0.7; 
 }
 .close-button:hover .close-icon {
   background:#EA4335; /* Màu chữ đỏ khi di chuột vào */
@@ -334,18 +338,31 @@
 /* CSS cho nút thông báo và nút người dùng */
 .notification-button
 {
+  background-color: transparent; 
   width: 57px;
   height: 57px;
-  background-image:  url("../image/Index/icons/notify.png");
   border:none;
   margin-left:5px;
 }
 .user-button
 {
+  background-color: transparent; 
   width: 57px;
   height: 57px;
-  background-image:  url("../image/Index/icons/user.png");
   border:none;
+  pointer-events: none;
+}
+.notify-img
+{
+  width:45px;
+  height:45px;
+  pointer-events: none;
+}
+.user-img
+{
+  width:45px;
+  height:45px;
+  pointer-events: none;
 }
 .personal-button
 {

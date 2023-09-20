@@ -13,7 +13,7 @@
 <script src="~/js/common.js"></script>
     <!-- Banner -->
     <div class="banner-container">
-        <img class="stamplogo" src="~/image/Voting/stamplogo.png" alt="">
+        <img class="stamplogo" src="~/image/shared/stamplogo-big.png" alt="">
     </div>
     <!-- Avatar người dùng -->
     <div class="profile-container">
@@ -70,71 +70,77 @@
                     </div>
                     <div class="info-button-container">
                         <button class="save-button" id="save-button"> Lưu thông tin </button>
-                        <a href="~/HomeRegisterStamp" class="exit-button" role="button">Thoát</a>
+                        <button class="exit-button" id="exit-button" type="button"> Thoát </button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-    <div class="content">
-        <div>
-            <a class="register-stamp" asp-area="" asp-page="/HomeRegisterStamp">Đăng kí tác phẩm</a>
-        </div>
-        <div>
-            <a class="register-talkshow">Đăng kí Talkshow</a>
+    <div class="content-container d-flex justify-content-center">
+        <div class="content">
+            <div>
+                <a class="register-stamp" asp-area="" asp-page="/HomeRegisterStamp">Đăng kí tác phẩm</a>
+            </div>
+            <div>
+                <a class="register-talkshow">Đăng kí Talkshow</a>
+            </div>
         </div>
     </div>
     <!-- Thông tin talkshow -->
-    <div class="row flex-nowrap" id="row">
-        <div class="col-6">
-            <div class="talkshow-container">
-                <div class="frame">
-                <div class="stamp-frame">
-                    <img src="~/image/UserProfile/image3.png" class="stamp-img">
-                </div>
-                </div>
-                <div class="info-container">
-                    <span class="info-name">S.T.A.M.P 2023 - Stand Together And Make</span>
-                    <div class=info-content-container>
-                        <h3 class="info-content"><span class="info-name">Protection</span> là cuộc thi về thiết kế và triển lãm tem thư </h3>
-                        <h3 class="info-content">được tổ chức bởi Đoàn - Hội khoa Công nghệ thông</h3>
+    <div class="talkshow-wrapper">
+        <div class="row flex-nowrap">
+            <div class="col-6 mx-auto d-flex justify-content-center">
+                <div class="talkshow-container">
+                    <div class="stamp-frame">
+                        <img src="~/image/UserProfile/image3.png" class="stamp-img">
                     </div>
-                        <h3 class="info-content1">tin kinh doanh </h3>
+                    <div class="info-container">
+                        <span class="info-name">S.T.A.M.P 2023 - Stand Together And Make</span>
+                        <div class=info-content-container>
+                            <h3 class="info-content"><span class="info-name">Protection</span> là cuộc thi về thiết kế và triển lãm tem</h3>
+                            <h3 class="info-content">thư được tổ chức bởi Đoàn - Hội khoa Công nghệ</h3>
+                        </div>
+                        <h3 class="info-content1">thông tin kinh doanh </h3>
+                    </div>
+                    <div class="talkshow-button-container"> 
+                        <button class="register-talkshow-button"> Đăng kí </button>
+                    </div>
                 </div>
-                <div class="talkshow-button-container"> 
-                    <button class="register-talkshow-button"> Đăng kí </button>
+            </div>
+         <div class="col-6 mx-auto d-flex justify-content-center">
+                <div class="talkshow-container">
+                    <div class="stamp-frame">
+                        <img src="~/image/UserProfile/image3.png" class="stamp-img">
+                    </div>
+                    <div class="info-container">
+                        <span class="info-name">S.T.A.M.P 2023 - Stand Together And Make</span>
+                        <div class=info-content-container>
+                            <h3 class="info-content"><span class="info-name">Protection</span> là cuộc thi về thiết kế và triển lãm tem</h3>
+                            <h3 class="info-content">thư được tổ chức bởi Đoàn - Hội khoa Công nghệ</h3>
+                        </div>
+                        <h3 class="info-content1">thông tin kinh doanh </h3>
+                    </div>
+                    <div class="talkshow-button-container"> 
+                        <button class="register-talkshow-button"> Đăng kí </button>
+                    </div>
                 </div>
             </div>
         </div>
-         <div class="col-6">
-            <div class="talkshow-container">
-                <div class="stamp-frame">
-                    <img src="~/image/UserProfile/image3.png" class="stamp-img">
-                </div>
-                <div class="info-container">
-                    <span class="info-name">S.T.A.M.P 2023 - Stand Together And Make</span>
-                    <div class=info-content-container>
-                        <h3 class="info-content"><span class="info-name">Protection</span> là cuộc thi về thiết kế và triển lãm tem thư </h3>
-                        <h3 class="info-content">được tổ chức bởi Đoàn - Hội khoa Công nghệ thông</h3>
-                    </div>
-                        <h3 class="info-content1">tin kinh doanh </h3>
-                </div>
-                <div class="talkshow-button-container"> 
-                    <button class="register-talkshow-button"> Đăng kí </button>
-                </div>
-            </div>
-        </div>
-    </div>
     </div>
      <!-- JavaScript điều khiển popup thay đổi thông tin cá nhân -->
     <script>
         const modalOne = document.getElementById('modalOne');
         const settingButton = document.getElementById('setting-button');
-       
+        const exitButton = document.querySelector(".exit-button");
             settingButton.addEventListener('click', () => {
                 modalOne.style.display = 'block';
                  document.body.style.overflow = 'hidden'; // Tắt cuộn
                 overlay.style.display = 'block'; // Hiển thị nền mờ
+            });
+               exitButton.addEventListener('click', () => {
+                modalOne.style.display = 'none';
+                 document.body.style.overflow = 'auto'; // Tắt cuộn
+                overlay.style.display = 'none'; // Hiển thị nền mờ
             });
     </script>
     <script>

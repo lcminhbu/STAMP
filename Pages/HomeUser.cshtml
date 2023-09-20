@@ -12,7 +12,7 @@
 <script src="~/js/common.js"></script>
     <!-- Banner -->
     <div class="banner-container">
-        <img class="stamplogo" src="~/image/Voting/stamplogo-big.png" alt="">
+        <img class="stamplogo" src="~/image/shared/stamplogo-big.png" alt="">
     </div>
     <!-- Avatar người dùng -->
     <div class="profile-container">
@@ -116,7 +116,7 @@
                     </div>
                     <div class="info-button-container">
                         <button class="save-button" id="save-button"> Lưu thông tin </button>
-                        <a href="~/HomeUser" class="exit-button" role="button">Thoát</a>
+                        <button class="exit-button" id="exit-button" type="button"> Thoát </button>
                     </div>
                 </form>
             </div>
@@ -160,169 +160,32 @@
     </div>
         </div>
     </div>
-    <!-- Popup đâng kí sản phẩm-->
-    <!-- Popup đăng kí hình  thức cá nhân hay nhóm -->
-    <div class="method-popup" id="register-method">
-        <h3 class="method-title"> Hình thức thi của bạn là </h3>
-        <div class="method-button-container">
-            <button class="invidual-method-button" id="invidual-method-button">
-                <div class="invidual-container">
-                    <div>
-                        <img src="~/image/UserProfile/profile.png">
-                        <h3 class="invidual-method"> Cá nhân </h3>
-                    </div>
-                </div>
-            </button>
-            <button class="people-method-button" id="people-method-button">
-                <div class="people-container">
-                    <img src="~/image/UserProfile/people.png">
-                    <h3 class="people-method"> Nhóm </h3>
-                </div>
-            </button>
-        </div>
-        <button class="exit-method-button" id="exit-method-button">
-            <span class="exit-method-icon">X</span>  
-        </button>
-    </div>
-    <!-- Form đăng kí cá nhân -->
-     <form action="/HomeRegisterStamp" class="invidual-form" id="invidual-form">
-            <h3 class="invidual-form-title">Đăng kí</h3>
-                <div>
-                    <div class="input-box">
-                        <input class="glow" type="text" name="school" required />
-                        <label> Trường </label>
-                    </div>
-                    <div class="input-box">
-                        <input class="glow" type="text" name="studentID"  required />
-                        <label> MSSV </label>
-                    </div>
-                    <div class="input-box">
-                        <input class="glow" type="text" name="phoneNumber" required />
-                        <label> Số điện thoại </label>
-                    </div>
-                    </div>
-                    <div class="invidual-button-container">
-                        <button class="save-invidual-button" id="save-invidual-button"> Lưu </button>
-                        <button type="button" class="cancel-invidual-button" id="cancel-invidual-button"> Hủy </button>
-                </div>
-    </form>
-    <!-- Form đăng kí theo nhóm -->
-     <form action="/HomeRegisterStamp" class="people-form" id="people-form">
-            <h3 class="people-form-title">Đăng kí tác phẩm nhóm</h3>
-                <div>
-                    <div class="input-box">
-                        <input class="glow" type="text" name="stamp-name" required />
-                        <label> Tên tác phẩm </label>
-                    </div>
-                <div class="member">
-                        <h3> Trưởng nhóm </h3>
-                        <div class="input-box">
-                            <input class="glow" type="text" name="membername"  required />
-                            <label> Họ và tên </label>
-                        </div>
-                        <div class="input-box">
-                            <input class="glow" type="text" name="memberemail" required />
-                            <label> Email </label>
-                        </div>
-                </div>
-                <div class="member">
-                        <h3> Thành viên 1 </h3>
-                        <div class="input-box">
-                            <input class="glow" type="text" name="membername"  required />
-                            <label> Họ và tên </label>
-                        </div>
-                        <div class="input-box">
-                            <input class="glow" type="text" name="memberemail" required />
-                            <label> Email </label>
-                        </div>
-                </div>
-                <div class="member">
-                        <h3> Thành viên 2 </h3>
-                        <div class="input-box">
-                            <input class="glow" type="text" name="membername"  required />
-                            <label> Họ và tên </label>
-                        </div>
-                        <div class="input-box">
-                            <input class="glow" type="text" name="memberemail" required />
-                            <label> Email </label>
-                        </div>
-                </div>
-                <div class="people-button-container">
-                    <button type="submit" class="save-people-button" id="save-people-button"> Lưu </button>
-                    <button type="button"  class="cancel-people-button" id="cancel-people-button"> Hủy </button>
-                </div>
-    </form>
     <!-- JavaScript điều khiển chuyển trang -->
     <script>
     var rankingButton = document.querySelector(".ranking-button");
+    var registerButton = document.querySelector(".register-button");
       rankingButton.addEventListener("click", function() {
             window.location.href = "HomeRanking"; 
+        });
+      registerButton.addEventListener("click", function() {
+            window.location.href = "HomeRegisterStamp"; 
         });
     </script>
     <!-- JavaScript điều khiển popup thay đổi thông tin cá nhân -->
     <script>
         const modalOne = document.getElementById('modalOne');
         const settingButton = document.getElementById('setting-button');
-       
+        const exitButton = document.querySelector(".exit-button");
             settingButton.addEventListener('click', () => {
                 modalOne.style.display = 'block';
                  document.body.style.overflow = 'hidden'; // Tắt cuộn
                 overlay.style.display = 'block'; // Hiển thị nền mờ
             });
-    </script>
-    <!-- JavaScript điều khiển popup đăng kí  -->
-     <script>
-        var registerButton = document.querySelector(".register-button");
-        var popupRegister  = document.getElementById("register-method");
-        var closeButton = document.getElementById("exit-method-button");
-        var invidualForm = document.getElementById("invidual-form");
-        var invidualMethodButton=document.getElementById("invidual-method-button");
-        var saveInvidualButton=document.getElementById("save-invidual-button");
-        var cancelInvidualButton=document.getElementById("cancel-invidual-button");
-        var peopleForm = document.getElementById("people-form");
-        var peopleMethodButton=document.getElementById("people-method-button");
-        var savePeopleButton=document.getElementById("save-people-button");
-        var cancelPeopleButton=document.getElementById("cancel-people-button");
-        registerButton.addEventListener("click", function() {
-            popupRegister.style.display = "block";
-            document.body.style.overflow = 'hidden'; 
-            overlay.style.display = 'block';
-        });
-        invidualMethodButton.addEventListener("click", function() {
-            invidualForm.style.display = "block";
-            popupRegister.style.display = "none";
-            document.body.style.overflow = 'hidden'; 
-            overlay.style.display = 'block';
-        });
-        cancelInvidualButton.addEventListener("click", function() {
-            popupRegister.style.display = "block";
-            document.body.style.overflow = 'hidden'; 
-            overlay.style.display = 'block';
-            invidualForm.style.display = "none";
-        });
-         saveInvidualButton.addEventListener("click", function() {
-           //Chỉnh sửa thêm javascipt truyền nhận dữ liệu
-        });
-         peopleMethodButton.addEventListener("click", function() {
-            peopleForm.style.display = "block";
-            popupRegister.style.display = "none";
-            document.body.style.overflow = 'hidden'; 
-            overlay.style.display = 'block';
-        });
-          cancelPeopleButton.addEventListener("click", function() {
-            popupRegister.style.display = "block";
-            document.body.style.overflow = 'hidden'; 
-            overlay.style.display = 'block';
-            peopleForm.style.display = "none";
-        });
-         savePeopleButton.addEventListener("click", function() {
-           //Chỉnh sửa thêm javascipt truyền nhận dữ liệu
-        });
-        closeButton.addEventListener('click', () => {
-            popupRegister.style.display = "none";
-            document.body.style.overflow = 'auto'; // Bật lại cuộn
-            overlay.style.display = 'none'; // Ẩn nền mờ
-        });
+             exitButton.addEventListener('click', () => {
+                modalOne.style.display = 'none';
+                 document.body.style.overflow = 'auto'; // Tắt cuộn
+                overlay.style.display = 'none'; // Hiển thị nền mờ
+            });
     </script>
     <!-- JavaScript điều khiển popup chỉnh sửa tác phẩm -->
     <script>
@@ -331,7 +194,7 @@
         const modal = document.getElementById('modifyModal');
         const editButton = document.getElementById('edit-button');
         const deleteButton = document.getElementById('delete-button');
-        const exitButton = document.getElementById('exit-modify-button');
+        const exitModifyButton = document.getElementById('exit-modify-button');
         const deletePopup = document.getElementById('deletePopup');
         const editPopup = document.getElementById('editPopup');
 
@@ -344,7 +207,7 @@
                 overlay.style.display = 'block'; // Hiển thị nền mờ
             });
         });
-         exitButton.addEventListener('click', () => {
+         exitModifyButton.addEventListener('click', () => {
             modal.style.display = 'none';
             document.body.style.overflow = 'auto'; // Bật lại cuộn
             overlay.style.display = 'none'; // Ẩn nền mờ

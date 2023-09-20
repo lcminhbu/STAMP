@@ -48,7 +48,11 @@
                         <!-- 2 nút chức năng -->
                         <li class="nav-item personal-button">
                             <button id="notification-button" class="notification-button">
+                                <img class="notify-img" src="~/image/Index/icons/notify.png" alt="">
+                            </button>
                             <button id="user-button" class="user-button">
+                                 <img class="user-img" src="~/image/Index/icons/user.png" alt="">
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -143,6 +147,7 @@
     <script>
         var notifyPopup = document.getElementById("notify-popup");
         var isPopupVisible = false;
+        var notifyButton = document.getElementById("notification-button");
          notifyButton.addEventListener("click", function() {
             notifyPopup.style.display = "block";
             isPopupVisible = true;

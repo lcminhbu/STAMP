@@ -6,25 +6,20 @@
 {
     text-decoration: underline;
 }
-.row
+.talkshow-wrapper
 {
-    display:flex;
-    width:100%;
-    margin-top:10%;
-    width: 100%; 
     overflow-x: auto; 
     white-space: nowrap;
-    padding-left:2%;
-} 
-.col-7
-{
-    align-items: left;;
+    margin-top:2%;
+    margin-bottom:5%;
+    padding-left: 2%;
 }
 .talkshow-container
 {
+    margin-top:10%;
     position: relative;
     height:90%;
-    width: 100%;
+    width: 93%;
     background:  #D4D7D8;
     border-radius:30px;
     border:1.5px solid black;
@@ -34,7 +29,7 @@
 {
     margin-top:50%;
     position: relative;
-    margin-top:3%;
+    margin-top:2%;
 }
 .info-name
 {
@@ -47,11 +42,10 @@
 }
 .info-content
 {
-    text-align:left;
+    text-align:center;
     width:100%;
     font-size:26px;
     line-height:26px;
-    /* margin-left:6%; */
     font-weight:500;
     margin-top:10px;
 }
@@ -64,11 +58,19 @@
 }
 .info-content-container
 {
-    margin-left:5%;
+    margin-left:2%;
 }
 .stamp-frame 
 {
-    background-image: url("../image/modifystamp.png");
+    background-image: url("../image/shared/2025.png");
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.stamp-img {
+    object-fit: cover;
+    padding-top: 2%;
 }
 .register-talkshow-button
 {
