@@ -4,7 +4,6 @@
     ViewData["Title"] = "Xếp hạng";
 }
 
-<html lang="vi">
     <head>
         <meta charset="utf-8" name="viewport" content="device-width, initial-scale=1, minimum-scale=1"/>
         <link rel="stylesheet" href="~/css/ranking-style.css" asp-append-version="true"/>
@@ -12,259 +11,252 @@
         <link rel="stylesheet" href="~/css/base.css" asp-append-version="true"/>
     </head>
 
-    <body>
-        <script src="~/js/common.js"></script>
-        <!-- Banner -->
-        <div class="banner">
-            <h1>XẾP HẠNG</h1>
-        </div>
-        
-        <!-- Top stamps -->
-        <div class="container-fluid horizontal-scrollable" style="margin-top: 40px">
-            <div class="row flex-nowrap" style="padding-bottom: 30px">
-                <div class="col-4">
-                    <div class="info-card container">
-                        <div class="row justify-content-between">
-                            <p class="col-7 cus-card-title">Mừng ngày Phụ nữ Việt Nam 20/10</p>
-                            <div class="col-4" style="display: flex; align-items: center;">
-                                <p class="cus-card-author">Đ.M.Khoa</p>
-                            </div>
-                        </div>
-                        <div class="submission-box">
-                            <div class="stamp-frame">
-                                <img src="~/image/stamp.png" alt="" class="stamp-img">
-                            </div>
-                        </div>
-                        <div class="row justify-content-around" style="margin-top: 10px">
-                            <button onclick="changeBackgroundColor()" class="like-btn">
-                                <p class="like-number number">00</p>
-                                <img class="like-image" src="~/image/Ranking/like.svg"/>
-                            </button>
-                            <div class="stt-btn">
-                                <p class="number stt-number">#02</p>
-                            </div>
+<body>
+    <script src="~/js/navbar.js"></script>
+    <script src="~/js/common.js"></script>
+    <!-- Banner -->
+    <div class="banner">
+        <h1>XẾP HẠNG</h1>
+    </div>
+    
+    <!-- Top stamps -->
+    <div class="container-fluid horizontal-scrollable" style="margin-top: 40px">
+        <div class="row flex-nowrap" style="padding-bottom: 30px">
+            <div class="col-4">
+                <div class="info-card container">
+                    <div class="row justify-content-between">
+                        <p class="col-7 cus-card-title">Mừng ngày Phụ nữ Việt Nam 20/10</p>
+                        <div class="col-4" style="display: flex; align-items: center;">
+                            <p class="cus-card-author">Đ.M.Khoa</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-4">
-                    <div class="info-card container">
-                        <div class="row justify-content-between">
-                            <p class="col-7 cus-card-title">Mừng ngày Phụ nữ Việt Nam 20/10</p>
-                            <div class="col-4" style="display: flex; align-items: center;">
-                                <p class="cus-card-author">Đ.M.Khoa</p>
-                            </div>
-                        </div>
-                        <div class="submission-box">
-                            <div class="stamp-frame">
-                                <img src="~/image/stamp.png" alt="" class="stamp-img">
-                            </div>
-                        </div>
-                        <div class="row justify-content-around" style="margin-top: 10px">
-                            <button onclick="changeBackgroundColor()" class="like-btn">
-                                <p class="like-number number">01</p>
-                                <img class="like-image" src="~/image/Ranking/like.svg"/>
-                            </button>
-                            <div class="stt-btn">
-                                <p class="number stt-number">#01</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="info-card container">
-                        <div class="row justify-content-between">
-                            <p class="col-7 cus-card-title">Mừng ngày Phụ nữ Việt Nam 20/10</p>
-                            <div class="col-4" style="display: flex; align-items: center;">
-                                <p class="cus-card-author">Đ.M.Khoa</p>
-                            </div>
-                        </div>
-                        <div class="submission-box">
-                            <div class="stamp-frame">
-                                <img src="~/image/stamp.png" alt="" class="stamp-img">
-                            </div>
-                        </div>
-                        <div class="row justify-content-around" style="margin-top: 10px">
-                            <button onclick="changeBackgroundColor()" class="like-btn">
-                                <p class="like-number number">00</p>
-                                <img class="like-image" src="~/image/Ranking/like.svg"/>
-                            </button>
-                            <div class="stt-btn">
-                                <p class="number stt-number">#02</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="info-card container">
-                        <div class="row justify-content-between">
-                            <p class="col-7 cus-card-title">Mừng ngày Phụ nữ Việt Nam 20/10</p>
-                            <div class="col-4" style="display: flex; align-items: center;">
-                                <p class="cus-card-author">Đ.M.Khoa</p>
-                            </div>
-                        </div>
-                        <div class="submission-box">
-                            <div class="stamp-frame">
-                                <img src="~/image/stamp.png" alt="" class="stamp-img">
-                            </div>
-                        </div>
-                        <div class="row justify-content-around" style="margin-top: 10px">
-                            <button onclick="changeBackgroundColor()" class="like-btn">
-                                <p class="like-number number">00</p>
-                                <img class="like-image" src="~/image/Ranking/like.svg"/>
-                            </button>
-                            <div class="stt-btn">
-                                <p class="number stt-number">#02</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="info-card container">
-                        <div class="row justify-content-between">
-                            <p class="col-7 cus-card-title">Mừng ngày Phụ nữ Việt Nam 20/10</p>
-                            <div class="col-4" style="display: flex; align-items: center;">
-                                <p class="cus-card-author">Đ.M.Khoa</p>
-                            </div>
-                        </div>
-                        <div class="submission-box">
-                            <div class="stamp-frame">
-                                <img src="~/image/stamp.png" alt="" class="stamp-img">
-                            </div>
-                        </div>
-                        <div class="row justify-content-around" style="margin-top: 10px">
-                            <button onclick="changeBackgroundColor()" class="like-btn">
-                                <p class="like-number number">00</p>
-                                <img class="like-image" src="~/image/Ranking/like.svg"/>
-                            </button>
-                            <div class="stt-btn">
-                                <p class="number stt-number">#02</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <script>
-                function showPopUp() {
-                    console.log("ok");
-                    const title = event.currentTarget.querySelector(".cus-card-title");
-                    const author = event.currentTarget.querySelector(".cus-card-author");
-                    const popup = document.getElementById("popup");
-                    const ptitle = popup.getElementsByClassName("popup-title")[0];
-                    ptitle.innerText = title.innerText;
-                    popup.getElementsByClassName("popup-author")[0].innerText = author.innerText;
-                    @* Load mô tả từ backend vào dòng bên dưới *@
-                    popup.getElementsByClassName("popup-describe")[0].innerText = "Mô tả của tranh";
-                    popup.classList.remove("display-none");
-                    const overlay = document.getElementById("overlay");
-                    overlay.classList.remove("display-none");
-                    const body = document.querySelector("body");
-                    body.style.overflow = "hidden";
-                    resize_frame();
-                }
-                
-                let cards = document.getElementsByClassName("info-card");
-                for (let i = 0; i <cards.length; i++) {
-                    cards[i].addEventListener("click", showPopUp);
-                }
-                
-                hidePopUp = () => {
-                    const popup = document.getElementById("popup");
-                    popup.classList.add("display-none");
-                    const overlay = document.getElementById("overlay");
-                    overlay.classList.add("display-none");
-                    const body = document.querySelector("body");
-                    body.style.overflow = "auto";
-                }
-            </script>
-        </div>
-        <div class="container-fluid justify-content-center display-none" id="popup">
-            <div class="row">
-                <div class="col-6">
                     <div class="submission-box">
                         <div class="stamp-frame">
                             <img src="~/image/stamp.png" alt="" class="stamp-img">
                         </div>
                     </div>
+                    <div class="row justify-content-around" style="margin-top: 10px">
+                        <button onclick="changeBackgroundColor()" class="like-btn">
+                            <p class="like-number number">00</p>
+                            <img class="like-image" src="~/image/Ranking/like.svg"/>
+                        </button>
+                        <div class="stt-btn">
+                            <p class="number stt-number">#02</p>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="col-6 popup-info">
-                    <div class="popup-title">Hello</div>
-                    <div class="popup-author">Author</div>
-                    <div class="popup-describe">Describe</div>
+            </div>
+            <div class="col-4">
+                <div class="info-card container">
+                    <div class="row justify-content-between">
+                        <p class="col-7 cus-card-title">Mừng ngày Phụ nữ Việt Nam 20/10</p>
+                        <div class="col-4" style="display: flex; align-items: center;">
+                            <p class="cus-card-author">Đ.M.Khoa</p>
+                        </div>
+                    </div>
+                    <div class="submission-box">
+                        <div class="stamp-frame">
+                            <img src="~/image/stamp.png" alt="" class="stamp-img">
+                        </div>
+                    </div>
+                    <div class="row justify-content-around" style="margin-top: 10px">
+                        <button onclick="changeBackgroundColor()" class="like-btn">
+                            <p class="like-number number">01</p>
+                            <img class="like-image" src="~/image/Ranking/like.svg"/>
+                        </button>
+                        <div class="stt-btn">
+                            <p class="number stt-number">#01</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="overlay" class="display-none" onclick="hidePopUp()"></div>
-        <!-- Search bar -->
-        <div class="search-box">
-            <div class="search">
-                <button class="search-btn" onclick="">
-                    <img class="search-img" src="~/image/Ranking/search-normal.png"/>
-                </button>
-                <input type="text" id="trigger" class="search-input" placeholder="Tìm kiếm"/>
+            <div class="col-4">
+                <div class="info-card container">
+                    <div class="row justify-content-between">
+                        <p class="col-7 cus-card-title">Mừng ngày Phụ nữ Việt Nam 20/10</p>
+                        <div class="col-4" style="display: flex; align-items: center;">
+                            <p class="cus-card-author">Đ.M.Khoa</p>
+                        </div>
+                    </div>
+                    <div class="submission-box">
+                        <div class="stamp-frame">
+                            <img src="~/image/stamp.png" alt="" class="stamp-img">
+                        </div>
+                    </div>
+                    <div class="row justify-content-around" style="margin-top: 10px">
+                        <button onclick="changeBackgroundColor()" class="like-btn">
+                            <p class="like-number number">00</p>
+                            <img class="like-image" src="~/image/Ranking/like.svg"/>
+                        </button>
+                        <div class="stt-btn">
+                            <p class="number stt-number">#02</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <!-- Contest Stamps -->
-        <div style="margin-bottom: 40px; margin-top: 20px">
-            <div class="contest-container list-group-item">
-                <p class="stt-contest-box">#01</p>
-                <p class="contest-name">Mừng ngày Phụ nữ Việt Nam</p>
-                <p class="contest-author stamp-author">Đoàn Minh Khoa</p>
-                <button onclick="changeBGandFont()" class="contest-like-box like-btn">
-                    <p class="contest-like-number like-number number">01</p>
-                    <img class="like-image" src="~/image/Ranking/like.svg"/>
-                </button>
+            <div class="col-4">
+                <div class="info-card container">
+                    <div class="row justify-content-between">
+                        <p class="col-7 cus-card-title">Mừng ngày Phụ nữ Việt Nam 20/10</p>
+                        <div class="col-4" style="display: flex; align-items: center;">
+                            <p class="cus-card-author">Đ.M.Khoa</p>
+                        </div>
+                    </div>
+                    <div class="submission-box">
+                        <div class="stamp-frame">
+                            <img src="~/image/stamp.png" alt="" class="stamp-img">
+                        </div>
+                    </div>
+                    <div class="row justify-content-around" style="margin-top: 10px">
+                        <button onclick="changeBackgroundColor()" class="like-btn">
+                            <p class="like-number number">00</p>
+                            <img class="like-image" src="~/image/Ranking/like.svg"/>
+                        </button>
+                        <div class="stt-btn">
+                            <p class="number stt-number">#02</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="contest-container list-group-item">
-                <p class="stt-contest-box">#02</p>
-                <p class="contest-name">Mừng ngày Phụ nữ Việt Nam</p>
-                <p class="contest-author stamp-author">Đoàn Minh Khoa</p>
-                <button onclick="changeBGandFont()" class="contest-like-box like-btn">
-                    <p class="contest-like-number like-number number">00</p>
-                    <img class="like-image" src="~/image/Ranking/like.svg"/>
-                </button>
+            <div class="col-4">
+                <div class="info-card container">
+                    <div class="row justify-content-between">
+                        <p class="col-7 cus-card-title">Mừng ngày Phụ nữ Việt Nam 20/10</p>
+                        <div class="col-4" style="display: flex; align-items: center;">
+                            <p class="cus-card-author">Đ.M.Khoa</p>
+                        </div>
+                    </div>
+                    <div class="submission-box">
+                        <div class="stamp-frame">
+                            <img src="~/image/stamp.png" alt="" class="stamp-img">
+                        </div>
+                    </div>
+                    <div class="row justify-content-around" style="margin-top: 10px">
+                        <button onclick="changeBackgroundColor()" class="like-btn">
+                            <p class="like-number number">00</p>
+                            <img class="like-image" src="~/image/Ranking/like.svg"/>
+                        </button>
+                        <div class="stt-btn">
+                            <p class="number stt-number">#02</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="contest-container list-group-item">
-                <p class="stt-contest-box">#03</p>
-                <p class="contest-name">Mừng ngày Phụ nữ Việt Nam</p>
-                <p class="contest-author stamp-author">Đoàn Minh Khoa</p>
-                <button onclick="changeBGandFont()" class="contest-like-box like-btn">
-                    <p class="contest-like-number like-number number">00</p>
-                    <img class="like-image" src="~/image/Ranking/like.svg" />
-                </button>
-            </div>
-
-            <div class="contest-container list-group-item">
-                <p class="stt-contest-box">#04</p>
-                <p class="contest-name">Mừng ngày Phụ nữ Việt Nam</p>
-                <p class="contest-author stamp-author">Đoàn Minh Khoa</p>
-                <button onclick="changeBGandFont()" class="contest-like-box like-btn">
-                    <p class="contest-like-number like-number number">00</p>
-                    <img class="like-image" src="~/image/Ranking/like.svg" />
-                </button>
-            </div>
-            
-        <!-- JavaScript -->
         <script>
-            function changeBackgroundColor() {
-                event.stopPropagation();
-                event.currentTarget.style.backgroundColor = "#4285F4";
+            function showPopUp() {
+                console.log("ok");
+                const title = event.currentTarget.querySelector(".cus-card-title");
+                const author = event.currentTarget.querySelector(".cus-card-author");
+                const popup = document.getElementById("popup");
+                const ptitle = popup.getElementsByClassName("popup-title")[0];
+                ptitle.innerText = title.innerText;
+                popup.getElementsByClassName("popup-author")[0].innerText = author.innerText;
+                @* Load mô tả từ backend vào dòng bên dưới *@
+                popup.getElementsByClassName("popup-describe")[0].innerText = "Mô tả của tranh";
+                popup.classList.remove("display-none");
+                const overlay = document.getElementById("overlay");
+                overlay.classList.remove("display-none");
+                const body = document.querySelector("body");
+                body.style.overflow = "hidden";
+                resize_frame();
             }
-
-            function changeBGandFont() {
-                event.currentTarget.style.backgroundColor = "#4285F4";
-                
-                const collection = event.currentTarget.children;
-                collection[0].style.color = "#FFF";
-                collection[0].style.fontWeight = "700";
-                collection[1].src = "image/Ranking/like_bold.svg"
-
-                const parent = event.currentTarget.parentElement;
-                const siblings = parent.children;
-                siblings[1].style.color = "#6EACE3";
+            
+            let cards = document.getElementsByClassName("info-card");
+            for (let i = 0; i <cards.length; i++) {
+                cards[i].addEventListener("click", showPopUp);
+            }
+            
+            hidePopUp = () => {
+                const popup = document.getElementById("popup");
+                popup.classList.add("display-none");
+                const overlay = document.getElementById("overlay");
+                overlay.classList.add("display-none");
+                const body = document.querySelector("body");
+                body.style.overflow = "auto";
             }
         </script>
-    </body>
-</html>
+    </div>
+    <div class="container-fluid justify-content-center display-none" id="popup">
+        <div class="row">
+            <div class="col-6">
+                <div class="submission-box">
+                    <div class="stamp-frame">
+                        <img src="~/image/stamp.png" alt="" class="stamp-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 popup-info">
+                <div class="popup-title">Hello</div>
+                <div class="popup-author">Author</div>
+                <div class="popup-describe">Describe</div>
+            </div>
+        </div>
+    </div>
+    <div id="overlay" class="display-none" onclick="hidePopUp()"></div>
+    <!-- Search bar -->
+    <div class="search-box">
+        <div class="search">
+            <button class="search-btn" onclick="">
+                <img class="search-img" src="~/image/Ranking/search-normal.png"/>
+            </button>
+            <input type="text" id="trigger" class="search-input" placeholder="Tìm kiếm"/>
+        </div>
+    </div>
+    <!-- Contest Stamps -->
+    <div style="margin-bottom: 40px; margin-top: 20px">
+        <div class="contest-container list-group-item">
+            <p class="stt-contest-box">#01</p>
+            <p class="contest-name">Mừng ngày Phụ nữ Việt Nam</p>
+            <p class="contest-author stamp-author">Đoàn Minh Khoa</p>
+            <button onclick="changeBGandFont()" class="contest-like-box like-btn">
+                <p class="contest-like-number like-number number">01</p>
+                <img class="like-image" src="~/image/Ranking/like.svg"/>
+            </button>
+        </div>
+        <div class="contest-container list-group-item">
+            <p class="stt-contest-box">#02</p>
+            <p class="contest-name">Mừng ngày Phụ nữ Việt Nam</p>
+            <p class="contest-author stamp-author">Đoàn Minh Khoa</p>
+            <button onclick="changeBGandFont()" class="contest-like-box like-btn">
+                <p class="contest-like-number like-number number">00</p>
+                <img class="like-image" src="~/image/Ranking/like.svg"/>
+            </button>
+        </div>
+        <div class="contest-container list-group-item">
+            <p class="stt-contest-box">#03</p>
+            <p class="contest-name">Mừng ngày Phụ nữ Việt Nam</p>
+            <p class="contest-author stamp-author">Đoàn Minh Khoa</p>
+            <button onclick="changeBGandFont()" class="contest-like-box like-btn">
+                <p class="contest-like-number like-number number">00</p>
+                <img class="like-image" src="~/image/Ranking/like.svg" />
+            </button>
+        </div>
+        <div class="contest-container list-group-item">
+            <p class="stt-contest-box">#04</p>
+            <p class="contest-name">Mừng ngày Phụ nữ Việt Nam</p>
+            <p class="contest-author stamp-author">Đoàn Minh Khoa</p>
+            <button onclick="changeBGandFont()" class="contest-like-box like-btn">
+                <p class="contest-like-number like-number number">00</p>
+                <img class="like-image" src="~/image/Ranking/like.svg" />
+            </button>
+        </div>
+        
+    <!-- JavaScript -->
+    <script>
+        function changeBackgroundColor() {
+            event.stopPropagation();
+            event.currentTarget.style.backgroundColor = "#4285F4";
+        }
+        function changeBGandFont() {
+            event.currentTarget.style.backgroundColor = "#4285F4";
+            
+            const collection = event.currentTarget.children;
+            collection[0].style.color = "#FFF";
+            collection[0].style.fontWeight = "700";
+            collection[1].src = "image/Ranking/like_bold.svg"
+            const parent = event.currentTarget.parentElement;
+            const siblings = parent.children;
+            siblings[1].style.color = "#6EACE3";
+        }
+    </script>
+</body>

@@ -27,6 +27,15 @@ body {
     line-height: normal;
 }
 
+/* Navbar */
+.nav-link.item {
+    color: black;
+}
+
+.nav-link.item:hover {
+    color: var(--light-blue);
+}
+
 .display-none {
     display: none !important;
 }

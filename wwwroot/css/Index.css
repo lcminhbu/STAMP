@@ -131,9 +131,10 @@
 }
 
 .award_price {
+    margin: 0;
     color:white;
     text-align: center;
-    padding-top:10px;
+    padding: 33px 45px 27px 45px;
     font-size: 50px;
 }
 
@@ -176,46 +177,7 @@
     margin-bottom: 10px;
 }
 
-.footer-column {
-    padding: 10px;
-}
-
-.footer-column__header {
-    text-align: left;
-    font-weight: 600;
-    font-size: 32px;
-    padding-top: 40px;
-}
-
-.footer-column__info {
-    text-align: left;
-    font-weight: 600;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.footer-column__info * {
-    font-size: 24px;
-    text-align: left;
-    font-weight: 600;
-    text-decoration: none;
-    color: black;
-    line-height: 24px;
-}
-
-.footer-column__info  *:hover {
-    cursor: pointer;
-    color: var(--light-blue);
-
-}
-
-.footer-column>ul{
-    list-style-type: none;
-    text-align: left;
-    padding: 0;
-}
-
 .award-container {
-    width: 70%;
+    width: 80%;
     margin: auto;
 }
