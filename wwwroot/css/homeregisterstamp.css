@@ -33,6 +33,7 @@
 }
 .load-button
 {
+    background-color: transparent; 
     background-image:  url("../image/UserProfile/loadbutton.png");
     background-size: cover; 
     cursor: pointer;
