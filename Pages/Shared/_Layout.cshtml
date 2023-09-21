@@ -44,7 +44,7 @@
                     <ul class="navbar-nav header-item">
                         <!-- Nút Đăng nhập -->
                         <li class="nav-item">
-                            <button id="login-button" class="login-button" onclick="document.getElementById('custom-form').style.display='block'">Đăng nhập</button>
+                            <button id="login-button" class="login-button">Đăng nhập</button>
                         <!-- 2 nút chức năng -->
                         <li class="nav-item personal-button">
                             <button id="notification-button" class="notification-button">
@@ -69,8 +69,8 @@
     <button class="google-button">
     <span class="google-icon" >Đăng nhập với Google</span>
     </form>
-    <button class="close-button" >
-    <span class="close-icon" onclick="document.getElementById('custom-form').style.display='none'">X</span>
+    <button class="close-button" id="close-button" >
+    <span class="close-icon">X</span>
     </div>
     <!-- Popup thông báo trang cá nhân người dùng -->
   <div class="notify-popup" id="notify-popup" style="display:none">
@@ -142,6 +142,19 @@
             notifyButton.style.display="none";
             userButton.style.display="none";
         }
+    </script>
+    <!-- JavaScript điều khiển form đăng nhập -->
+    <script>
+        var loginForm=document.getElementById('custom-form');
+        var closeButton=document.getElementById('close-button');
+        loginButton.addEventListener("click", function() {
+            loginForm.style.display = "block";
+            document.body.style.overflow = 'hidden'; 
+        });
+        closeButton.addEventListener("click", function() {
+            loginForm.style.display = "none";
+            document.body.style.overflow = 'auto'; 
+        });
     </script>
     <!-- JavaScript điều khiển popup thông báo -->
     <script>
