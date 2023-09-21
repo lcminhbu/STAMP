@@ -10,15 +10,17 @@
     <link rel="stylesheet" href="~/css/news.css" asp-append-version="true" />
 </header>
 <body>
-    <!-- search-box -->
-     <div class="search-box">
+    <script src="~/js/navbar.js"></script>
+    @* Search box *@
+    <div class="search-box">
         <div class="search">
             <button class="search-btn" onclick="">
-                <img class="search-img" src="~/image/Ranking/search-normal.png" />
+                <img class="search-img" src="~/icon/search.png" />
             </button>
             <input type="text" id="trigger" class="search-input" placeholder="Tìm kiếm" />
         </div>
     </div>
+
     <!-- Các tin mới -->
      <div class="container-fluid news-container-fluid">
         <div class="row flex-nowrap">
