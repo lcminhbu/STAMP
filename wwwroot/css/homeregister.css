@@ -16,11 +16,45 @@
     line-height:32px;
     font-family: "JosefinSans";
     color:#286AA3;
+    position: relative;
+    text-decoration: none;
 }
 a:hover
 {
     color:#286AA3;
 }
+.register-talkshow::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Chiều dài của đường thẳng */
+    background-color: #286AA3; /* Màu của đường thẳng */
+    transform: scaleX(0); /* Bắt đầu với độ rộng của đường thẳng là 0 */
+    transform-origin: left;
+    transition: transform 0.3s ease; /* Thời gian và hiệu ứng */
+  }
+  
+  .register-talkshow:hover::before {
+    transform: scaleX(1); /* Khi di chuột vào, thay đổi độ rộng của đường thẳng thành 1 */
+  }
+  .register-stamp::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Chiều dài của đường thẳng */
+    background-color: #286AA3; /* Màu của đường thẳng */
+    transform: scaleX(0); /* Bắt đầu với độ rộng của đường thẳng là 0 */
+    transform-origin: left;
+    transition: transform 0.3s ease; /* Thời gian và hiệu ứng */
+  }
+  
+  .register-stamp:hover::before {
+    transform: scaleX(1); /* Khi di chuột vào, thay đổi độ rộng của đường thẳng thành 1 */
+  }
 /* CSS form đăng kí tác phẩm */
 .method-popup
 {
@@ -103,7 +137,7 @@ h3 {
     display:none;
     z-index:3;/* Độ ưu tiên lớn hơn so với popup chỉnh sửa tác phẩm  */
     left:25%;
-    height:70%;
+    height:72%;
     width:50%;
     border-radius:28px;
     background:#fff;

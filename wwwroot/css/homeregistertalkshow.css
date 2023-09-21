@@ -1,11 +1,3 @@
-.register-stamp
-{
-    text-decoration: none;
-}
-.register-stamp:hover
-{
-    text-decoration: underline;
-}
 .talkshow-wrapper
 {
     overflow-x: auto; 
