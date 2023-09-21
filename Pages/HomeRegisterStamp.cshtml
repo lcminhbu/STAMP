@@ -10,6 +10,7 @@
 </head>
 <body>
 <script src="~/js/common.js"></script>
+<div>
     <!-- Banner -->
     <div class="banner-container">
         <img class="stamplogo" src="~/image/shared/stamplogo-big.png" alt="">
@@ -119,8 +120,8 @@
         </div>
     </div>
     <div class="saved-button-container">
-        <button class="saved-button"> Lưu </button>
-        <button class="saved-submit-button"> Nộp bài </button>
+        <button class="saved-button" id="saved-button"> Lưu </button>
+        <button class="saved-submit-button" id="saved-submit-button"> Nộp bài </button>
     </div>
      <!-- Popup đâng kí sản phẩm-->
     <!-- Popup đăng kí hình  thức cá nhân hay nhóm -->
@@ -214,6 +215,33 @@
                         <button type="button" class="cancel-invidual-button" id="cancel-invidual-button"> Hủy </button>
                 </div>
     </form>
+     <!-- Popup tải ảnh lên -->
+     <div class="stamp-popup-container d-flex justify-content-center">
+        <div class="stamp-popup" id="stamp-popup" >
+            <h3 class="load-stamp-title"> Tải ảnh mới </h3> 
+            <div>
+                <button class="load-stamp-button">
+                    <img src="~/image/UserProfile/arrow.png">
+                </button>
+            </div>
+            <h4> Nhấp hoặc kéo và thả để thêm hình ảnh </h4>
+            <button class="exit-load-stamp" id="exit-load-stamp">
+                <span class="exit-load-stamp-icon">X</span>  
+            </button>
+        </div>
+    </div>
+     <!-- Popup thông báo tải ảnh thành công lên -->
+    <div class="success-popup-container d-flex justify-content-center">
+        <div class="success-popup" id="success-popup">
+            <h2> ĐĂNG KÍ THÀNH CÔNG </h2>
+            <p> Bạn đã tải tác phẩm lên thành công. </p>
+            <p>Hãy chú ý theo dõi email để nhận những thông tin mới nhất nhé. </p>
+            <img src="~/image/UserProfile/greentick.png">
+            <button class="exit-success-button" id="exit-success-button">
+                <span class="exit-success-button-icon">X</span>  
+            </button>
+        </div>
+    </div>
     <!-- Form đăng kí theo nhóm -->
      <form action="/HomeRegisterStamp" class="people-form" id="people-form">
             <h3 class="people-form-title">Đăng kí tác phẩm nhóm</h3>
@@ -272,6 +300,23 @@
                     <button type="button"  class="cancel-people-button" id="cancel-people-button"> Hủy </button>
                 </div>
     </form>
+    </div>
+    <!-- JavaScript thông báo nộp tác phẩm thành công  -->
+    <script>
+    var savedSubmitButton=document.getElementById("saved-submit-button"); 
+    var exitSuccessButton=document.getElementById("exit-success-button"); 
+    var successPopup=document.getElementById("success-popup"); 
+     savedSubmitButton.addEventListener("click", function() {
+            successPopup.style.display="block";
+            document.body.style.overflow = 'hidden'; 
+            overlay.style.display = 'block';
+        });
+     exitSuccessButton.addEventListener("click", function() {
+            successPopup.style.display="none";
+            document.body.style.overflow = 'auto'; 
+            overlay.style.display = 'none';
+        });
+    </script>
      <!-- JavaScript điều khiển popup thay đổi thông tin cá nhân -->
     <script>
         const modalOne = document.getElementById('modalOne');
@@ -343,6 +388,7 @@
     // });
      </script>
      <script>
+        var exitLoadStampButton=document.getElementById("exit-load-stamp"); 
         var closeButton=document.getElementById("exit-method-button"); 
         var loadImageButton = document.getElementById("load-stamp-img");
         var popupRegister = document.getElementById("register-method"); 
@@ -351,12 +397,24 @@
         var peopleMethodButton=document.getElementById("people-method-button");
         var savePeopleButton=document.getElementById("save-people-button");
         var cancelPeopleButton=document.getElementById("cancel-people-button");
+        var loadStampPopup= document.getElementById("stamp-popup")
         loadImageButton.addEventListener("click", function() {
             popupRegister.style.display = "block";
             document.body.style.overflow = 'hidden'; 
             overlay.style.display = 'block';
         });
-
+         invidualMethodButton.addEventListener("click", function() {
+            loadStampPopup.style.display = "block";
+            popupRegister.style.display = "none";
+            document.body.style.overflow = 'hidden'; 
+            overlay.style.display = 'block';
+        });
+         exitLoadStampButton.addEventListener("click", function() {
+            loadStampPopup.style.display = "none";
+            popupRegister.style.display = "block";
+            document.body.style.overflow = 'hidden'; 
+            overlay.style.display = 'block';
+        });
          peopleMethodButton.addEventListener("click", function() {
             peopleForm.style.display = "block";
             popupRegister.style.display = "none";
@@ -370,6 +428,11 @@
             peopleForm.style.display = "none";
         });
          savePeopleButton.addEventListener("click", function() {
+            //Chỉnh sửa thêm javascipt truyền nhận dữ liệu
+            loadStampPopup.style.display = "block";
+            peopleForm.style.display = "none";
+            document.body.style.overflow = 'hidden'; 
+            overlay.style.display = 'block';
            //Chỉnh sửa thêm javascipt truyền nhận dữ liệu
         });
         closeButton.addEventListener('click', () => {

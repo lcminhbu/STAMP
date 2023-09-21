@@ -99,6 +99,7 @@
   /* margin-top: 35px; */
   font-size:39px;
   font-weight: 600px;
+  padding: 0 10px 0 10px;
 }
 .google-icon {
   font-weight: bold; /* Tạo chữ đậm */
@@ -382,6 +383,7 @@
 }
 .notify-title
 {
+  font-family: "JosefinSans";
   font-weight:500;
   font-size:32px;
   line-height:32px;
