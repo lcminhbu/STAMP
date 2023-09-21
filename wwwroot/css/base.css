@@ -36,6 +36,22 @@ body {
     color: var(--light-blue);
 }
 
+/* Page title */
+.page-title {
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    font-weight: 700;
+    text-shadow:
+    -1px -1px 0 white,  
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+
 .display-none {
     display: none !important;
 }
