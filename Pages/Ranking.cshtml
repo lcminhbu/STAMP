@@ -15,8 +15,17 @@
     <script src="~/js/navbar.js"></script>
     <script src="~/js/common.js"></script>
     <!-- Banner -->
+    <script src="~/js/slideshow.js"></script>
+    <script>
+        window.onload = ()=>{init_slide_show(["./image/shared/banner1.jpg",
+        "./image/shared/banner2.jpg", "./image/shared/banner3.jpg"]);};
+    </script>
     <div class="banner">
-        <h1>XẾP HẠNG</h1>
+        <!-- Slideshow container -->
+        <div id="slideshow-container"></div>
+        <div class="page-title">
+            BÌNH CHỌN
+        </div>
     </div>
     
     <!-- Top stamps -->
@@ -32,7 +41,7 @@
                     </div>
                     <div class="submission-box">
                         <div class="stamp-frame">
-                            <img src="~/image/stamp.png" alt="" class="stamp-img">
+                            <img src="~/image/shared/stamp.png" alt="" class="stamp-img">
                         </div>
                     </div>
                     <div class="row justify-content-around" style="margin-top: 10px">
@@ -56,7 +65,7 @@
                     </div>
                     <div class="submission-box">
                         <div class="stamp-frame">
-                            <img src="~/image/stamp.png" alt="" class="stamp-img">
+                            <img src="~/image/shared/stamp.png" alt="" class="stamp-img">
                         </div>
                     </div>
                     <div class="row justify-content-around" style="margin-top: 10px">
@@ -80,7 +89,7 @@
                     </div>
                     <div class="submission-box">
                         <div class="stamp-frame">
-                            <img src="~/image/stamp.png" alt="" class="stamp-img">
+                            <img src="~/image/shared/stamp.png" alt="" class="stamp-img">
                         </div>
                     </div>
                     <div class="row justify-content-around" style="margin-top: 10px">
@@ -104,7 +113,7 @@
                     </div>
                     <div class="submission-box">
                         <div class="stamp-frame">
-                            <img src="~/image/stamp.png" alt="" class="stamp-img">
+                            <img src="~/image/shared/stamp.png" alt="" class="stamp-img">
                         </div>
                     </div>
                     <div class="row justify-content-around" style="margin-top: 10px">
@@ -128,7 +137,7 @@
                     </div>
                     <div class="submission-box">
                         <div class="stamp-frame">
-                            <img src="~/image/stamp.png" alt="" class="stamp-img">
+                            <img src="~/image/shared/stamp.png" alt="" class="stamp-img">
                         </div>
                     </div>
                     <div class="row justify-content-around" style="margin-top: 10px">
@@ -181,7 +190,7 @@
             <div class="col-6">
                 <div class="submission-box">
                     <div class="stamp-frame">
-                        <img src="~/image/stamp.png" alt="" class="stamp-img">
+                        <img src="~/image/shared/stamp.png" alt="" class="stamp-img">
                     </div>
                 </div>
             </div>
@@ -193,13 +202,14 @@
         </div>
     </div>
     <div id="overlay" class="display-none" onclick="hidePopUp()"></div>
-    <!-- Search bar -->
+    
+    @* Search box *@
     <div class="search-box">
         <div class="search">
             <button class="search-btn" onclick="">
-                <img class="search-img" src="~/image/Ranking/search-normal.png"/>
+                <img class="search-img" src="~/icon/search.png" />
             </button>
-            <input type="text" id="trigger" class="search-input" placeholder="Tìm kiếm"/>
+            <input type="text" id="trigger" class="search-input" placeholder="Tìm kiếm" />
         </div>
     </div>
     <!-- Contest Stamps -->
