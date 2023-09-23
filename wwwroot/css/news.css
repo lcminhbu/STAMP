@@ -15,6 +15,7 @@
     font-size:24px;
     line-height:24px;
     font-weight: 600;
+    width:550px;
 }
 .dated {
     text-align: left;
@@ -33,6 +34,7 @@
     font-size:20px;
     line-height:20px;
     font-weight: 300;
+    width:550px;
 }
 .stamp-frame {
     background-image: url("../image/shared/horizontalstampframe.svg");

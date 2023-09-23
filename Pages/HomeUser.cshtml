@@ -133,48 +133,52 @@
             </div>
             <h4> Nhấp hoặc kéo và thả để thêm hình ảnh </h4>
             <button class="exit-load-stamp" id="exit-load-stamp">
-                <span class="exit-load-stamp-icon">X</span>  
+                <img src="~/image/Index/icons/close.png" class="close-img"> 
             </button>
         </div>
     </div>
     <!-- Popup chỉnh sửa tác phẩm -->
-     <div class="popup-modal" id="modifyModal">
+    <div class="popup-modal" id="modifyModal">
         <div id=popup class="popup-container" > 
-        <h4> Tác phẩm dự thi của bạn </h4>
-            <!-- <div class="stamp-frame"> -->
-            <div class="stamp-frame">
-                <img src="~/image/shared/stamp.png" class="stamp-img">
-            </div>
-            <div class="button-modify-wrapper d-flex justify-content-center" >
-                <div class="button-modify-container">
-                    <button class="edit-button" id="edit-button">Chỉnh sửa</button>
-                    <button class="delete-button" id="delete-button">Xóa</button>
+            <h4> Tác phẩm dự thi của bạn </h4>
+                <div class="stamp-frame">
+                    <img src="~/image/shared/stamp.png" class="stamp-img">
                 </div>
-            </div>
-          <button class="exit-modify-button" id="exit-modify-button">
-        <span class="exit-modify-icon">X</span>  </button>
+                <div class="button-modify-wrapper d-flex justify-content-center" >
+                    <div class="button-modify-container">
+                        <button class="delete-button" id="delete-button">Xóa</button>
+                        <button class="edit-button" id="edit-button">Chỉnh sửa</button>
+                    </div>
+                </div>
+            <button class="exit-modify-button" id="exit-modify-button">
+                <img src="~/image/Index/icons/close.png" class="close-img">
+            </button>
+         </div>
+    </div>
         <!-- Popup sau khi nhấn nút "Xóa" -->
         <div class="delete-popup" id="deletePopup">
             <h4 class="caution">Bạn có chắc chắn xóa tác phẩm này</h4>
             <p class="notify">Tác phẩm sau khi xóa sẽ không thể khôi phục</p>
-        <div class="button-caution-container">
-            <button class="yes-button" id="yes-button">Có</button>
-            <button class="cancel-button" id="cancel-delete-button">Hủy</button>
-            <button class="exit-caution-button" id="exit-delete-button">
-            <span class="exit-caution-icon">X</span>  </button>
+            <div class="button-caution-wrapper d-flex justify-content-center">
+                <div class="button-caution-container">
+                    <button class="cancel-button" id="cancel-delete-button">Hủy</button>
+                    <button class="yes-button" id="yes-button">Có</button>
+                    <button class="exit-caution-button" id="exit-delete-button">
+                        <img src="~/image/Index/icons/close.png" class="close-img"> 
+                    </button>
+                </div>
+            </div>
         </div>
-    </div>
 
     <!-- Popup sau khi nhấn nút "Chỉnh sửa" -->
     <div class="edit-popup" id="editPopup">
         <h4 class="caution">Bạn có chắc chắn lưu tác phẩm này</h4>
         <div class="button-caution-container">
-            <button class="yes-button" id="yes-button">Có</button>
             <button class="cancel-button" id="cancel-edit-button">Hủy</button>
+            <button class="yes-button" id="yes-button">Có</button>
             <button class="exit-caution-button" id="exit-edit-button">
-            <span class="exit-caution-icon">X</span>  </button>
-        </div>
-    </div>
+                <img src="~/image/Index/icons/close.png" class="close-img"> 
+            </button>
         </div>
     </div>
     <!-- JavaScript điều khiển chuyển trang -->
@@ -251,6 +255,9 @@
         deleteButton.addEventListener('click', () => {
             // Thực hiện hành động xóa ở đây
             deletePopup.style.display = 'block';
+            modal.style.display = 'none';
+            document.body.style.overflow = 'hidden'; 
+            overlay.style.display = 'block'; 
         });
     </script>
     <!--  JavaScript điều khiển cảnh báo khi chỉnh sửa tác phẩm -->
@@ -262,15 +269,27 @@
     const cancelDeleteButton = document.getElementById('cancel-delete-button');
     exitEditButton.addEventListener('click', () => {
         editPopup.style.display = 'none';
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden'; 
+        overlay.style.display = 'block'; 
     });
     exitDeleteButton.addEventListener('click', () => {
         deletePopup.style.display = 'none';
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden'; 
+        overlay.style.display = 'block'; 
     });
     cancelEditButton.addEventListener('click', () => {
         editPopup.style.display = 'none';
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden'; 
+        overlay.style.display = 'block'; 
     });
     cancelDeleteButton.addEventListener('click', () => {
         deletePopup.style.display = 'none';
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden'; 
+        overlay.style.display = 'block'; 
     });
 
     //Xử lý khi nút "Chỉnh sửa" được nhấp vào
