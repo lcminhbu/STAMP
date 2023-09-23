@@ -23,38 +23,38 @@ a:hover
 {
     color:#286AA3;
 }
-.register-talkshow::before {
+/* .register-talkshow.clicked::before {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 2px; /* Chiều dài của đường thẳng */
-    background-color: #286AA3; /* Màu của đường thẳng */
-    transform: scaleX(0); /* Bắt đầu với độ rộng của đường thẳng là 0 */
+    height: 2px; 
+    background-color: #286AA3; 
+    transform: scaleX(0); 
     transform-origin: left;
-    transition: transform 0.3s ease; /* Thời gian và hiệu ứng */
+    transition: transform 0.3s ease; 
   }
   
-  .register-talkshow:hover::before {
-    transform: scaleX(1); /* Khi di chuột vào, thay đổi độ rộng của đường thẳng thành 1 */
+  .register-talkshow.clicked:hover::before {
+    transform: scaleX(1); 
   }
-  .register-stamp::before {
+  .register-stamp.clicked::before {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 2px; /* Chiều dài của đường thẳng */
-    background-color: #286AA3; /* Màu của đường thẳng */
-    transform: scaleX(0); /* Bắt đầu với độ rộng của đường thẳng là 0 */
+    height: 2px; 
+    background-color: #286AA3; 
+    transform: scaleX(0); 
     transform-origin: left;
-    transition: transform 0.3s ease; /* Thời gian và hiệu ứng */
+    transition: transform 0.3s ease; 
   }
   
-  .register-stamp:hover::before {
-    transform: scaleX(1); /* Khi di chuột vào, thay đổi độ rộng của đường thẳng thành 1 */
-  }
+  .register-stamp.clicked:hover::before {
+    transform: scaleX(1); 
+  } */
 /* CSS form đăng kí tác phẩm */
 .method-popup
 {
@@ -137,7 +137,7 @@ h3 {
     display:none;
     z-index:3;/* Độ ưu tiên lớn hơn so với popup chỉnh sửa tác phẩm  */
     left:25%;
-    height:72%;
+    height:555px;
     width:50%;
     border-radius:28px;
     background:#fff;
@@ -166,7 +166,7 @@ h3 {
 }
 .invidual-button-container
 {
-    margin-top:40px;
+    margin-top:60px;
     width:100%;
     display:flex;
     justify-content: flex-end;

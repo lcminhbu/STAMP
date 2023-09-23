@@ -40,6 +40,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom:5%;
+    padding:0 5% 0 5%;
 }
 .voting,.ranking {
     font-family:"JosefinSans";
@@ -79,6 +80,7 @@
     background:#fff;
     border:1px solid black;
     overflow: auto; /* Bật thanh cuộn khi cần thiết */
+    padding:0 2% 0 2%;
 }
 .voting-wrapper
 {

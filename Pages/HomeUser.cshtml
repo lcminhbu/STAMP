@@ -122,17 +122,34 @@
             </div>
         </div>
     </div>
+    <!-- Popup tải ảnh lên -->
+     <div class="stamp-popup-container d-flex justify-content-center">
+        <div class="stamp-popup" id="stamp-popup" >
+            <h3 class="load-stamp-title"> Tải ảnh mới </h3> 
+            <div>
+                <button class="load-stamp-button">
+                    <img src="~/image/UserProfile/arrow.png">
+                </button>
+            </div>
+            <h4> Nhấp hoặc kéo và thả để thêm hình ảnh </h4>
+            <button class="exit-load-stamp" id="exit-load-stamp">
+                <span class="exit-load-stamp-icon">X</span>  
+            </button>
+        </div>
+    </div>
     <!-- Popup chỉnh sửa tác phẩm -->
      <div class="popup-modal" id="modifyModal">
         <div id=popup class="popup-container" > 
         <h4> Tác phẩm dự thi của bạn </h4>
             <!-- <div class="stamp-frame"> -->
-            <div class="frame">
+            <div class="stamp-frame">
                 <img src="~/image/shared/stamp.png" class="stamp-img">
             </div>
-            <div class="button-modify-container">
-                <button class="edit-button" id="edit-button">Chỉnh sửa</button>
-                <button class="delete-button" id="delete-button">Xóa</button>
+            <div class="button-modify-wrapper d-flex justify-content-center" >
+                <div class="button-modify-container">
+                    <button class="edit-button" id="edit-button">Chỉnh sửa</button>
+                    <button class="delete-button" id="delete-button">Xóa</button>
+                </div>
             </div>
           <button class="exit-modify-button" id="exit-modify-button">
         <span class="exit-modify-icon">X</span>  </button>
@@ -197,7 +214,8 @@
         const exitModifyButton = document.getElementById('exit-modify-button');
         const deletePopup = document.getElementById('deletePopup');
         const editPopup = document.getElementById('editPopup');
-
+        var loadStampPopup= document.getElementById("stamp-popup");
+        var exitLoadStampButton=document.getElementById("exit-load-stamp"); 
         
         // Hiện popup khi hình ảnh được nhấp vào
         images.forEach(image => {
@@ -205,6 +223,7 @@
                 modal.style.display = 'block';
                 document.body.style.overflow = 'hidden'; // Tắt cuộn
                 overlay.style.display = 'block'; // Hiển thị nền mờ
+                resize_frame();
             });
         });
          exitModifyButton.addEventListener('click', () => {
@@ -215,9 +234,18 @@
 
         //Xử lý khi nút "Chỉnh sửa" được nhấp vào
         editButton.addEventListener('click', () => {
-            
-             editPopup.style.display = 'block';
+             modal.style.display = 'none';
+             loadStampPopup.style.display = "block";
+             document.body.style.overflow = 'hidden'; 
+            overlay.style.display = 'block'; 
         });
+          exitLoadStampButton.addEventListener("click", function() {
+            loadStampPopup.style.display = "none";
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; 
+            overlay.style.display = 'block';
+        });
+        // JavaScript hiển thị edit popup tại đây
 
         //Xử lý khi nút "Xóa" được nhấp vào
         deleteButton.addEventListener('click', () => {
@@ -232,7 +260,6 @@
     const exitDeleteButton = document.getElementById('exit-delete-button');
     const cancelEditButton = document.getElementById('cancel-edit-button');
     const cancelDeleteButton = document.getElementById('cancel-delete-button');
-
     exitEditButton.addEventListener('click', () => {
         editPopup.style.display = 'none';
     });
