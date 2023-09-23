@@ -39,10 +39,7 @@
     background-size: 100% 100%;
     width:597px;
     height:413px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+    margin-left:40px;
 }
 
 .stamp-img {

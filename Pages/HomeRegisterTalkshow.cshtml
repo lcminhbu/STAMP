@@ -82,7 +82,7 @@
                 <a class="register-stamp" asp-area="" asp-page="/HomeRegisterStamp">Đăng kí tác phẩm</a>
             </div>
             <div>
-                <a class="register-talkshow">Đăng kí Talkshow</a>
+                <a class="register-talkshow" asp-page="/HomeRegisterTalkshow">Đăng kí Talkshow</a>
             </div>
         </div>
     </div>
@@ -127,6 +127,23 @@
             </div>
         </div>
     </div>
+    <script>
+    // Lấy tất cả các thẻ <a> có class "register-stamp" và "register-talkshow"
+    var stampLink = document.querySelector('.register-stamp');
+    var talkshowLink = document.querySelector('.register-talkshow');
+
+    // Thêm sự kiện click cho thẻ "Register Stamp"
+    stampLink.addEventListener('click', function(event) {
+    stampLink.style.textDecoration = 'underline'; // Thêm gạch chân
+    talkshowLink.style.textDecoration = 'none'; // Loại bỏ gạch chân ở thẻ "Register Talkshow"
+    });
+
+    // Thêm sự kiện click cho thẻ "Register Talkshow"
+    talkshowLink.addEventListener('click', function(event) {
+    talkshowLink.style.textDecoration = 'underline'; // Thêm gạch chân
+    stampLink.style.textDecoration = 'none'; // Loại bỏ gạch chân ở thẻ "Register Stamp"
+    });
+    </script>
      <!-- JavaScript điều khiển popup thay đổi thông tin cá nhân -->
     <script>
         const modalOne = document.getElementById('modalOne');

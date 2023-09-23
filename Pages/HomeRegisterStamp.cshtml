@@ -80,7 +80,7 @@
     <div class="content-container d-flex justify-content-center">
         <div class="content">
             <div>
-                <a class="register-stamp">Đăng kí tác phẩm</a>
+                <a class="register-stamp"  asp-page="/HomeRegisterStamp">Đăng kí tác phẩm</a>
             </div>
             <div>
                 <a class="register-talkshow" asp-area="" asp-page="/HomeRegisterTalkshow">Đăng kí Talkshow</a>
@@ -101,7 +101,7 @@
         <div class="load-button-container">
             <div class="decription-button-container" id="load-stamp-description" >
                 <div>
-                <button class="load-button"> 
+                <button class="load-button" id="load-stamp-description"> 
                 </div>
                 <h4> Nhấn vào đây để tải nội dung lên </h4>
             </div>
@@ -230,6 +230,21 @@
             </button>
         </div>
     </div>
+    <!-- Popup tải nội dung lên -->
+     <div class="description-popup-container d-flex justify-content-center">
+        <div class="description-popup" id="description-popup" >
+            <h3 class="load-description-title"> Tải nội dung lên </h3> 
+            <div>
+                <button class="load-description-button">
+                    <img src="~/image/UserProfile/arrow.png">
+                </button>
+            </div>
+            <h4> Nhấp hoặc kéo và thả để thêm mô tả </h4>
+            <button class="exit-description-stamp" id="exit-description-stamp">
+                <span class="exit-description-stamp-icon">X</span>  
+            </button>
+        </div>
+    </div>
      <!-- Popup thông báo tải ảnh thành công lên -->
     <div class="success-popup-container d-flex justify-content-center">
         <div class="success-popup" id="success-popup">
@@ -301,6 +316,23 @@
                 </div>
     </form>
     </div>
+    <script>
+    // Lấy tất cả các thẻ <a> có class "register-stamp" và "register-talkshow"
+    var stampLink = document.querySelector('.register-stamp');
+    var talkshowLink = document.querySelector('.register-talkshow');
+
+    // Thêm sự kiện click cho thẻ "Register Stamp"
+    stampLink.addEventListener('click', function(event) {
+    stampLink.style.textDecoration = 'underline'; // Thêm gạch chân
+    talkshowLink.style.textDecoration = 'none'; // Loại bỏ gạch chân ở thẻ "Register Talkshow"
+    });
+
+    // Thêm sự kiện click cho thẻ "Register Talkshow"
+    talkshowLink.addEventListener('click', function(event) {
+    talkshowLink.style.textDecoration = 'underline'; // Thêm gạch chân
+    stampLink.style.textDecoration = 'none'; // Loại bỏ gạch chân ở thẻ "Register Stamp"
+    });
+    </script>
     <!-- JavaScript thông báo nộp tác phẩm thành công  -->
     <script>
     var savedSubmitButton=document.getElementById("saved-submit-button"); 
@@ -389,8 +421,10 @@
      </script>
      <script>
         var exitLoadStampButton=document.getElementById("exit-load-stamp"); 
+        var exitLoadDescriptionButton=document.getElementById("exit-description-stamp"); 
         var closeButton=document.getElementById("exit-method-button"); 
         var loadImageButton = document.getElementById("load-stamp-img");
+        var loadDescriptionButton = document.getElementById("load-stamp-description");
         var popupRegister = document.getElementById("register-method"); 
         var invidualMethodButton=document.getElementById("invidual-method-button");
         var peopleForm = document.getElementById("people-form");
@@ -398,6 +432,17 @@
         var savePeopleButton=document.getElementById("save-people-button");
         var cancelPeopleButton=document.getElementById("cancel-people-button");
         var loadStampPopup= document.getElementById("stamp-popup")
+        var loadDescriptionPopup= document.getElementById("description-popup");
+        loadDescriptionButton .addEventListener("click", function() {
+            loadDescriptionPopup.style.display = "block";
+            document.body.style.overflow = 'hidden'; 
+            overlay.style.display = 'block';
+        });
+         exitLoadDescriptionButton .addEventListener("click", function() {
+            loadDescriptionPopup.style.display = "none";
+            document.body.style.overflow = 'auto'; 
+            overlay.style.display = 'none';
+        });
         loadImageButton.addEventListener("click", function() {
             popupRegister.style.display = "block";
             document.body.style.overflow = 'hidden'; 
