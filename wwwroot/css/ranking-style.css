@@ -97,7 +97,7 @@
     border: none;
 
     border-radius: 15px;
-    background: var(--vng, #E8AA42);
+    background-color: rgb(232, 170, 66);
     padding: 10px;
     z-index: 1;
 }
@@ -115,7 +115,6 @@
 .number {
     font-size: 2.0vw;
     font-weight: 500;
-    font-family: JosefinSans;
 }
 
 @media only screen and (max-width: 768px) {
@@ -127,6 +126,7 @@
 .like-number {
     width: 20%;
     margin: auto 0;
+    margin-top: 3px;
 }
 
 .like-image {
