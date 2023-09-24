@@ -6,36 +6,28 @@
   }
 }
 
-h3 {
-    color: #000;
-    text-align: center;
-    font-family: Josefin Sans;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-caption {
-    color: #000;
-    text-align: center;
-    font-family: Josefin Sans;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-}
-
 .navbar-nav {
     width: 80%;
 }
 
 .header {
-    background-color: #F8F1F1;
+    background-color: white;
+}
+
+.navbar {
+    padding: 10px;
+    height: 100px;
+}
+
+.navbar-brand {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
 }
 
 .logo {
-    width: 150px; 
+    height: 86%;
 }
 
 .navbar-box {
