@@ -15,6 +15,7 @@
     padding:0 0 8px 0;
     list-style: none;
     margin-bottom: 0;
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,47 +23,50 @@
 
 .stamp-item {
     padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 .stamp-item__link {
     position: relative;
     font-size: 24px;
+    line-height: 24px;
     color: var(--blue-color);
     text-decoration: none;
-    padding: 6px 0px;
+    padding: 10px 0px;
     display: block;
+    font-weight: 600;
 }
 
 .stamp-item__link:hover {
-    color: #286AA3;
+    color: var(--light-blue);
 }
 
 .select-part {
     font-size: 20px;
     text-align: center;
     list-style-type: none;
-    font-family: JosefinSans;
-    font-weight: 200;
     padding: 0;
     display: flex; 
     flex-direction: column;
     align-items: center;
+    margin-left: 30%;
+    text-align: left;
 }
 
 .select-item {
-    padding: 5px 0px;
+    padding: 16px 0px 8px 0px;
     font-size: 20px;
-    width: fit-content;
+    width: 100%;
 }
 
 .select-item:hover {
     cursor: pointer;
 }
 
-
 .select-part__link {
     color: #000;
     text-decoration: none;
+    font-weight: 300;
 }
 
 .info {
@@ -95,6 +99,7 @@
 .info-introduce {
     margin-left: 7%;
     margin-right: 7%;
+    text-align: justify;
 }
 
 .alignleft {

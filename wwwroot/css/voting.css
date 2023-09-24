@@ -148,13 +148,16 @@
 
 .pag_btn {
     width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     border: 2px solid black;
     border-radius: 12px;
     font-size: 50px;
     font-weight: 600;
-    height: 64px;
-    padding-top: 3px;
+    line-height: 64px;
 }
 
 .pag_btn:hover {
