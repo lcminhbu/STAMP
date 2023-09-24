@@ -78,6 +78,7 @@ hr
 {
     border:none;
     border-top:2px solid black;
+    width:230px;
 }
 
 @media (max-width: 1700px) 
@@ -97,7 +98,7 @@ hr
     width:30%;
     }
     hr {
-        width:420px;
+        width:220px;
     }
 }
 @media (min-width:1700px) and (max-width: 1800px) 

@@ -137,7 +137,7 @@ form {
 .input-box label {
     position:absolute;
     left:70px;
-    height:5%;
+    height:3%;
     margin-top:65px;
     pointer-events:none;
     /* transition: top 0.3s, font-size 0.3s; */
