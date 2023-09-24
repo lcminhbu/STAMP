@@ -294,5 +294,10 @@ hr {
     width:74px;
     height:74px;
 }
-
+@media (min-height: 800px) 
+{
+    .success-popup h2  {
+        margin-top:15%;
+    }
+}
 

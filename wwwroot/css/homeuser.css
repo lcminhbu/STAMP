@@ -275,6 +275,7 @@ font-weight:600;
     line-height:40px;
     margin-top:107px;
     font-family: "JosefinSans";
+    font-weight: 500;
 }
 .exit-load-stamp {
     position: absolute;
@@ -297,6 +298,7 @@ font-weight:600;
     margin-top:10%;
     font-size:32px;
     line-height:32px;
+    font-weight: 400;
 }
 .load-stamp-button
 {

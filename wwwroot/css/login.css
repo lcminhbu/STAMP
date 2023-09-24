@@ -64,7 +64,7 @@
   width:642px;
   height:112px;
   line-height: 40px;
-  font-weight: 700px;
+  font-weight: 700;
 }
 
 .login-notice
@@ -74,7 +74,7 @@
   /* font-size: 28px; */
   line-height: 48px;
   font-size: 48px;
-  font-weight:700px;
+  font-weight:700;
 }
 .notice
 {
@@ -84,7 +84,7 @@
   /* font-weight: 500; */
   /* margin-top: 35px; */
   font-size:39px;
-  font-weight: 600px;
+  font-weight: 600;
   padding: 0 10px 0 10px;
 }
 .google-icon {

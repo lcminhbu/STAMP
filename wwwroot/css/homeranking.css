@@ -24,10 +24,11 @@
     width:50%;
     height:100%;
 }
-.author,.author-content
+.author,.author-name
 {
     text-align: right;
     font-family:"JosefinSans";
+    font-weight: 700;
 }
 .ranking-container 
 {
@@ -44,11 +45,13 @@
 }
 .voting,.ranking {
     font-family:"JosefinSans";
+    font-weight: 700;
 }
 .stamp,.stamp-name
 {
     text-align: left;
     font-family:"JosefinSans";
+    font-weight: 700;
 }
 .stamp-name
 {
