@@ -255,7 +255,6 @@
         deleteButton.addEventListener('click', () => {
             // Thực hiện hành động xóa ở đây
             deletePopup.style.display = 'block';
-            modal.style.display = 'none';
             document.body.style.overflow = 'hidden'; 
             overlay.style.display = 'block'; 
         });
@@ -269,25 +268,21 @@
     const cancelDeleteButton = document.getElementById('cancel-delete-button');
     exitEditButton.addEventListener('click', () => {
         editPopup.style.display = 'none';
-        modal.style.display = 'block';
         document.body.style.overflow = 'hidden'; 
         overlay.style.display = 'block'; 
     });
     exitDeleteButton.addEventListener('click', () => {
         deletePopup.style.display = 'none';
-        modal.style.display = 'block';
         document.body.style.overflow = 'hidden'; 
         overlay.style.display = 'block'; 
     });
     cancelEditButton.addEventListener('click', () => {
         editPopup.style.display = 'none';
-        modal.style.display = 'block';
         document.body.style.overflow = 'hidden'; 
         overlay.style.display = 'block'; 
     });
     cancelDeleteButton.addEventListener('click', () => {
         deletePopup.style.display = 'none';
-        modal.style.display = 'block';
         document.body.style.overflow = 'hidden'; 
         overlay.style.display = 'block'; 
     });
@@ -295,7 +290,7 @@
     //Xử lý khi nút "Chỉnh sửa" được nhấp vào
     yesButton.addEventListener('click', () => {
             
-        alert ("Xử lý khi chỉnh sửa");
+        // alert ("Xử lý khi chỉnh sửa");
     });
 </script>
 </body>

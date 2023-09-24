@@ -84,7 +84,7 @@ p {
     height:700px;
     border:1px solid black;
     margin: 0 auto; /* Để căn giữa theo chiều ngang */
-    margin-top:2%;
+    margin-top:1.5%;
     border-radius: 5px;
     display:flex;
     flex-direction: column;
@@ -158,8 +158,8 @@ h4
     position:absolute;
     top: 5px; /* Đặt vị trí top tùy ý để đặt nút "X" ở góc trên cùng bên phải của form */
     right:-10px; /* Đặt vị trí right tùy ý để đặt nút "X" ở góc trên cùng bên phải của form */
-    width: 20px; /* Đặt chiều rộng của nút "X" */
-    height: 20px; /* Đặt chiều cao của nút "X" */
+    width: 15px; /* Đặt chiều rộng của nút "X" */
+    height: 15px; /* Đặt chiều cao của nút "X" */
     background-color: transparent; /* Loại bỏ màu nền của nút "X" */
     border: none; /* Loại bỏ đường viền của nút "X" */
     cursor: pointer; /* Biểu tượng con trỏ khi di chuột qua nút "X" */
@@ -184,7 +184,7 @@ h4
     top: 50%;
     display:none;
     z-index:3;
-    top:25%;
+    top:30%;
     left:25%;
     height:250px;
     width: 50%;
@@ -198,7 +198,7 @@ h4
     top: 50%;
     display:none;
     z-index:3;/* Độ ưu tiên lớn hơn so với popup chỉnh sửa tác phẩm  */
-    top:25%;
+    top:30%;
     left:25%;
     height:250px;
     width: 50%;
