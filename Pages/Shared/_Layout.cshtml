@@ -14,8 +14,8 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary header" style = "padding: 0">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary header">
+            <div class="container-fluid" style="height: 100%">
                 <a class="navbar-brand" asp-area="" asp-page="/Index"><img class="logo" src="~/image/shared/stamplogo.png" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -88,9 +88,9 @@
         </main>
     </div>
 
-    <footer class="container-fluid grey-background">
+    <footer class="container-fluid" style="background-color: #DEDBDB;">
         <div class="row justify-content-around">
-            <div class="col-4 footer-column">
+            <div class="col-5 footer-column">
                 <p class="footer-column__header">Đoàn - Hội Khoa Công nghệ thông tin kinh doanh</p>
             </div>
             <div class="col-3 footer-column">
@@ -101,7 +101,7 @@
             </div>
         </div>
         <div class="row justify-content-around">
-            <div class="col-4 footer-column">
+            <div class="col-5 footer-column">
                 <p class="footer-column__info">Trường Đại học Kinh tế TP.Hồ Chí Minh (UEH)</p>
             </div>
             <div class="col-3 footer-column">
@@ -116,6 +116,7 @@
                 </ul>
             </div>
         </div>
+        <div style="height: 100px"></div>
     </footer>
     <!-- JavaScript thay đổi button đăng nhập thành các nút chức năng khi người dùng đã đăng nhập -->
     <script>

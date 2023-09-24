@@ -207,21 +207,19 @@ h2 {
     white-space: nowrap;
 }
 
-.footer-column {
-    padding: 10px;
-}
-
 .footer-column__header {
     text-align: left;
     font-weight: 600;
     font-size: 32px;
     padding-top: 40px;
+    line-height: 50px;
 }
 
 .footer-column__info {
     text-align: left;
     font-weight: 600;
     font-size: 24px;
+    line-height: 24px;
     margin-bottom: 20px;
 }
 
@@ -232,6 +230,7 @@ h2 {
     text-decoration: none;
     color: black !important;
     line-height: 24px;
+    margin-bottom: 26px;
 }
 
 .footer-column__info  *:hover {
