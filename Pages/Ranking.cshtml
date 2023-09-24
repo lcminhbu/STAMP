@@ -45,7 +45,7 @@
                         </div>
                     </div>
                     <div class="row justify-content-around" style="margin-top: 10px">
-                        <button onclick="changeBackgroundColor()" class="like-btn">
+                        <button default-color="rgb(232, 170, 66)" onclick="like_action()" class="like-btn">
                             <p class="like-number number">00</p>
                             <img class="like-image" src="~/image/Ranking/like.svg"/>
                         </button>
@@ -69,7 +69,7 @@
                         </div>
                     </div>
                     <div class="row justify-content-around" style="margin-top: 10px">
-                        <button onclick="changeBackgroundColor()" class="like-btn">
+                        <button default-color="rgb(232, 170, 66)" onclick="like_action()" class="like-btn">
                             <p class="like-number number">01</p>
                             <img class="like-image" src="~/image/Ranking/like.svg"/>
                         </button>
@@ -93,7 +93,7 @@
                         </div>
                     </div>
                     <div class="row justify-content-around" style="margin-top: 10px">
-                        <button onclick="changeBackgroundColor()" class="like-btn">
+                        <button default-color="rgb(232, 170, 66)" onclick="like_action()" class="like-btn">
                             <p class="like-number number">00</p>
                             <img class="like-image" src="~/image/Ranking/like.svg"/>
                         </button>
@@ -117,7 +117,7 @@
                         </div>
                     </div>
                     <div class="row justify-content-around" style="margin-top: 10px">
-                        <button onclick="changeBackgroundColor()" class="like-btn">
+                        <button default-color="rgb(232, 170, 66)" onclick="like_action()" class="like-btn">
                             <p class="like-number number">00</p>
                             <img class="like-image" src="~/image/Ranking/like.svg"/>
                         </button>
@@ -141,7 +141,7 @@
                         </div>
                     </div>
                     <div class="row justify-content-around" style="margin-top: 10px">
-                        <button onclick="changeBackgroundColor()" class="like-btn">
+                        <button default-color="rgb(232, 170, 66)" onclick="like_action()" class="like-btn">
                             <p class="like-number number">00</p>
                             <img class="like-image" src="~/image/Ranking/like.svg"/>
                         </button>
@@ -218,7 +218,7 @@
             <p class="stt-contest-box">#01</p>
             <p class="contest-name">Mừng ngày Phụ nữ Việt Nam</p>
             <p class="contest-author stamp-author">Đoàn Minh Khoa</p>
-            <button onclick="changeBGandFont()" class="contest-like-box like-btn">
+            <button default-color="rgb(217, 217, 217)" onclick="like_action()" class="contest-like-box like-btn">
                 <p class="contest-like-number like-number number">01</p>
                 <img class="like-image" src="~/image/Ranking/like.svg"/>
             </button>
@@ -227,7 +227,7 @@
             <p class="stt-contest-box">#02</p>
             <p class="contest-name">Mừng ngày Phụ nữ Việt Nam</p>
             <p class="contest-author stamp-author">Đoàn Minh Khoa</p>
-            <button onclick="changeBGandFont()" class="contest-like-box like-btn">
+            <button default-color="rgb(217, 217, 217)" onclick="like_action()" class="contest-like-box like-btn">
                 <p class="contest-like-number like-number number">00</p>
                 <img class="like-image" src="~/image/Ranking/like.svg"/>
             </button>
@@ -236,7 +236,7 @@
             <p class="stt-contest-box">#03</p>
             <p class="contest-name">Mừng ngày Phụ nữ Việt Nam</p>
             <p class="contest-author stamp-author">Đoàn Minh Khoa</p>
-            <button onclick="changeBGandFont()" class="contest-like-box like-btn">
+            <button default-color="rgb(217, 217, 217)" onclick="like_action()" class="contest-like-box like-btn">
                 <p class="contest-like-number like-number number">00</p>
                 <img class="like-image" src="~/image/Ranking/like.svg" />
             </button>
@@ -245,7 +245,7 @@
             <p class="stt-contest-box">#04</p>
             <p class="contest-name">Mừng ngày Phụ nữ Việt Nam</p>
             <p class="contest-author stamp-author">Đoàn Minh Khoa</p>
-            <button onclick="changeBGandFont()" class="contest-like-box like-btn">
+            <button default-color="rgb(217, 217, 217)" onclick="like_action()" class="contest-like-box like-btn">
                 <p class="contest-like-number like-number number">00</p>
                 <img class="like-image" src="~/image/Ranking/like.svg" />
             </button>
@@ -253,20 +253,42 @@
         
     <!-- JavaScript -->
     <script>
-        function changeBackgroundColor() {
+        function like_action() {
             event.stopPropagation();
-            event.currentTarget.style.backgroundColor = "#4285F4";
-        }
-        function changeBGandFont() {
-            event.currentTarget.style.backgroundColor = "#4285F4";
-            
-            const collection = event.currentTarget.children;
-            collection[0].style.color = "#FFF";
-            collection[0].style.fontWeight = "700";
-            collection[1].src = "image/Ranking/like_bold.svg"
-            const parent = event.currentTarget.parentElement;
-            const siblings = parent.children;
-            siblings[1].style.color = "#6EACE3";
+            var current = event.currentTarget
+            const default_color = current.getAttribute("default-color");
+            let current_style = window.getComputedStyle(current);
+            var like_number = current.getElementsByClassName("like-number")[0];
+            const parent = current.parentElement;
+            const name = parent.getElementsByClassName("contest-name");
+            if (current_style.backgroundColor === default_color){
+                current.style.backgroundColor = "rgb(66, 133, 244)";
+                current.children[1].src = "image/Ranking/like_bold.svg";
+                like_number.style.color = "white";
+                like_number.textContent = parseInt(like_number.textContent) + 1;
+                if (like_number.textContent<10) {
+                    like_number.textContent = "0" + like_number.textContent;
+                }
+                if (name.length>0) {
+                    name[0].style.color = "#6EACE3";
+                }
+
+                @* Code truyền request like ở đây *@
+            }
+            else {
+                current.style.backgroundColor = default_color;
+                current.children[1].src = "image/Ranking/like.svg";
+                like_number.style.color = "black";
+                like_number.textContent = parseInt(like_number.textContent) - 1;
+                if (like_number.textContent<10) {
+                    like_number.textContent = "0" + like_number.textContent;
+                }
+                if (name.length>0) {
+                    name[0].style.color = "#000";
+                }
+
+                @* Code request dislike ở đây *@
+            }
         }
     </script>
 </body>
