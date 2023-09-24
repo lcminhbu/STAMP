@@ -136,6 +136,10 @@ h3 {
     line-height:32px;
     text-align: center;
 }
+.invidual-form .input-box label 
+{
+    height:4%;
+}
 .invidual-form button {
     width:188px;
     height: 58px;
@@ -173,12 +177,17 @@ h3 {
     border:1px solid black;
     overflow: auto; /* Bật thanh cuộn khi cần thiết */
 }
+.people-form .input-box label 
+{
+    height:4%;
+}
 .people-form-title
 {
     font-weight: 500;
     font-size:32px;
     line-height:32px;
     text-align: center;
+    margin-top:3%;
 }
 .people-form button {
     width:188px;
@@ -202,7 +211,8 @@ h3 {
     display:flex;
     justify-content: flex-end;
 }
-.people-form h3 
+.people-form .member h3 
 {
     margin-top:5%;
+    text-align: left;
 }
