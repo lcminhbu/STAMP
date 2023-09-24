@@ -257,6 +257,7 @@
             deletePopup.style.display = 'block';
             document.body.style.overflow = 'hidden'; 
             overlay.style.display = 'block'; 
+            modal.style.display = 'none';
         });
     </script>
     <!--  JavaScript điều khiển cảnh báo khi chỉnh sửa tác phẩm -->
@@ -270,21 +271,29 @@
         editPopup.style.display = 'none';
         document.body.style.overflow = 'hidden'; 
         overlay.style.display = 'block'; 
+        modal.style.display = 'block';
+        resize_frame();
     });
     exitDeleteButton.addEventListener('click', () => {
         deletePopup.style.display = 'none';
         document.body.style.overflow = 'hidden'; 
         overlay.style.display = 'block'; 
+         modal.style.display = 'block';
+         resize_frame();
     });
     cancelEditButton.addEventListener('click', () => {
         editPopup.style.display = 'none';
         document.body.style.overflow = 'hidden'; 
         overlay.style.display = 'block'; 
+         modal.style.display = 'block';
+         resize_frame();
     });
     cancelDeleteButton.addEventListener('click', () => {
         deletePopup.style.display = 'none';
         document.body.style.overflow = 'hidden'; 
         overlay.style.display = 'block'; 
+         modal.style.display = 'block';
+         resize_frame();
     });
 
     //Xử lý khi nút "Chỉnh sửa" được nhấp vào

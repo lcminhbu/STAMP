@@ -315,3 +315,16 @@ font-weight:600;
         margin-top:4%;
     }
 }
+@media (max-width: 1700px)
+{
+    .delete-popup
+    {
+        width:60%;
+        left:20%;
+    }
+    .edit-popup
+    {
+        width:60%;
+        left:20%;
+    }
+} 
