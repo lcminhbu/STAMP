@@ -137,7 +137,7 @@ form {
 .input-box label {
     position:absolute;
     left:70px;
-    height:3%;
+    height:2%;
     margin-top:65px;
     pointer-events:none;
     /* transition: top 0.3s, font-size 0.3s; */
@@ -147,14 +147,11 @@ input[type="text"] {
 }
     .input-box input:valid~label,
     .input-box input:focus~label {
-        margin-top:20px;
-        color: #286AA3;
+        margin-top:32px;
         font-size:20px;
         background:#fff;
+        padding:0 5px 0 5px;
     }
-.input-box input:focus {
-    border-color: #007bff; 
-}
 /* Ngăn style mặc định của chrome */
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px white inset;

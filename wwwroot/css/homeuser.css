@@ -1,11 +1,15 @@
 /* CSS cho trang chủ */
+.contest-wrapper
+{
+    margin-top:150px;
+}
 .contest-container {
     display :flex;
     flex-direction: row;
-    margin-top:150px;
     margin-left:40px;
     width:70%;
     height: 559px;
+    margin-bottom:40px;
 }
 
 .stamp-frame {
